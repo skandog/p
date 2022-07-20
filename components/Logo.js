@@ -1,14 +1,14 @@
 import Link from 'next/link'
 
-
+import "./Logo.module.css"
 import Image from 'next/image'
 import {Text, useColorModeValue} from '@chakra-ui/react'
-import styled from '@emotion/styled'
+// import styled from '@emotion/styled'
 
 
-const LogBox = styled.span`
-font-weight: bold;
-`
+// const LogBox = styled.span`
+// font-weight: bold;
+// `
 
 // const LogoBox = styled.span`
 //   font-weight: bold;
@@ -26,16 +26,18 @@ font-weight: bold;
 //   }
 // `
 
+// style={{"font-weight": "bold", "font-size": "18px","display": "inline-flex",  "align-items": "center",   "height": "50px",   "line-height": "20px", "padding": "30px"}}
+// 
+
 const Logo = () => {
     const dogImg = `/images/skandy-logo${useColorModeValue('', '-dark')}.png`
     
     return (
         <Link href="/" scroll={false}>
           <a>
-          <LogBox>
 
-            <span style={{"font-weight": "bold", "font-size": "18px","display": "inline-flex",  "align-items": "center",   "height": "50px",   "line-height": "20px", "padding": "30px"}}>
-              <Image src={dogImg} width={30} height={30} alt="logo" />
+            <span className='LogoBox' style={{"font-weight": "bold", "font-size": "90%","display": "inline-flex",  "align-items": "center",   "height": "50px",   "line-height": "20px", "padding": "30px"}}>
+              <Image src={dogImg} width={50} height={50} alt="logo" />
               <Text
                 color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                 fontFamily='M PLUS Rounded 1c", sans-serif'
@@ -45,7 +47,6 @@ const Logo = () => {
                 Skandy Rattray
               </Text>
             </span>
-          </LogBox>
           </a>
         </Link>
       )

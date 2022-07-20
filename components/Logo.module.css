@@ -1,0 +1,17 @@
+.LogoBox {
+  font-weight: bold;
+  font-size: 180px;
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  line-height: 20px;
+  padding: 10px;
+}
+
+.LogoBox img {
+         transition: 200ms ease;
+       }
+
+       .LogoBox :hover img {
+         transform: rotate(20deg);
+       }
