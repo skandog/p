@@ -3,7 +3,7 @@ import {Container, Box, Heading} from "@chakra-ui/react"
 const Page = () => {
     return ( 
         <Container>
-<Box borderRadius="lg" bg="red" p={3} mt={10} mb={6} align="center" >
+<Box borderRadius="lg" bg="green.700" color="whiteAlpha.800" p={3} mt={10} mb={6} align="center" >
 Hello, I&apos;m a full-stack developer based in London!
 </Box>
 <Box display={{md:'flex'}} >

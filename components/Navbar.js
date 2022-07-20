@@ -75,7 +75,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
             <LinkItem href="/projects" path={path}>
               Projects
             </LinkItem>
-            <LinkItem href="/about" path={path}>
+            <LinkItem href="/posts" path={path}>
               Posts
             </LinkItem>
             <LinkItem

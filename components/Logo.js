@@ -3,7 +3,12 @@ import Link from 'next/link'
 
 import Image from 'next/image'
 import {Text, useColorModeValue} from '@chakra-ui/react'
-// import styled from '@emotion/styled'
+import styled from '@emotion/styled'
+
+
+const LogBox = styled.span`
+font-weight: bold;
+`
 
 // const LogoBox = styled.span`
 //   font-weight: bold;
@@ -27,6 +32,8 @@ const Logo = () => {
     return (
         <Link href="/" scroll={false}>
           <a>
+          <LogBox>
+
             <span style={{"font-weight": "bold", "font-size": "18px","display": "inline-flex",  "align-items": "center",   "height": "50px",   "line-height": "20px", "padding": "30px"}}>
               <Image src={dogImg} width={30} height={30} alt="logo" />
               <Text
@@ -38,6 +45,7 @@ const Logo = () => {
                 Skandy Rattray
               </Text>
             </span>
+          </LogBox>
           </a>
         </Link>
       )
