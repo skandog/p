@@ -21,6 +21,7 @@ import { IoLogoGithub } from 'react-icons/io5'
 const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+    console.log(active)
     return (
       <NextLink href={href} passHref scroll={false}>
         <Link
@@ -37,17 +38,20 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   }
   
 
+
   const Navbar = props => {
     const { path } = props
   
     return (
       <Box
-        position="fixed"
+        position="static"
         as="nav"
         w="100%"
-        bg={useColorModeValue('#ffffff40', '#20202380')}
-        css={{ backdropFilter: 'blur(10px)' }}
+        bg={useColorModeValue('#ffffff', '#202023')}
+        css={{ backdropFilter: 'blur(50px)' }}
         zIndex={2}
+        // borderColor={"green.300"}
+        // borderWidth="thick"
         {...props}
       >
         <Container
@@ -57,6 +61,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
           wrap="wrap"
           align="center"
           justify="space-between"
+
         >
           <Flex align="center" mr={5}>
             <Heading as="h1" size="lg" letterSpacing={'tighter'}>
@@ -77,6 +82,9 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
             </LinkItem>
             <LinkItem href="/posts" path={path}>
               Posts
+            </LinkItem>
+            <LinkItem href="/bakes" path={path}>
+              Bakes
             </LinkItem>
             <LinkItem
               target="_blank"
@@ -107,12 +115,16 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
                   <NextLink href="/" passHref>
                     <MenuItem as={Link}>About</MenuItem>
                   </NextLink>
-                  <NextLink href="/works" passHref>
-                    <MenuItem as={Link}>Works</MenuItem>
+                  <NextLink href="/projects" passHref>
+                    <MenuItem as={Link}>Projects</MenuItem>
                   </NextLink>
                   <NextLink href="/posts" passHref>
                     <MenuItem as={Link}>Posts</MenuItem>
                   </NextLink>
+                  <NextLink href="/bakes" passHref>
+                    <MenuItem as={Link}>Bakes</MenuItem>
+                  </NextLink>
+                  
                   <MenuItem
                     as={Link}
                     href="https://github.com/skandog"

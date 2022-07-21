@@ -1,6 +1,8 @@
 import React from "react";
 import { ChakraProvider } from "@chakra-ui/react";
 import Layout from "../components/layouts/main.js"
+import '../styles/globals.css'
+
 
 const Website = ({Component, pageProps, router}) => {
     return ( 
