@@ -30,19 +30,20 @@ import {Text, useColorModeValue} from '@chakra-ui/react'
 // 
 
 const Logo = () => {
-    const dogImg = `/images/skandy-logo${useColorModeValue('', '-dark')}.png`
+    const dogImg = `/images/skandy-logo${useColorModeValue('', '-dark')}-v3.png`
     
     return (
         <Link href="/" scroll={false}>
           <a>
 
             <span className='LogoBox' style={{"font-weight": "bold", "font-size": "90%","display": "inline-flex",  "align-items": "center",   "height": "50px",   "line-height": "20px", "padding": "30px"}}>
-              <Image src={dogImg} width={50} height={50} alt="logo" />
+              <Image src={dogImg} width={70} height={50} alt="logo" />
               <Text
                 color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-                fontFamily='M PLUS Rounded 1c", sans-serif'
                 fontWeight="bold"
                 ml={3}
+                fontFamily='"M PLUS Rounded 1c", "sans-serif"'
+
               >
                 Skandy Rattray
               </Text>
