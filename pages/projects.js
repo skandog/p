@@ -4,6 +4,8 @@ import { WorkGridItem } from '../components/grid-item'
 import skandy from '../public/images/skandy-logo-v3.png'
 
 const Projects = () => {
+  console.log('skandy :>> ', skandy)
+
   return (
     <Container>
       <Box
@@ -22,7 +24,11 @@ const Projects = () => {
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="skandy" title="Skandy" thumbnail={skandy}>
+          <WorkGridItem
+            id="skandy"
+            title="Skandy"
+            thumbnail={String(skandy.src)}
+          >
             A skandy app
           </WorkGridItem>
         </Section>
