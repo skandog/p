@@ -111,6 +111,14 @@ const Page = () => {
           Working freelance and open to full time roles.
         </BioSection>
       </Section>
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          I ♥
+        </Heading>
+        <Paragraph>
+          Cooking, Skateboarding, Running, Fermenting, Traveling
+        </Paragraph>
+      </Section>
     </Container>
   )
 }
