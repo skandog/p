@@ -7,6 +7,7 @@ import {
   Image
 } from '@chakra-ui/react'
 import Section from '../components/section'
+import Paragraph from '../components/paragraph'
 
 const Page = () => {
   const dogImg = `/images/skandy-logo${useColorModeValue('', '-dark')}-v3.png`
@@ -54,7 +55,7 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
-        <p>Paragraph</p>
+        <Paragraph>Paragraph</Paragraph>
       </Section>
     </Container>
   )
