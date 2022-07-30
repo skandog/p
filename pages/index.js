@@ -6,6 +6,8 @@ import {
   useColorModeValue,
   Image
 } from '@chakra-ui/react'
+import Section from '../components/section'
+
 const Page = () => {
   const dogImg = `/images/skandy-logo${useColorModeValue('', '-dark')}-v3.png`
 
@@ -13,7 +15,7 @@ const Page = () => {
     <Container>
       <Box
         borderRadius="lg"
-        bg="green.700"
+        bg={useColorModeValue('green.700', 'green.400')}
         color="whiteAlpha.800"
         p={3}
         mt={10}
@@ -34,11 +36,11 @@ const Page = () => {
           flexShrink={0}
           mt={{ base: 4, md: 0 }}
           ml={{ md: 6 }}
-          align="centre"
+          align="center"
         >
           <Image
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
+            borderColor={useColorModeValue('green.700', 'green.400')}
+            borderWidth={3}
             borderStyle="solid"
             maxWidth="100px"
             display={'inline-block'}
@@ -48,7 +50,12 @@ const Page = () => {
           />
         </Box>
       </Box>
-      <Box></Box>
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          Work
+        </Heading>
+        <p>Paragraph</p>
+      </Section>
     </Container>
   )
 }
