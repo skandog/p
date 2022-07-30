@@ -55,7 +55,14 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
-        <Paragraph>Paragraph</Paragraph>
+        <Paragraph>
+          Skandy is a software developer with a love for growth and embracing
+          new challenges. Born and raised in London, he lives with his partner,
+          pizzas and plants 🌱. When not at the keyboard he enjoys trying new
+          recipes and sharing them with his friends and family. Currently he is
+          expanding his abilty to build beautiful full-stack applications with
+          The School of Code, while working freelance and open to full time roles.
+        </Paragraph>
       </Section>
     </Container>
   )
