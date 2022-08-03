@@ -11,6 +11,7 @@ import {
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
+import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 // import styled from '@emotion/styled'
@@ -19,6 +20,8 @@ const Page = () => {
   const dogImg = `/images/skandy-logo${useColorModeValue('', '-dark')}-v3.png`
 
   return (
+    <Layout>
+
     <Container>
       <Box
         borderRadius="lg"
@@ -74,8 +77,8 @@ const Page = () => {
           Skandy is a software developer with a love for growth and embracing
           new challenges. Born and raised in London, he lives with his partner,
           pizzas and plants 🌱. When not at the keyboard he enjoys trying new
-          recipes and sharing them with his friends and family. Currently he is
-          perfecting his abilty to build beautiful full-stack applications.
+          recipes then sharing the output with his friends and family. Currently he is
+          developing his abilty to build beautiful full-stack applications.
         </Paragraph>
         <Box align="left" my={4}>
           <NextLink href="/projects">
@@ -120,6 +123,7 @@ const Page = () => {
         </Paragraph>
       </Section>
     </Container>
+    </Layout>
   )
 }
 

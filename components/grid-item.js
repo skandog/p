@@ -47,14 +47,14 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
   )
 }
 
-// export const GridItemStyle = () => {
-//   return (
-//     <Global
-//       styles={`
-//     .grid-item-thumbnail {
-//         border-radius: 12px;
-//     }
-//     `}
-//     />
-//   )
-// }
+export const GridItemStyle = () => {
+  return (
+    <Global
+      styles={`
+    .grid-item-thumbnail {
+        border-radius: 12px;
+    }
+    `}
+    />
+  )
+}
