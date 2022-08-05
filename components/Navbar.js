@@ -48,7 +48,7 @@ const Navbar = props => {
       w="100%"
       bg={useColorModeValue('#ffffff', '#202023')}
       css={{ backdropFilter: 'blur(50px)' }}
-      zIndex={2}
+      zIndex={4}
       // borderColor={"green.300"}
       // borderWidth="thick"
       {...props}
@@ -98,7 +98,7 @@ const Navbar = props => {
           </LinkItem>
         </Stack>
 
-        <Box flex={1} align="right">
+        <Box z-index={5} flex={1} align="right">
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
