@@ -40,6 +40,7 @@ const Projects = () => {
             <WorkGridItem
               id="skandy"
               title="Skandy"
+              alt="Skandy"
               thumbnail={useColorModeValue(skandy.src, skandyDark.src)}
             >
               A skandy app
@@ -49,6 +50,7 @@ const Projects = () => {
             <WorkGridItem
               id="Streamlit Analysis of NYC"
               alt="Streamlit Analysis of NYC"
+              title="Streamlit Analysis of NYC"
               thumbnail={useColorModeValue(stremNYC.src, stremNYCDark.src)}
             >
               Data science project using Python and Streamlit to analyse data on
