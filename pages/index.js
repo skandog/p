@@ -5,16 +5,21 @@ import {
   Box,
   Heading,
   Link,
+  SimpleGrid,
   useColorModeValue,
   Image,
-  Button
+  Button,
+  List,
+  ListItem,
+  Icon
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
-// import styled from '@emotion/styled'
+import { GridItem } from '../components/grid-item'
+import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const Page = () => {
   const dogImg = `/images/skandy-logo${useColorModeValue('', '-dark')}-v3.png`
@@ -36,7 +41,7 @@ const Page = () => {
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Skandy Rattray
+              Alexander 'Skandy' Rattray
             </Heading>
             <p>Professional Bug Hunter / Developer</p>
             {/* <Image src={dogImg} width={200} height={150} alt="logo" /> */}
@@ -74,11 +79,12 @@ const Page = () => {
 
           <Paragraph>
             Skandy is a software developer with a love for growth, making
-            things, and embracing new challenges. Born and raised in London, he
-            lives with his partner, pizzas and plants 🌱. When not at the
-            keyboard he enjoys trying new recipes then sharing the output with
-            his friends and family. Currently he is developing his abilty to
-            build beautiful full-stack applications.
+            things, and embracing new challenges. Born and raised in South
+            London, he lives there currently with his partner, tending to his
+            pizzas and plants 🌱. When not at the keyboard he enjoys trying new
+            recipes then sharing the output with his friends and family.
+            Currently he is developing his abilty to build beautiful full-stack
+            applications.
           </Paragraph>
           <Box align="left" my={4}>
             <NextLink href="/projects">
@@ -93,9 +99,18 @@ const Page = () => {
             Bio
           </Heading>
           <BioSection>
-            <BioYear>1989</BioYear>
-            Born in London, United Kingdom
+            <BioYear>1999</BioYear>
+            Won egg and spoon race at school sports day
           </BioSection>
+          <BioSection>
+            <BioYear>2006</BioYear>
+            Won silver in breastroke inter-school competition
+          </BioSection>
+          <BioSection>
+            <BioYear>2009</BioYear>
+            Won gold in scotland inter-university trampolene competiton
+          </BioSection>
+
           <BioSection>
             <BioYear>2014</BioYear>
             Completed Bachelor of Science with Honors degree in Mathematics at
@@ -119,8 +134,55 @@ const Page = () => {
             I ♥
           </Heading>
           <Paragraph>
-            Cooking, Skateboarding, Running, Fermenting, Traveling
+            Cooking, Skateboarding, Running, Fermenting, Traveling, History,
+            Photography
           </Paragraph>
+        </Section>
+
+        <Section delay={0.4}>
+          <Heading as="h3" variant="section-title">
+            Also find me here
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/skandog" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @skandog
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com/skandog_" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoTwitter} />}
+                >
+                  @skandog_
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.linkedin.com/in/arattray/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  @arattray
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem></ListItem>
+            <ListItem></ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
