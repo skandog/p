@@ -93,9 +93,18 @@ const Page = () => {
             Bio
           </Heading>
           <BioSection>
-            <BioYear>1989</BioYear>
-            Born in London, United Kingdom
+            <BioYear>1999</BioYear>
+            Won egg and spoon race at school sports day
           </BioSection>
+          <BioSection>
+            <BioYear>2006</BioYear>
+            Won silver in breastroke inter-school competition
+          </BioSection>
+          <BioSection>
+            <BioYear>2009</BioYear>
+            Won gold in scotland inter-university trampolene competiton
+          </BioSection>
+
           <BioSection>
             <BioYear>2014</BioYear>
             Completed Bachelor of Science with Honors degree in Mathematics at
@@ -119,7 +128,8 @@ const Page = () => {
             I ♥
           </Heading>
           <Paragraph>
-            Cooking, Skateboarding, Running, Fermenting, Traveling
+            Cooking, Skateboarding, Running, Fermenting, Traveling, History,
+            Photography
           </Paragraph>
         </Section>
       </Container>
