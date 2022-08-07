@@ -30,10 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/bakes.js"
     ],
-    "/bakes/pizza_aug_22": [
+    "/bakes/pizza_anchovy_july_22": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/bakes/pizza_aug_22.js"
+      "static/chunks/pages/bakes/pizza_anchovy_july_22.js"
     ]
   },
   "ampFirstPages": []

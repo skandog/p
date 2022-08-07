@@ -29,7 +29,7 @@ const Bakes = () => {
           <Section>
             <BakeGridItem
               id="pizza_aug_22"
-              title="Nduja + Red Onion"
+              title="Nduja, Red Onion & Olive"
               alt="homecooked pizza"
               thumbnail={AugPizza.src}
             >
@@ -38,7 +38,7 @@ const Bakes = () => {
           </Section>
           <Section delay={0.1}>
             <BakeGridItem
-              id="pizza"
+              id="pizza_anchovy_july_22"
               title="July 2022 - Anchovy, Capers, Chili and Parsley"
               alt="homecooked pizza"
               thumbnail={AnchPizza.src}
