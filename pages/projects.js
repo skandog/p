@@ -9,7 +9,7 @@ import {
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import skandy from '../public/images/skandy-logo-v3.png'
-import skandyDark from '../public/images/skandy-logo-dark-v3.png'
+// import skandyDark from '../public/images/skandy-logo-dark-v3.png'
 import stremNYC from '../public/images/projects/python_streamlit_nyc.JPG.png'
 import stremNYCDark from '../public/images/projects/python_streamlit_nyc_dark.JPG.png'
 import Layout from '../components/layouts/article'
