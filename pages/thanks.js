@@ -30,7 +30,7 @@ const Thanks = () => {
               alt="Takuya Matsuyama"
               thumbnail={TakuyaDog.src}
             >
-              Mr Matsuyama's video tutorial was the basis for this site
+              Mr Matsuyama&apos;s video tutorial was the basis for this site
             </ThanksGridItem>
           </Section>
         </SimpleGrid>

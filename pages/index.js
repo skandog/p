@@ -5,7 +5,6 @@ import {
   Box,
   Heading,
   Link,
-  SimpleGrid,
   useColorModeValue,
   Image,
   Button,
@@ -18,11 +17,11 @@ import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
-import { GridItem } from '../components/grid-item'
+// import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const Page = () => {
-  const dogImg = `/images/skandy-logo${useColorModeValue('', '-dark')}-v3.png`
+  // const dogImg = `/images/skandy-logo${useColorModeValue('', '-dark')}-v3.png`
 
   return (
     <Layout>
@@ -41,7 +40,7 @@ const Page = () => {
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Alexander 'Skandy' Rattray
+              Alexander &apos;Skandy&apos; Rattray
             </Heading>
             <p>Professional Bug Hunter / Developer</p>
             {/* <Image src={dogImg} width={200} height={150} alt="logo" /> */}

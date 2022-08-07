@@ -1,4 +1,4 @@
-import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
+import { Container, List, ListItem, Badge } from '@chakra-ui/react'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -8,7 +8,9 @@ const Bake = () => {
   return (
     <Layout title="Grapefruit Soda">
       <Container>
-        <Title>Fermented Grapefruit Soda - July 2022</Title>
+        <Title>
+          Fermented Grapefruit Soda <Badge>July 2022</Badge>
+        </Title>
         <P>
           I have been fermenting ginger beer using a natural yeast culture for
           the last couple years. Recently, sad at the lack of commercial

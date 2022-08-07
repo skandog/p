@@ -1,4 +1,4 @@
-import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
+import { Container, Badge,  List, ListItem } from '@chakra-ui/react'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -8,7 +8,9 @@ const Bake = () => {
   return (
     <Layout title="Nduja, Kalmata & Red Onion - August 2022">
       <Container>
-        <Title>Nduja, Kalmata & Red Onion - August 2022</Title>
+        <Title>
+          Nduja, Kalmata & Red Onion <Badge>August 2022</Badge>
+        </Title>
         <P>
           My signature pizza. Nduja, pork sausage cured with Calabrian chili
           pepper, is great on pizza. It has a strong spiciness which difuses

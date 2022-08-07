@@ -1,4 +1,4 @@
-import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
+import { Container, Badge, List, ListItem } from '@chakra-ui/react'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -8,14 +8,16 @@ const Bake = () => {
   return (
     <Layout title="Pita Bread">
       <Container>
-        <Title>Homemade Pita Bread - July 2022</Title>
+        <Title>
+          Homemade Pita Bread <Badge>July 2022</Badge>
+        </Title>
         <P>
           I made a load of baba ganoush for some friends coming round for
           drinks. But when I looked in the freezer I realised my error: no pita!
           Not one to be beaten by a problem, I had a go at making my own and was
-          delighted to discover they're pretty straight forward. A fairly dry
-          and rough wholemeal dough, rolled out thin and given 10 mins in the
-          oven. never buying pita again!
+          delighted to discover they&apos;re pretty straight forward. A fairly
+          dry and rough wholemeal dough, rolled out thin and given 10 mins in
+          the oven. never buying pita again!
         </P>
         <List my={4} ml={4}>
           <ListItem>

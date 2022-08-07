@@ -1,4 +1,4 @@
-import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
+import { Container, Badge, List, ListItem } from '@chakra-ui/react'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -8,7 +8,9 @@ const Bake = () => {
   return (
     <Layout title="Anchovy Pizza">
       <Container>
-        <Title>Anchovy, Capers, Chili & Parsley - July 2022</Title>
+        <Title>
+          Anchovy, Capers, Chili & Parsley <Badge>July 2022</Badge>
+        </Title>
         <P>
           I love strong flavours and few ingredients can compete with the
           intense saltiness of anchovies. For my anchovy pizza I marinate the

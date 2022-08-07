@@ -1,6 +1,6 @@
 import NextLink from 'next/link'
-import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
-import { Title, ThanksImage, Meta } from '../../components/thanks.js'
+import { Container, Link } from '@chakra-ui/react'
+import { Title, ThanksImage } from '../../components/thanks.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
 import TakuyaDog from '../../public/images/thanks/takuya_dog.jpg'
@@ -11,7 +11,7 @@ const Thank = () => {
       <Container>
         <Title>Takuya Matsuyama (Craftzdog)</Title>
         <P>
-          I came across Mr Matsuyama's{' '}
+          I came across Mr Matsuyama&apos;s{' '}
           <NextLink href="https://youtu.be/bSMZgXzC9AA" passHref>
             <Link target="_blank">tutorial</Link>
           </NextLink>{' '}
@@ -22,8 +22,9 @@ const Thank = () => {
           pleasing.
           <br />
           However only a few minutes into the tutorial, I realised there was no
-          narritive to the design process. I had no context to Mr Matsuyama's
-          decisions. While nervous to continue, I decided to perservere.
+          narritive to the design process. I had no context to Mr
+          Matsuyama&apos;s decisions. While nervous to continue, I decided to
+          perservere.
           <br />
           And I am so happy that I did. It was necessary for me to go away an
           research almost every keystroke and as a result I have learned so much
