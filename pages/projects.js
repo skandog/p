@@ -48,7 +48,7 @@ const Projects = () => {
               them to target.
             </WorkGridItem>
           </Section>
-          <Section delay={0.2}>
+          {/* <Section delay={0.2}>
             <WorkGridItem
               id="skandy"
               title="Skandy"
@@ -65,7 +65,7 @@ const Projects = () => {
             >
               A skandy app
             </WorkGridItem>
-          </Section>
+          </Section> */}
         </SimpleGrid>
         <Divider my={8} />
       </Container>
