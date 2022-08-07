@@ -67,14 +67,6 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             Work
           </Heading>
-          {/* <p style={{ 'text-align': 'justify', 'text-indent': '1em' }}>
-          Skandy is a software developer with a love for growth and embracing
-          new challenges. Born and raised in London, he lives with his partner,
-          pizzas and plants 🌱. When not at the keyboard he enjoys trying new
-          recipes and sharing them with his friends and family. Currently he is
-          expanding his abilty to build beautiful full-stack applications with
-          School of Code, while working freelance and open to full time roles.
-        </p> */}
 
           <Paragraph>
             Skandy is a software developer with a love for growth, making
@@ -101,14 +93,11 @@ const Page = () => {
             <BioYear>1999</BioYear>
             Won egg and spoon race at school sports day
           </BioSection>
-          <BioSection>
-            <BioYear>2006</BioYear>
-            Won silver in breastroke inter-school competition
-          </BioSection>
-          <BioSection>
+
+          {/* <BioSection>
             <BioYear>2009</BioYear>
             Won gold in scotland inter-university trampolene competiton
-          </BioSection>
+          </BioSection> */}
 
           <BioSection>
             <BioYear>2014</BioYear>
