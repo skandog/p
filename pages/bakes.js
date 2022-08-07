@@ -2,10 +2,10 @@ import { Box, Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import AugPizza from '../public/images/nduja_pizza_aug_22.jpg'
-import AnchPizza from '../public/images/anchovy_july_22.jpg'
-import Pita from '../public/images/pitta_july_22.jpg'
-import GrapeFruit from '../public/images/grapefruit_soda_july22.jpg'
+import AugPizza from '../public/images/bakes/nduja_pizza_aug_22.jpg'
+import AnchPizza from '../public/images/bakes/anchovy_july_22.jpg'
+import Pita from '../public/images/bakes/pitta_july_22.jpg'
+import GrapeFruit from '../public/images/bakes/grapefruit_soda_july22.jpg'
 
 const Bakes = () => {
   return (

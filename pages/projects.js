@@ -10,8 +10,8 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import skandy from '../public/images/skandy-logo-v3.png'
 import skandyDark from '../public/images/skandy-logo-dark-v3.png'
-import stremNYC from '../public/images/python_streamlit_nyc.JPG.png'
-import stremNYCDark from '../public/images/python_streamlit_nyc_dark.JPG.png'
+import stremNYC from '../public/images/projects/python_streamlit_nyc.JPG.png'
+import stremNYCDark from '../public/images/projects/python_streamlit_nyc_dark.JPG.png'
 import Layout from '../components/layouts/article'
 
 const Projects = () => {
@@ -35,20 +35,9 @@ const Projects = () => {
           Projects
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section>
-            {/* {useColorModeValue(skandy.src, skandyDark)} */}
+          <Section delay={0.1}>
             <WorkGridItem
-              id="skandy"
-              title="Skandy"
-              alt="Skandy"
-              thumbnail={useColorModeValue(skandy.src, skandyDark.src)}
-            >
-              A skandy app
-            </WorkGridItem>
-          </Section>
-          <Section delay={0.2}>
-            <WorkGridItem
-              id="Streamlit Analysis of NYC"
+              id="streamlit_nyc"
               alt="Streamlit Analysis of NYC"
               title="Streamlit Analysis of NYC"
               thumbnail={useColorModeValue(stremNYC.src, stremNYCDark.src)}
@@ -59,7 +48,7 @@ const Projects = () => {
               them to target.
             </WorkGridItem>
           </Section>
-          <Section delay={0.3}>
+          <Section delay={0.2}>
             <WorkGridItem
               id="skandy"
               title="Skandy"
@@ -68,7 +57,7 @@ const Projects = () => {
               A skandy app
             </WorkGridItem>
           </Section>
-          <Section delay={0.4}>
+          <Section delay={0.3}>
             <WorkGridItem
               id="skandy"
               title="Skandy"
