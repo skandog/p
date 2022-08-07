@@ -2,6 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.js",
-  "/": "pages/index.js"
+  "/projects": "pages/projects.js",
+  "/projects/streamlit_nyc": "pages/projects/streamlit_nyc.js",
+  "/bakes": "pages/bakes.js"
 }

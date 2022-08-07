@@ -1,5 +1,5 @@
 import { Box, Container, Heading, SimpleGrid } from '@chakra-ui/react'
-import { WorkGridItem } from '../components/grid-item'
+import { BakeGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import AugPizza from '../public/images/bakes/nduja_pizza_aug_22.jpg'
@@ -27,27 +27,27 @@ const Bakes = () => {
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
-            <WorkGridItem
-              id="pizza"
-              title="Aug 2022 - Nduja + Red Onion"
+            <BakeGridItem
+              id="pizza_aug_22"
+              title="Nduja + Red Onion"
               alt="homecooked pizza"
               thumbnail={AugPizza.src}
             >
               Really enjoying the new found ability to build thickk crusts
-            </WorkGridItem>
+            </BakeGridItem>
           </Section>
           <Section delay={0.1}>
-            <WorkGridItem
+            <BakeGridItem
               id="pizza"
               title="July 2022 - Anchovy, Capers, Chili and Parsley"
               alt="homecooked pizza"
               thumbnail={AnchPizza.src}
             >
               I love anchovies, and anyone that will enjoy them with me.{' '}
-            </WorkGridItem>
+            </BakeGridItem>
           </Section>
           <Section delay={0.2}>
-            <WorkGridItem
+            <BakeGridItem
               id="pita"
               title="July 2022 - Homemade Pita Bread"
               alt="homecooked pita"
@@ -56,10 +56,10 @@ const Bakes = () => {
               I made a bunch of baba ganoush, looked in the freezer and
               disaster: no pita! So I had a go at making my own and pleased to
               discover they're pretty straight forward.
-            </WorkGridItem>
+            </BakeGridItem>
           </Section>
           <Section delay={0.3}>
-            <WorkGridItem
+            <BakeGridItem
               id="grapefruit_soda"
               title="July 2022 - Fermented Grapefruit Soda"
               alt="fermented grapefruit soda"
@@ -69,7 +69,7 @@ const Bakes = () => {
               for the last couple years. I recently, sad at the lack of
               commercial availability, decided to brew some grapefruit soda.
               Delicious.
-            </WorkGridItem>
+            </BakeGridItem>
           </Section>
         </SimpleGrid>
       </Container>

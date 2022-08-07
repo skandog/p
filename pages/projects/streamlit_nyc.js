@@ -15,16 +15,17 @@ import stremNYCDark from '../../public/images/projects/python_streamlit_nyc_dark
 
 const Project = () => {
   return (
-    <Layout title="streamlit_nyc">
+    <Layout title="Streamlit Analysis">
       <Container>
         <Title>
           Data analysis of NYC Rental Market <Badge>2022</Badge>
         </Title>
         <P>
           A static analysis of of the NYC rental market in March 2022 using
-          Python and Streamlit. The aim of this project was to assist recent
-          graduates know where to focus their search for an appartment shortly
-          after graduating.
+          Python and Streamlit. This project was undertaken while working in a
+          data science role at Crelytica. The aim of this project was to help
+          recent graduates identify where to focus their search for an
+          appartment shortly after graduating.
         </P>
         <List ml={4} my={4}>
           <ListItem>
