@@ -42,7 +42,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Alexander &apos;Skandy&apos; Rattray
             </Heading>
-            <p>Professional Bug Hunter / Developer</p>
+            <p>Software Developer / Bug Hunter</p>
             {/* <Image src={dogImg} width={200} height={150} alt="logo" /> */}
           </Box>
           <Box
