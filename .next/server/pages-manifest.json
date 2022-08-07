@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/projects": "pages/projects.js",
-  "/projects/streamlit_nyc": "pages/projects/streamlit_nyc.js",
-  "/bakes": "pages/bakes.js"
+  "/bakes/pizza_anchovy_july_22": "pages/bakes/pizza_anchovy_july_22.js",
+  "/bakes/pita_july_22": "pages/bakes/pita_july_22.js",
+  "/bakes/pizza_aug_22": "pages/bakes/pizza_aug_22.js"
 }
