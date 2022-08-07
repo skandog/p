@@ -4,8 +4,9 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import AugPizza from '../public/images/bakes/nduja_pizza_aug_22.jpg'
 import AnchPizza from '../public/images/bakes/anchovy_july_22.jpg'
-import Pita from '../public/images/bakes/pitta_july_22.jpg'
+import Pita from '../public/images/bakes/pita_july_22.jpg'
 import GrapeFruit from '../public/images/bakes/grapefruit_soda_july22.jpg'
+// import FocaGanoush from '../public/images/bakes/focaccia_baba_ganoush_june_22'
 
 const Bakes = () => {
   return (
@@ -39,7 +40,7 @@ const Bakes = () => {
           <Section delay={0.1}>
             <BakeGridItem
               id="pizza_anchovy_july_22"
-              title="July 2022 - Anchovy, Capers, Chili and Parsley"
+              title="Anchovy, Capers, Chili and Parsley"
               alt="homecooked pizza"
               thumbnail={AnchPizza.src}
             >
@@ -48,27 +49,22 @@ const Bakes = () => {
           </Section>
           <Section delay={0.2}>
             <BakeGridItem
-              id="pita"
-              title="July 2022 - Homemade Pita Bread"
+              id="pita_july_22"
+              title="Pita Bread"
               alt="homecooked pita"
               thumbnail={Pita.src}
             >
-              I made a bunch of baba ganoush, looked in the freezer and
-              disaster: no pita! So I had a go at making my own and pleased to
-              discover they're pretty straight forward.
+              First time making pita bread from scratch!
             </BakeGridItem>
           </Section>
           <Section delay={0.3}>
             <BakeGridItem
               id="grapefruit_soda"
-              title="July 2022 - Fermented Grapefruit Soda"
+              title="Fermented Grapefruit Soda"
               alt="fermented grapefruit soda"
               thumbnail={GrapeFruit.src}
             >
-              I have been fermenting ginger beer using a natural yeast culture
-              for the last couple years. I recently, sad at the lack of
-              commercial availability, decided to brew some grapefruit soda.
-              Delicious.
+              Grapefruit juice, a simple
             </BakeGridItem>
           </Section>
         </SimpleGrid>

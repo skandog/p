@@ -74,6 +74,9 @@ export const GridItemStyle = () => {
       styles={`
     .grid-item-thumbnail {
         border-radius: 12px;
+        max-height: 150px;
+        width:100%;
+        object-fit: cover; 
     }
     `}
     />
