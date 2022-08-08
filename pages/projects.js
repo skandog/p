@@ -13,6 +13,7 @@ import skandy from '../public/images/skandy-logo-v3.png'
 import stremNYC from '../public/images/projects/python_streamlit_nyc.JPG.png'
 import stremNYCDark from '../public/images/projects/python_streamlit_nyc_dark.JPG.png'
 import Layout from '../components/layouts/article'
+import { motion } from 'framer-motion'
 
 const Projects = () => {
   console.log('skandy :>> ', skandy)
@@ -21,6 +22,7 @@ const Projects = () => {
     <Layout>
       <Container>
         <Box
+          as={motion.div}
           borderRadius="lg"
           bg={useColorModeValue('green.700', 'green.400')}
           color="whiteAlpha.800"
@@ -28,6 +30,9 @@ const Projects = () => {
           mt={10}
           mb={6}
           align="center"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ rotate: 45 }}
+          cursor="pointer"
         >
           Here is some of my favourite work
         </Box>

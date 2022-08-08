@@ -19,6 +19,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 // import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { motion } from 'framer-motion'
 
 const Page = () => {
   // const dogImg = `/images/skandy-logo${useColorModeValue('', '-dark')}-v3.png`
@@ -27,6 +28,7 @@ const Page = () => {
     <Layout>
       <Container>
         <Box
+          as={motion.div}
           borderRadius="lg"
           bg={useColorModeValue('green.700', 'green.400')}
           color="whiteAlpha.800"
@@ -34,6 +36,9 @@ const Page = () => {
           mt={10}
           mb={6}
           align="center"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ rotate: 45 }}
+          cursor="pointer"
         >
           Hello, I&apos;m a full-stack developer based in London!
         </Box>
@@ -52,6 +57,8 @@ const Page = () => {
             align="center"
           >
             <Image
+              as={motion.img}
+              whileHover={{ rotate: 180 }}
               borderColor={useColorModeValue('green.700', 'green.400')}
               borderWidth={3}
               borderStyle="solid"
@@ -79,7 +86,12 @@ const Page = () => {
           </Paragraph>
           <Box align="left" my={4}>
             <NextLink href="/projects">
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="green">
+              <Button
+                as={motion.button}
+                whileHover={{ scale: 1.2 }}
+                rightIcon={<ChevronRightIcon />}
+                colorScheme="green"
+              >
                 Projects
               </Button>
             </NextLink>

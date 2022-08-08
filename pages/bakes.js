@@ -7,12 +7,14 @@ import AnchPizza from '../public/images/bakes/anchovy_july_22.jpg'
 import Pita from '../public/images/bakes/pita_july_22.jpg'
 import GrapeFruit from '../public/images/bakes/grapefruit_soda_july22.jpg'
 // import FocaGanoush from '../public/images/bakes/focaccia_baba_ganoush_june_22'
+import { motion } from 'framer-motion'
 
 const Bakes = () => {
   return (
     <Layout>
       <Container>
         <Box
+          as={motion.div}
           borderRadius="lg"
           bg="yellow.700"
           color="whiteAlpha.800"
@@ -20,6 +22,9 @@ const Bakes = () => {
           mt={10}
           mb={6}
           align="center"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ rotate: 45 }}
+          cursor="pointer"
         >
           I love to cook, bake and ferment exciting things!
         </Box>
