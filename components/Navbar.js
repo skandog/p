@@ -22,7 +22,6 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   const activeColor = useColorModeValue('black.200', 'whiteAlpha.600')
-
   return (
     <NextLink href={href} passHref scroll={false}>
       <Link
@@ -46,7 +45,7 @@ const Navbar = props => {
       position="static"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#ffffff', '#202023')}
+      bg={useColorModeValue('#CFE9D6', '#07150A')}
       css={{ backdropFilter: 'blur(50px)' }}
       zIndex={4}
       // borderColor={"green.300"}
