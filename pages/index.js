@@ -19,7 +19,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 // import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
-import { motion } from 'framer-motion'
+import { motion, useMotionValue, useTransform } from 'framer-motion'
 
 const Page = () => {
   // const dogImg = `/images/skandy-logo${useColorModeValue('', '-dark')}-v3.png`
@@ -58,13 +58,13 @@ const Page = () => {
           >
             <Image
               as={motion.img}
-              whileHover={{ rotate: 180 }}
+              whileHover={{ rotate: 360 }}
               borderColor={useColorModeValue('green.700', 'green.400')}
               borderWidth={3}
               borderStyle="solid"
               maxWidth="100px"
               display={'inline-block'}
-              borderRadius="full"
+              borderRadius="lg"
               src="/images/skn.JPG"
               alt="Profile Image"
             />
