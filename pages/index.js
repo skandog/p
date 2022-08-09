@@ -30,7 +30,7 @@ const Page = () => {
         <Box
           as={motion.div}
           borderRadius="lg"
-          bg={useColorModeValue('purple.500', 'teal.400')}
+          bg={useColorModeValue('purple.500', 'green.400')}
           color="whiteAlpha.800"
           p={3}
           mt={10}
@@ -59,7 +59,7 @@ const Page = () => {
             <Image
               as={motion.img}
               whileHover={{ rotate: 360 }}
-              borderColor={useColorModeValue('purple.500', 'teal.400')}
+              borderColor={useColorModeValue('purple.500', 'green.400')}
               borderWidth={3}
               borderStyle="solid"
               maxWidth="100px"
@@ -90,7 +90,7 @@ const Page = () => {
                 as={motion.button}
                 whileHover={{ scale: 1.2 }}
                 rightIcon={<ChevronRightIcon />}
-                colorScheme={useColorModeValue('purple', 'teal')}
+                colorScheme={useColorModeValue('purple', 'green')}
               >
                 Projects
               </Button>
