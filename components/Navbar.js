@@ -46,7 +46,7 @@ const Navbar = props => {
       as="nav"
       w="100%"
       bg={useColorModeValue('blue.100', '#2A2754')}
-      css={{ backdropFilter: 'blur(50px)' }}
+      css={{ backdropFilter: 'blur(100px)' }}
       zIndex={4}
       // borderColor={"green.300"}
       // borderWidth="thick"
