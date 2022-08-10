@@ -8,12 +8,14 @@ import {
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
+import { motion } from 'framer-motion'
+import Layout from '../components/layouts/article'
 import skandy from '../public/images/skandy-logo-v3.png'
 // import skandyDark from '../public/images/skandy-logo-dark-v3.png'
 import stremNYC from '../public/images/projects/python_streamlit_nyc.JPG.png'
 import stremNYCDark from '../public/images/projects/python_streamlit_nyc_dark.JPG.png'
-import Layout from '../components/layouts/article'
-import { motion } from 'framer-motion'
+import skanfolioLight from '../public/images/projects/Skanfolio_light.png'
+import skanfolioDark from '../public/images/projects/Skanfolio_Dark.png'
 
 const Projects = () => {
   console.log('skandy :>> ', skandy)
@@ -41,6 +43,19 @@ const Projects = () => {
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.1}>
+            <WorkGridItem
+              id="skanfolio"
+              alt="Portfolio Site"
+              title="Skanfolio"
+              thumbnail={useColorModeValue(
+                skanfolioDark.src,
+                skanfolioLight.src
+              )}
+            >
+              Portfolio website built with React.js, Next.js, Chakra-UI and more.
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.2}>
             <WorkGridItem
               id="streamlit_nyc"
               alt="Streamlit Analysis of NYC"

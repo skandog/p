@@ -80,8 +80,8 @@ const Page = () => {
             things, and embracing new challenges. Born and raised in South
             London, he lives there currently with his partner, tending to his
             pizzas and plants 🌱. When not at the keyboard he enjoys trying new
-            recipes then sharing the output with his friends and family.
-            Currently he is developing his abilty to build beautiful full-stack
+            recipes and sharing the output with his friends and family.
+            Currently he is sharpening his ability to build beautiful full-stack
             applications.
           </Paragraph>
           <Box align="left" my={4}>

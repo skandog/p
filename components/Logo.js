@@ -35,7 +35,7 @@ const Logo = () => {
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontWeight="bold"
             ml={3}
-            fontFamily='"M PLUS Rounded 1c", "sans-serif"'
+            fontFamily='"Caveat", "cursive"'
           >
             Skandy Rattray
           </Text>
