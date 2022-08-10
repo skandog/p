@@ -8,11 +8,14 @@ import {
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
+import { motion } from 'framer-motion'
+import Layout from '../components/layouts/article'
 import skandy from '../public/images/skandy-logo-v3.png'
 // import skandyDark from '../public/images/skandy-logo-dark-v3.png'
 import stremNYC from '../public/images/projects/python_streamlit_nyc.JPG.png'
 import stremNYCDark from '../public/images/projects/python_streamlit_nyc_dark.JPG.png'
-import Layout from '../components/layouts/article'
+import skanfolioLight from '../public/images/projects/skanfolio_light.png'
+import skanfolioDark from '../public/images/projects/skanfolio_dark.png'
 
 const Projects = () => {
   console.log('skandy :>> ', skandy)
@@ -21,15 +24,19 @@ const Projects = () => {
     <Layout>
       <Container>
         <Box
+          // as={motion.div}
           borderRadius="lg"
-          bg={useColorModeValue('green.700', 'green.400')}
+          bg={useColorModeValue('purple.500', 'green.400')}
           color="whiteAlpha.800"
           p={3}
           mt={10}
           mb={6}
           align="center"
+          // whileHover={{ scale: 1.1 }}
+          // whileTap={{ rotate: 45 }}
+          // cursor="pointer"
         >
-          Here is some of my favourite work
+          {/* Here is some of my favourite work */}
         </Box>
         <Heading as="h3" fontSize={20} mb={4}>
           Projects
@@ -37,15 +44,27 @@ const Projects = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.1}>
             <WorkGridItem
+              id="skanfolio"
+              alt="Portfolio Site"
+              title="Skanfolio"
+              thumbnail={useColorModeValue(
+                skanfolioDark.src,
+                skanfolioLight.src
+              )}
+            >
+              Portfolio website built with React.js, Next.js, Chakra-UI and
+              more.
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.2}>
+            <WorkGridItem
               id="streamlit_nyc"
               alt="Streamlit Analysis of NYC"
               title="Streamlit Analysis of NYC"
               thumbnail={useColorModeValue(stremNYC.src, stremNYCDark.src)}
             >
               Data science project using Python and Streamlit to analyse data on
-              the NYC Real Estate market in 2022, with a view to providing
-              information to recent graduates on the most affordable areas for
-              them to target.
+              the NYC Real Estate market in 2022.
             </WorkGridItem>
           </Section>
           {/* <Section delay={0.2}>
@@ -67,7 +86,15 @@ const Projects = () => {
             </WorkGridItem>
           </Section> */}
         </SimpleGrid>
-        <Divider my={8} />
+        <Section delay={0.3}>
+          <Divider
+            as={motion.hr}
+            my={8}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 3 }}
+          />
+        </Section>
       </Container>
     </Layout>
   )

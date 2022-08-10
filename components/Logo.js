@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import './Logo.module.css'
+// import './Logo.module.css'
 import Image from 'next/image'
 import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
@@ -34,8 +34,9 @@ const Logo = () => {
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontWeight="bold"
+            fontSize={'3xl'}
             ml={3}
-            fontFamily='"M PLUS Rounded 1c", "sans-serif"'
+            fontFamily='Caveat, "cursive"'
           >
             Skandy Rattray
           </Text>

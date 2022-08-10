@@ -18,14 +18,19 @@ const Project = () => {
     <Layout title="Streamlit Analysis">
       <Container>
         <Title>
-          Data analysis of NYC Rental Market <Badge>2022</Badge>
+          Data analysis of NYC Rental Market<Badge ml={'15px'}>2022</Badge>
         </Title>
         <P>
           A static analysis of of the NYC rental market in March 2022 using
-          Python and Streamlit. This project was undertaken while working in a
-          data science role at Crelytica. The aim of this project was to help
-          recent graduates identify where to focus their search for an
-          appartment shortly after graduating.
+          Python and Streamlit. This project was undertaken while working as a
+          data science intern at Crelytica. <br /> <br /> I am so grateful for
+          my time on this project as it was this that confirmed how much I love
+          talking to computers, and wrangling them to do what I ask! <br />
+          <br /> The aim of this project was to help recent graduates identify
+          where to focus their search for an appartment shortly after
+          graduating. It was interesting learning to use Streamlit's suite of
+          analysis tools, as well as working with geospatial data representation
+          via PyDeck.
         </P>
         <List ml={4} my={4}>
           <ListItem>

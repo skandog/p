@@ -19,6 +19,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 // import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { motion, useMotionValue, useTransform } from 'framer-motion'
 
 const Page = () => {
   // const dogImg = `/images/skandy-logo${useColorModeValue('', '-dark')}-v3.png`
@@ -27,15 +28,19 @@ const Page = () => {
     <Layout>
       <Container>
         <Box
+          // as={motion.div}
           borderRadius="lg"
-          bg={useColorModeValue('green.700', 'green.400')}
+          bg={useColorModeValue('purple.500', 'green.400')}
           color="whiteAlpha.800"
           p={3}
           mt={10}
           mb={6}
           align="center"
+          // whileHover={{ scale: 1.1 }}
+          // whileTap={{ rotate: 45 }}
+          // cursor="pointer"
         >
-          Hello, I&apos;m a full-stack developer based in London!
+          {/* Hello, I&apos;m a full-stack developer based in London! */}
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -49,15 +54,17 @@ const Page = () => {
             flexShrink={0}
             mt={{ base: 4, md: 0 }}
             ml={{ md: 6 }}
-            align="center"
+            align="left"
           >
             <Image
-              borderColor={useColorModeValue('green.700', 'green.400')}
+              as={motion.img}
+              whileHover={{ rotate: 360 }}
+              borderColor={useColorModeValue('purple.500', 'green.400')}
               borderWidth={3}
               borderStyle="solid"
-              maxWidth="100px"
+              maxWidth="150px"
               display={'inline-block'}
-              borderRadius="full"
+              borderRadius="lg"
               src="/images/skn.JPG"
               alt="Profile Image"
             />
@@ -73,13 +80,18 @@ const Page = () => {
             things, and embracing new challenges. Born and raised in South
             London, he lives there currently with his partner, tending to his
             pizzas and plants 🌱. When not at the keyboard he enjoys trying new
-            recipes then sharing the output with his friends and family.
-            Currently he is developing his abilty to build beautiful full-stack
+            recipes and sharing the output with his friends and family.
+            Currently he is sharpening his ability to build beautiful full-stack
             applications.
           </Paragraph>
           <Box align="left" my={4}>
             <NextLink href="/projects">
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="green">
+              <Button
+                as={motion.button}
+                whileHover={{ scale: 1.2 }}
+                rightIcon={<ChevronRightIcon />}
+                colorScheme={useColorModeValue('purple', 'green')}
+              >
                 Projects
               </Button>
             </NextLink>
@@ -105,6 +117,14 @@ const Page = () => {
             the universtiy of Glasgow.
           </BioSection>
           <BioSection>
+            <BioYear>2015</BioYear>
+            Worked in customer success at fintech startup Dext
+          </BioSection>
+          <BioSection>
+            <BioYear>2018</BioYear>
+            Worked in a non-technical project management role at IMechE
+          </BioSection>
+          <BioSection>
             <BioYear>2022</BioYear>
             Undertook Data Science Internship at Crelytica.
           </BioSection>
@@ -123,7 +143,7 @@ const Page = () => {
           </Heading>
           <Paragraph>
             Cooking, Skateboarding, Running, Fermenting, Traveling, History,
-            Photography
+            Photography, Karaoke
           </Paragraph>
         </Section>
 

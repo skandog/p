@@ -3,6 +3,7 @@ import { ThanksGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import TakuyaDog from '../public/images/thanks/takuya_dog.jpg'
+import { motion } from 'framer-motion'
 
 const Thanks = () => {
   console.log(TakuyaDog)
@@ -11,6 +12,7 @@ const Thanks = () => {
     <Layout>
       <Container>
         <Box
+          as={motion.div}
           borderRadius="lg"
           bg="red.700"
           color="whiteAlpha.800"
@@ -18,6 +20,9 @@ const Thanks = () => {
           mt={10}
           mb={6}
           align="center"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ rotate: 45 }}
+          cursor="pointer"
         >
           To acknowledge those who have helped me
         </Box>
