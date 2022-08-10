@@ -19,7 +19,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 // import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
-import { motion, useMotionValue, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const Page = () => {
   // const dogImg = `/images/skandy-logo${useColorModeValue('', '-dark')}-v3.png`

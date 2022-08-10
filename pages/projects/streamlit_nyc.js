@@ -28,9 +28,9 @@ const Project = () => {
           talking to computers, and wrangling them to do what I ask! <br />
           <br /> The aim of this project was to help recent graduates identify
           where to focus their search for an appartment shortly after
-          graduating. It was interesting learning to use Streamlit's suite of
-          analysis tools, as well as working with geospatial data representation
-          via PyDeck.
+          graduating. It was interesting learning to use Streamlit&apos;s suite
+          of analysis tools, as well as working with geospatial data
+          representation via PyDeck.
         </P>
         <List ml={4} my={4}>
           <ListItem>

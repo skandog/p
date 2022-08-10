@@ -3,3 +3,5 @@ dist
 .vercel
 .env
 .next
+
+/lib/tokyohack.js

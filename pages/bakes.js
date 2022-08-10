@@ -13,7 +13,7 @@ import AnchPizza from '../public/images/bakes/anchovy_july_22.jpg'
 import Pita from '../public/images/bakes/pita_july_22.jpg'
 import GrapeFruit from '../public/images/bakes/grapefruit_soda_july22.jpg'
 // import FocaGanoush from '../public/images/bakes/focaccia_baba_ganoush_june_22'
-import { motion } from 'framer-motion'
+// import { motion } from 'framer-motion'
 
 const Bakes = () => {
   return (
