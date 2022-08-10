@@ -4,4 +4,4 @@ dist
 .env
 .next
 
-/lib/tokyohack.js
+./lib/tokyohack.js
