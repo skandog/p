@@ -54,7 +54,7 @@ const Page = () => {
             flexShrink={0}
             mt={{ base: 4, md: 0 }}
             ml={{ md: 6 }}
-            align="center"
+            align="left"
           >
             <Image
               as={motion.img}
@@ -62,7 +62,7 @@ const Page = () => {
               borderColor={useColorModeValue('purple.500', 'green.400')}
               borderWidth={3}
               borderStyle="solid"
-              maxWidth="100px"
+              maxWidth="150px"
               display={'inline-block'}
               borderRadius="lg"
               src="/images/skn.JPG"
