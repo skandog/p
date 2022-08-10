@@ -72,7 +72,15 @@ const Projects = () => {
             </WorkGridItem>
           </Section> */}
         </SimpleGrid>
-        <Divider my={8} />
+        <Section delay={0.3}>
+          <Divider
+            as={motion.hr}
+            my={8}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 3 }}
+          />
+        </Section>
       </Container>
     </Layout>
   )
