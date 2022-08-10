@@ -10,15 +10,15 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, ProjectImage, Meta } from '../../components/project.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
-import skanfolioLight from '../../public/images/projects/Skanfolio_light.png'
-import skanfolioDark from '../../public/images/projects/Skanfolio_dark.png'
+import skanfolioLight from '../../public/images/projects/skanfolio_light.png'
+import skanfolioDark from '../../public/images/projects/skanfolio_dark.png'
 
 const Project = () => {
   return (
     <Layout title="Skanfolio">
       <Container>
         <Title>
-          Skanfolio - Portfolio Page <Badge>2022</Badge>
+          Skanfolio - Portfolio Page <Badge ml={'10px'}>2022</Badge>
         </Title>
         <P>
           This was a project I undertook in order to practice my ability in

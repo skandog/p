@@ -117,6 +117,14 @@ const Page = () => {
             the universtiy of Glasgow.
           </BioSection>
           <BioSection>
+            <BioYear>2015</BioYear>
+            Worked in customer success at fintech startup Dext
+          </BioSection>
+          <BioSection>
+            <BioYear>2018</BioYear>
+            Worked in a non-technical project management role at IMechE
+          </BioSection>
+          <BioSection>
             <BioYear>2022</BioYear>
             Undertook Data Science Internship at Crelytica.
           </BioSection>
@@ -135,7 +143,7 @@ const Page = () => {
           </Heading>
           <Paragraph>
             Cooking, Skateboarding, Running, Fermenting, Traveling, History,
-            Photography
+            Photography, Karaoke
           </Paragraph>
         </Section>
 

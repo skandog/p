@@ -14,8 +14,8 @@ import skandy from '../public/images/skandy-logo-v3.png'
 // import skandyDark from '../public/images/skandy-logo-dark-v3.png'
 import stremNYC from '../public/images/projects/python_streamlit_nyc.JPG.png'
 import stremNYCDark from '../public/images/projects/python_streamlit_nyc_dark.JPG.png'
-import skanfolioLight from '../public/images/projects/Skanfolio_light.png'
-import skanfolioDark from '../public/images/projects/Skanfolio_Dark.png'
+import skanfolioLight from '../public/images/projects/skanfolio_light.png'
+import skanfolioDark from '../public/images/projects/skanfolio_dark.png'
 
 const Projects = () => {
   console.log('skandy :>> ', skandy)
@@ -52,7 +52,8 @@ const Projects = () => {
                 skanfolioLight.src
               )}
             >
-              Portfolio website built with React.js, Next.js, Chakra-UI and more.
+              Portfolio website built with React.js, Next.js, Chakra-UI and
+              more.
             </WorkGridItem>
           </Section>
           <Section delay={0.2}>
@@ -63,9 +64,7 @@ const Projects = () => {
               thumbnail={useColorModeValue(stremNYC.src, stremNYCDark.src)}
             >
               Data science project using Python and Streamlit to analyse data on
-              the NYC Real Estate market in 2022, with a view to providing
-              information to recent graduates on the most affordable areas for
-              them to target.
+              the NYC Real Estate market in 2022.
             </WorkGridItem>
           </Section>
           {/* <Section delay={0.2}>
