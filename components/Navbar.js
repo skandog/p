@@ -20,8 +20,8 @@ import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('gray200', "'whiteAlpha.900'")
-  const activeColor = useColorModeValue('black.200', 'whiteAlpha.600')
+  const inactiveColor = useColorModeValue('black.200', "'whiteAlpha.900'")
+  const activeColor = useColorModeValue('gray.500', 'whiteAlpha.600')
   return (
     <NextLink href={href} passHref scroll={false}>
       <Link
@@ -45,7 +45,7 @@ const Navbar = props => {
       position="static"
       as="nav"
       w="100%"
-      bg={useColorModeValue('blue.100', '#0B0827')}
+      bg={useColorModeValue('#FBF4E2', '#0B0827')}
       css={{ backdropFilter: 'blur(100px)' }}
       zIndex={4}
       // borderColor={"green.300"}
@@ -80,9 +80,9 @@ const Navbar = props => {
           <LinkItem href="/bakes" path={path}>
             Bakes
           </LinkItem>
-          <LinkItem href="/thanks" path={path}>
+          {/* <LinkItem href="/thanks" path={path}>
             Thanks
-          </LinkItem>
+          </LinkItem> */}
           <LinkItem
             target="_blank"
             href="https://github.com/skandog/p"
@@ -118,9 +118,9 @@ const Navbar = props => {
                 <NextLink href="/bakes" passHref>
                   <MenuItem as={Link}>Bakes</MenuItem>
                 </NextLink>
-                <NextLink href="/thanks" passHref>
+                {/* <NextLink href="/thanks" passHref>
                   <MenuItem as={Link}>Thanks</MenuItem>
-                </NextLink>
+                </NextLink> */}
 
                 <MenuItem
                   as={Link}

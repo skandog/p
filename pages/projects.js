@@ -22,19 +22,19 @@ const Projects = () => {
     <Layout>
       <Container>
         <Box
-          as={motion.div}
+          // as={motion.div}
           borderRadius="lg"
-          bg={useColorModeValue('green.700', 'green.400')}
+          bg={useColorModeValue('purple.500', 'green.400')}
           color="whiteAlpha.800"
           p={3}
           mt={10}
           mb={6}
           align="center"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ rotate: 45 }}
-          cursor="pointer"
+          // whileHover={{ scale: 1.1 }}
+          // whileTap={{ rotate: 45 }}
+          // cursor="pointer"
         >
-          Here is some of my favourite work
+          {/* Here is some of my favourite work */}
         </Box>
         <Heading as="h3" fontSize={20} mb={4}>
           Projects

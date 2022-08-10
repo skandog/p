@@ -28,7 +28,7 @@ const Page = () => {
     <Layout>
       <Container>
         <Box
-          as={motion.div}
+          // as={motion.div}
           borderRadius="lg"
           bg={useColorModeValue('purple.500', 'green.400')}
           color="whiteAlpha.800"
@@ -36,11 +36,11 @@ const Page = () => {
           mt={10}
           mb={6}
           align="center"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ rotate: 45 }}
-          cursor="pointer"
+          // whileHover={{ scale: 1.1 }}
+          // whileTap={{ rotate: 45 }}
+          // cursor="pointer"
         >
-          Hello, I&apos;m a full-stack developer based in London!
+          {/* Hello, I&apos;m a full-stack developer based in London! */}
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
