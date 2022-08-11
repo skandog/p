@@ -25,7 +25,7 @@ const Project = () => {
           Python and Streamlit. This project was undertaken while working as a
           data science intern at Crelytica. <br /> <br /> I am so grateful for
           my time on this project as it was this that confirmed how much I love
-          talking to computers, and wrangling them to do what I ask! <br />
+          talking to computers, and wrangling them into doing what I ask! <br />
           <br /> The aim of this project was to help recent graduates identify
           where to focus their search for an appartment shortly after
           graduating. It was interesting learning to use Streamlit&apos;s suite
