@@ -24,7 +24,7 @@ const Project = () => {
           This was a project I undertook in order to practice my ability in
           building beautiful websites. I also wanted to learn new technologies
           as part of the process, so decided to use Next.js for the first time.
-          <br /> <br />I decided to follow a tutorial by Takuya Matsuyama, whose
+          <br /> <br />I chose to follow a tutorial by Takuya Matsuyama, whose
           eye for design is enviable. The style of his videos is extremely
           challenging however, as there is no narritive provided to any
           decision. As a result I was forced to go away an research nearly every
