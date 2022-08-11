@@ -142,8 +142,8 @@ const Page = () => {
             I ♥
           </Heading>
           <Paragraph>
-            Cooking, Skateboarding, Running, Fermenting, Traveling, History,
-            Photography, Karaoke
+            Cooking, Karaoke, Running, Making Music, Skateboarding, Fermenting, Traveling, History,
+            Photography
           </Paragraph>
         </Section>
 
