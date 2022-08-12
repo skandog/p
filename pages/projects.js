@@ -16,6 +16,7 @@ import stremNYC from '../public/images/projects/python_streamlit_nyc.JPG.png'
 import stremNYCDark from '../public/images/projects/python_streamlit_nyc_dark.JPG.png'
 import skanfolioLight from '../public/images/projects/skanfolio_light.png'
 import skanfolioDark from '../public/images/projects/skanfolio_dark.png'
+import backpack from '../public/images/projects/backpack.jpg'
 
 const Projects = () => {
   console.log('skandy :>> ', skandy)
@@ -67,24 +68,6 @@ const Projects = () => {
               the NYC Real Estate market in 2022.
             </WorkGridItem>
           </Section>
-          {/* <Section delay={0.2}>
-            <WorkGridItem
-              id="skandy"
-              title="Skandy"
-              thumbnail={useColorModeValue(skandy.src, skandyDark.src)}
-            >
-              A skandy app
-            </WorkGridItem>
-          </Section>
-          <Section delay={0.3}>
-            <WorkGridItem
-              id="skandy"
-              title="Skandy"
-              thumbnail={useColorModeValue(skandy.src, skandyDark.src)}
-            >
-              A skandy app
-            </WorkGridItem>
-          </Section> */}
         </SimpleGrid>
         <Section delay={0.3}>
           <Divider
@@ -95,6 +78,17 @@ const Projects = () => {
             transition={{ duration: 3 }}
           />
         </Section>
+        <Heading as="h3" fontSize={20} mb={4}>
+          Collabs
+        </Heading>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section delay={0.2}>
+            <WorkGridItem id="skandy" title="Backpack" thumbnail={backpack.src}>
+              One week team project to build an app to help students on the
+              Schhol of Code Bootcamp{' '}
+            </WorkGridItem>
+          </Section>{' '}
+        </SimpleGrid>
       </Container>
     </Layout>
   )
