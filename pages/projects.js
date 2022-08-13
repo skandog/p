@@ -83,7 +83,7 @@ const Projects = () => {
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.2}>
-            <WorkGridItem id="skandy" title="Backpack" thumbnail={backpack.src}>
+            <WorkGridItem id="backpack" title="Backpack" thumbnail={backpack.src}>
               One week team project to build an app to help students on the
               Schhol of Code Bootcamp{' '}
             </WorkGridItem>

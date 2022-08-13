@@ -52,7 +52,7 @@ const Project = () => {
 
         <ProjectImage
           src={useColorModeValue(skanfolioDark.src, skanfolioLight.src)}
-          alt="streamlit analysis of nyc rental market"
+          alt="Portfolio Front Page"
         />
       </Container>
     </Layout>
