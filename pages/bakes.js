@@ -75,7 +75,7 @@ const Bakes = () => {
               alt="fermented grapefruit soda"
               thumbnail={GrapeFruit.src}
             >
-              Grapefruit juice, a simple
+              Grapefruit soda, naturally fizzy with a tiny booze kick
             </BakeGridItem>
           </Section>
         </SimpleGrid>
