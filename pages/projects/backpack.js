@@ -1,4 +1,11 @@
-import { Container, Badge, Link, List, ListItem, Divider } from '@chakra-ui/react'
+import {
+  Container,
+  Badge,
+  Link,
+  List,
+  ListItem,
+  Divider
+} from '@chakra-ui/react'
 import NextLink from 'next/link'
 
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -64,6 +71,7 @@ const Project = () => {
             </span>
           </ListItem>
         </List>
+        <Divider my={8} />
 
         <ProjectImage src={backpack.src} alt="Backpack Skills Tracker" />
       </Container>
