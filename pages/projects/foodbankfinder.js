@@ -53,7 +53,9 @@ const Project = () => {
           Bringing the experience of our 1-week project, we again introduced
           ourselves, and agreed on our team manifesto. It quickly became
           apparent that we had a good blend of specialism, and I was excited to
-          learn some design magic from Jim, Sim and Camilla!
+          learn some design magic from Sim, Jim and Camilla! For this reason we
+          opted not to use a component library, so that we could learn how to
+          build assets from scratch.
           <br />
           <br />
           We discussed ideas and it became clear that we all wanted to work on
@@ -68,24 +70,30 @@ const Project = () => {
           their community, as well as provide a central location for
           beneficiaries and supporters to access information about their local
           services.
-          <br/><br/>
-          
+          <br />
+          <br />
+          The latest verison connects via our hosted backend to a wider API of
+          larger foodbanks around the UK, as well as a database of foodbanks
+          registered directly with the app. So smaller foodbanks can sign up
+          easily, and use a headless cms to update the details about their
+          foodbank. Supporters looking to help are also able to find infomation
+          about items most needed and ways to donate.
         </P>
         <List ml={4} my={2}>
           <ListItem>
             <Meta>Web App</Meta>
             <Link
-              href="https://github.com/SchoolOfCode/w9_frontend-project-team-js"
+              href="https://your-local-foodbank.netlify.app/givehelp"
               target={'_blank'}
             >
-              Repo <ExternalLinkIcon mx={'2px'} />
+              Website <ExternalLinkIcon mx={'2px'} />
             </Link>
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
             <span>
-              Javascript, React.js, Node.js, Jest, Supertest, React Testing
-              Library
+              Javascript, React.js, Node.js, Framer-Motion, Emotion, Jest,
+              Supertest, React Testing Library
             </span>
           </ListItem>
         </List>
