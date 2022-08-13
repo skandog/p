@@ -17,6 +17,7 @@ import stremNYCDark from '../public/images/projects/python_streamlit_nyc_dark.JP
 import skanfolioLight from '../public/images/projects/skanfolio_light.png'
 import skanfolioDark from '../public/images/projects/skanfolio_dark.png'
 import backpack from '../public/images/projects/backpack.jpg'
+import foodbank from '../public/images/projects/ff.png'
 
 const Projects = () => {
   console.log('skandy :>> ', skandy)
@@ -82,12 +83,26 @@ const Projects = () => {
           Collabs
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section delay={0.2}>
-            <WorkGridItem id="backpack" title="Backpack" thumbnail={backpack.src}>
-              One week team project to build an app to help students on the
-              Schhol of Code Bootcamp{' '}
+          <Section delay={0.4}>
+            <WorkGridItem
+              id="foodbankfinder"
+              title="Foodbank Finder"
+              thumbnail={foodbank.src}
+            >
+              Four-week team project with open brief. We created an app designed
+              to help all those involved with foodbanks
             </WorkGridItem>
-          </Section>{' '}
+          </Section>
+          <Section delay={0.5}>
+            <WorkGridItem
+              id="backpack"
+              title="Backpack"
+              thumbnail={backpack.src}
+            >
+              One-week team project to build an app to help students on the
+              Schhol of Code Bootcamp
+            </WorkGridItem>
+          </Section>
         </SimpleGrid>
       </Container>
     </Layout>
