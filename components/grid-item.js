@@ -33,6 +33,8 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
             alt={title}
             className="grid-item-thumbnail"
             placeholder="blur"
+            objectFit={'cover'}
+            minH={'160px'}
           />
           <LinkOverlay href={`/projects/${id}`}>
             <Text mt={2} fontSize={20}>
@@ -55,6 +57,8 @@ export const BakeGridItem = ({ children, id, title, thumbnail }) => {
             alt={title}
             className="grid-item-thumbnail"
             placeholder="blur"
+            objectFit={'cover'}
+            minH={'160px'}
           />
           <LinkOverlay href={`/bakes/${id}`}>
             <Text mt={2} fontSize={20}>

@@ -4,7 +4,8 @@ import {
   Link,
   List,
   ListItem,
-  useColorModeValue
+  useColorModeValue,
+  Divider
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, ProjectImage, Meta } from '../../components/project.js'
@@ -49,10 +50,11 @@ const Project = () => {
             </span>
           </ListItem>
         </List>
+        <Divider my={8} />
 
         <ProjectImage
           src={useColorModeValue(skanfolioDark.src, skanfolioLight.src)}
-          alt="streamlit analysis of nyc rental market"
+          alt="Portfolio Front Page"
         />
       </Container>
     </Layout>
