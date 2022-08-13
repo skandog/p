@@ -83,7 +83,7 @@ const Project = () => {
           <ListItem>
             <Meta>Web App</Meta>
             <Link
-              href="https://your-local-foodbank.netlify.app/givehelp"
+              href="https://your-local-foodbank.netlify.app/"
               target={'_blank'}
             >
               Website <ExternalLinkIcon mx={'2px'} />
