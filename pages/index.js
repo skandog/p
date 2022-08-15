@@ -114,7 +114,7 @@ const Page = () => {
           <BioSection>
             <BioYear>2014</BioYear>
             Completed Bachelor of Science with Honors degree in Mathematics at
-            the universtiy of Glasgow.
+            the Universtiy of Glasgow.
           </BioSection>
           <BioSection>
             <BioYear>2015</BioYear>
@@ -134,7 +134,7 @@ const Page = () => {
           </BioSection>
           <BioSection>
             <BioYear>2022 to present</BioYear>
-            Working freelance and open to full time roles.
+            Working freelance and open to full-time roles.
           </BioSection>
         </Section>
         <Section delay={0.3}>
