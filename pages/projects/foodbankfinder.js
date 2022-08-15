@@ -18,10 +18,10 @@ import ff2 from '../../public/images/projects/ff2.png'
 
 const Project = () => {
   return (
-    <Layout title="Skanfolio">
+    <Layout title="Your Local Foodbank">
       <Container>
         <Title>
-          Backpack - A study aid for bootcampers <Badge ml={'10px'}>2022</Badge>
+          Your Local Foodbank <Badge ml={'10px'}>2022</Badge>
         </Title>
         <P>
           For this project I had the pleasure of working with{' '}
