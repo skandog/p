@@ -16,7 +16,7 @@ import backpack from '../../public/images/projects/backpack.jpg'
 
 const Project = () => {
   return (
-    <Layout title="Skanfolio">
+    <Layout title="Backpack">
       <Container>
         <Title>
           Backpack - A study aid for bootcampers <Badge ml={'10px'}>2022</Badge>
