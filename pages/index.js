@@ -76,13 +76,15 @@ const Page = () => {
           </Heading>
 
           <Paragraph>
-            Skandy is a software developer with a love for growth, making
-            things, and embracing new challenges. Born and raised in South
-            London, he lives there currently with his partner, tending to his
-            pizzas and plants 🌱. When not at the keyboard he enjoys trying new
-            recipes and sharing the output with his friends and family.
-            Currently he is sharpening his ability to build beautiful full-stack
-            applications.
+            <NextLink href="https://en.wikipedia.org/wiki/Iskandar" passHref>
+              <Link target="_blank">Skandy</Link>
+            </NextLink>{' '}
+            is a software developer with a love for growth, making things, and
+            embracing new challenges. Born and raised in South London, he lives
+            there currently with his partner, tending to his pizzas and plants
+            🌱. When not at the keyboard he enjoys trying new recipes and
+            sharing the output with his friends and family. Currently he is
+            sharpening his ability to build beautiful full-stack applications.
           </Paragraph>
           <Box align="left" my={4}>
             <NextLink href="/projects">
@@ -142,8 +144,8 @@ const Page = () => {
             I ♥
           </Heading>
           <Paragraph>
-            Cooking, Karaoke, Running, Making Music, Skateboarding, Fermenting, Traveling, History,
-            Photography
+            Cooking, Karaoke, Running, Making Music, Skateboarding, Fermenting,
+            Traveling, History, Photography
           </Paragraph>
         </Section>
 
