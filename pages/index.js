@@ -76,11 +76,11 @@ const Page = () => {
             Work
           </Heading>
 
-          <Paragraph>
+          <Paragraph style={{ fontSize: '1.18rem' }}>
             <NextLink href="https://en.wikipedia.org/wiki/Iskandar" passHref>
               <Link target="_blank">Skandy</Link>
             </NextLink>{' '}
-            is a software developer with a love for growth, making things, and
+            is a full-stack developer with a love for growth, making things, and
             embracing new challenges. Born and raised in South London, he lives
             there currently with his partner, tending to his pizzas and plants
             🌱. When not at the keyboard he enjoys trying new recipes and
