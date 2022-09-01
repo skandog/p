@@ -25,7 +25,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => {
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => {
   return (
-    <Box w="100%" textAlign="center">
+    <Box w="100%" textAlign="left">
       <NextLink href={`/projects/${id}`} passHref scroll={false}>
         <LinkBox cursor="pointer">
           <Image
@@ -49,7 +49,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
 }
 export const BakeGridItem = ({ children, id, title, thumbnail }) => {
   return (
-    <Box w="100%" textAlign="center">
+    <Box w="100%" textAlign="left">
       <NextLink href={`/bakes/${id}`} passHref scroll={false}>
         <LinkBox cursor="pointer">
           <Image
