@@ -10,7 +10,8 @@ import {
   Button,
   List,
   ListItem,
-  Icon
+  Icon,
+  SimpleGrid
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
@@ -99,102 +100,98 @@ const Page = () => {
             </NextLink>
           </Box>
         </Section>
-        <Section delay={0.2}>
-          <Heading as="h3" variant={'section-title'}>
-            Bio
-          </Heading>
-          <BioSection>
-            <BioYear>1999</BioYear>
-            Won egg and spoon race at school sports day
-          </BioSection>
-
-          {/* <BioSection>
-            <BioYear>2009</BioYear>
-            Won gold in scotland inter-university trampolene competiton
-          </BioSection> */}
-
-          <BioSection>
-            <BioYear>2014</BioYear>
-            Completed Bachelor of Science with Honors degree in Mathematics at
-            the Universtiy of Glasgow.
-          </BioSection>
-          <BioSection>
-            <BioYear>2015</BioYear>
-            Worked in customer success at fintech startup Dext
-          </BioSection>
-          <BioSection>
-            <BioYear>2018</BioYear>
-            Worked in a non-technical project management role at IMechE
-          </BioSection>
-          <BioSection>
-            <BioYear>2022</BioYear>
-            Undertook Data Science Internship at Crelytica.
-          </BioSection>
-          <BioSection>
-            <BioYear>2022</BioYear>
-            Graduated School of Code Full-Stack Development course.
-          </BioSection>
-          <BioSection>
-            <BioYear>2022 to present</BioYear>
-            Working freelance and open to full-time roles.
-          </BioSection>
-        </Section>
-        <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
-            I ♥
-          </Heading>
-          <Paragraph>
-
-            Cooking, Karaoke, Running, Making Music, Skateboarding, Fermenting, Travelling, History,
-            Photography
-          </Paragraph>
-        </Section>
-
-        <Section delay={0.4}>
-          <Heading as="h3" variant="section-title">
-            Also find me here
-          </Heading>
-          <List>
-            <ListItem>
-              <Link href="https://github.com/skandog" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme={'teal'}
-                  leftIcon={<Icon as={IoLogoGithub} />}
-                >
-                  @skandog
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link href="https://twitter.com/skandog_" target="_blank">
-                <Button
-                  variant="ghost"
-                  colorScheme={'teal'}
-                  leftIcon={<Icon as={IoLogoTwitter} />}
-                >
-                  @skandog_
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link
-                href="https://www.linkedin.com/in/arattray/"
-                target="_blank"
-              >
-                <Button
-                  variant="ghost"
-                  colorScheme={'teal'}
-                  leftIcon={<Icon as={IoLogoLinkedin} />}
-                >
-                  @arattray
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem></ListItem>
-            <ListItem></ListItem>
-          </List>
-        </Section>
+        <SimpleGrid columns={[1, 1, 2]} spacing={10}>
+          <Section delay={0.2}>
+            <Heading as="h3" variant={'section-title'}>
+              Bio
+            </Heading>
+            <BioSection>
+              <BioYear>1999</BioYear>
+              Won egg and spoon race at school sports day
+            </BioSection>
+            <BioSection>
+              <BioYear>2014</BioYear>
+              Completed Bachelor of Science with Honors degree in Mathematics at
+              the Universtiy of Glasgow.
+            </BioSection>
+            <BioSection>
+              <BioYear>2015</BioYear>
+              Worked in customer success at fintech startup Dext
+            </BioSection>
+            <BioSection>
+              <BioYear>2018</BioYear>
+              Worked in a non-technical project management role at IMechE
+            </BioSection>
+            <BioSection>
+              <BioYear>2022</BioYear>
+              Undertook Data Science Internship at Crelytica.
+            </BioSection>
+            <BioSection>
+              <BioYear>2022</BioYear>
+              Graduated School of Code Full-Stack Development course.
+            </BioSection>
+            <BioSection>
+              <BioYear>2022 to present</BioYear>
+              Working freelance and open to full-time roles.
+            </BioSection>
+          </Section>
+          <SimpleGrid columns={1}>
+            <Section delay={0.3}>
+              <Heading as="h3" variant="section-title">
+                I ♥
+              </Heading>
+              <Paragraph>
+                Cooking, Karaoke, Running, Making Music, Skateboarding,
+                Fermenting, Travelling, History, Photography
+              </Paragraph>
+            </Section>
+            <Section delay={0.4}>
+              <Heading as="h3" variant="section-title">
+                Also find me here
+              </Heading>
+              <List>
+                <ListItem>
+                  <Link href="https://github.com/skandog" target="_blank">
+                    <Button
+                      variant="ghost"
+                      colorScheme={'teal'}
+                      leftIcon={<Icon as={IoLogoGithub} />}
+                    >
+                      @skandog
+                    </Button>
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  <Link href="https://twitter.com/skandog_" target="_blank">
+                    <Button
+                      variant="ghost"
+                      colorScheme={'teal'}
+                      leftIcon={<Icon as={IoLogoTwitter} />}
+                    >
+                      @skandog_
+                    </Button>
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  <Link
+                    href="https://www.linkedin.com/in/arattray/"
+                    target="_blank"
+                  >
+                    <Button
+                      variant="ghost"
+                      colorScheme={'teal'}
+                      leftIcon={<Icon as={IoLogoLinkedin} />}
+                    >
+                      @arattray
+                    </Button>
+                  </Link>
+                </ListItem>
+                <ListItem></ListItem>
+                <ListItem></ListItem>
+              </List>
+            </Section>
+          </SimpleGrid>
+        </SimpleGrid>
       </Container>
     </Layout>
   )
