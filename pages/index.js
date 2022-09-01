@@ -100,7 +100,7 @@ const Page = () => {
             </NextLink>
           </Box>
         </Section>
-        <SimpleGrid columns={[1, 1, 2]} spacing={10}>
+        <SimpleGrid columns={[1, 1, 2]} spacingX={"10%"}>
           <Section delay={0.2}>
             <Heading as="h3" variant={'section-title'}>
               Bio
@@ -149,7 +149,7 @@ const Page = () => {
               </NextLink>
             </Box>
           </Section>
-          <SimpleGrid columns={1}>
+          <SimpleGrid columns={1} spacingY="12%">
             <Section delay={0.3}>
               <Heading as="h3" variant="section-title">
                 I ♥
