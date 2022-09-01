@@ -119,7 +119,7 @@ const Page = () => {
               Worked in customer success at fintech startup Dext
             </BioSection>
             <BioSection>
-              <BioYear>2018</BioYear>
+              <BioYear>2017</BioYear>
               Worked in a non-technical project management role at IMechE
             </BioSection>
             <BioSection>
@@ -134,6 +134,20 @@ const Page = () => {
               <BioYear>2022 to present</BioYear>
               Working freelance and open to full-time roles.
             </BioSection>
+            <Box align="left" my={4}>
+              <NextLink href="https://www.linkedin.com/in/arattray/" passHref>
+                <Link target="_blank" style={{ textDecoration: 'none' }}>
+                  <Button
+                    as={motion.button}
+                    whileHover={{ scale: 1.2 }}
+                    rightIcon={<ChevronRightIcon />}
+                    colorScheme={useColorModeValue('purple', 'green')}
+                  >
+                    Career
+                  </Button>
+                </Link>
+              </NextLink>
+            </Box>
           </Section>
           <SimpleGrid columns={1}>
             <Section delay={0.3}>
