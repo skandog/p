@@ -18,7 +18,7 @@ import GrapeFruit from '../public/images/bakes/grapefruit_soda_july22.jpg'
 const Bakes = () => {
   return (
     <Layout>
-      <Container>
+      <Container maxW="2xl">
         <Box
           // as={motion.div}
           borderRadius="lg"
