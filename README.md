@@ -5,7 +5,7 @@ going over everything and customising to both better understand everything that 
 
 http://p-skandog.vercel.app/
 
-![Skanfolio Homepage](public/images/projects/skanfolio_dark.png "Skanfolio Homepage")
+![Skanfolio Homepage](public/images/projects/skanfolio_dark.png "Skanfolio Homepage")(http://p-skandog.vercel.app/)
 
 
 ## Tech Stack
