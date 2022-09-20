@@ -20,7 +20,7 @@ import backpack from '../public/images/projects/backpack.jpg'
 import foodbank from '../public/images/projects/ff.png'
 
 const Projects = () => {
-  console.log('skandy :>> ', skandy)
+
 
   return (
     <Layout>
@@ -63,6 +63,17 @@ const Projects = () => {
               id="streamlit_nyc"
               alt="Streamlit Analysis of NYC"
               title="Streamlit Analysis of NYC"
+              thumbnail={useColorModeValue(stremNYC.src, stremNYCDark.src)}
+            >
+              Data science project using Python and Streamlit to analyse data on
+              the NYC Real Estate market in 2022.
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.2}>
+            <WorkGridItem
+              id="twitter-bot"
+              alt="SkandogDev Automated Twitter Bot"
+              title="SkandogDev Twitter Bot"
               thumbnail={useColorModeValue(stremNYC.src, stremNYCDark.src)}
             >
               Data science project using Python and Streamlit to analyse data on
