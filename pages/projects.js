@@ -10,18 +10,17 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import { motion } from 'framer-motion'
 import Layout from '../components/layouts/article'
-import skandy from '../public/images/skandy-logo-v3.png'
-// import skandyDark from '../public/images/skandy-logo-dark-v3.png'
 import stremNYC from '../public/images/projects/python_streamlit_nyc.JPG.png'
 import stremNYCDark from '../public/images/projects/python_streamlit_nyc_dark.JPG.png'
 import skanfolioLight from '../public/images/projects/skanfolio_light.png'
 import skanfolioDark from '../public/images/projects/skanfolio_dark.png'
 import backpack from '../public/images/projects/backpack.jpg'
 import foodbank from '../public/images/projects/ff.png'
+import botLight from '../public/images/projects/skandog-dev-twitter-bot-light.png'
+import botDark from '../public/images/projects/skandog-dev-twitter-bot-dark.png'
+import weatherApp from '../public/images/projects/four-hour-weather-app.png'
 
 const Projects = () => {
-
-
   return (
     <Layout>
       <Container maxW="2xl">
@@ -74,10 +73,21 @@ const Projects = () => {
               id="twitter-bot"
               alt="SkandogDev Automated Twitter Bot"
               title="SkandogDev Twitter Bot"
-              thumbnail={useColorModeValue(stremNYC.src, stremNYCDark.src)}
+              thumbnail={useColorModeValue(botDark.src, botLight.src)}
             >
-              Data science project using Python and Streamlit to analyse data on
-              the NYC Real Estate market in 2022.
+              Very simple automated twitter bot to explore automated scripts
+              with Python.
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.2}>
+            <WorkGridItem
+              id="four-hour-weather"
+              alt="Weather Forecast App Built in Four Hours"
+              title="Five Day Weather Forecast"
+              thumbnail={weatherApp.src}
+            >
+              This project has been completed in around four hours as part of a
+              frontend challenge.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
