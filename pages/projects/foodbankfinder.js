@@ -90,6 +90,15 @@ const Project = () => {
             </Link>
           </ListItem>
           <ListItem>
+            <Meta>Source Code</Meta>
+            <Link
+              href="https://github.com/SchoolOfCode/final-project_front-end-jazzy-code-superheros"
+              target={'_blank'}
+            >
+              Github <ExternalLinkIcon mx={'2px'} />
+            </Link>
+          </ListItem>
+          <ListItem>
             <Meta>Stack</Meta>
             <span>
               Javascript, React.js, Node.js, Framer-Motion, Emotion, Jest,
