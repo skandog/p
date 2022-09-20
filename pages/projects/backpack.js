@@ -55,12 +55,12 @@ const Project = () => {
         </P>
         <List ml={4} my={2}>
           <ListItem>
-            <Meta>Web App</Meta>
+            <Meta>Source Code</Meta>
             <Link
               href="https://github.com/SchoolOfCode/w9_frontend-project-team-js"
               target={'_blank'}
             >
-              Repo <ExternalLinkIcon mx={'2px'} />
+              Github <ExternalLinkIcon mx={'2px'} />
             </Link>
           </ListItem>
           <ListItem>
