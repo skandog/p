@@ -70,7 +70,7 @@ const Projects = () => {
           </Section>
           <Section delay={0.2}>
             <WorkGridItem
-              id="twitter-bot"
+              id="twitterbot"
               alt="SkandogDev Automated Twitter Bot"
               title="SkandogDev Twitter Bot"
               thumbnail={useColorModeValue(botDark.src, botLight.src)}
