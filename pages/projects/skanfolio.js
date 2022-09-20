@@ -44,6 +44,12 @@ const Project = () => {
             </Link>
           </ListItem>
           <ListItem>
+            <Meta>Source Code</Meta>
+            <Link href="https://github.com/skandog/p" target={'_blank'}>
+              Github <ExternalLinkIcon mx={'2px'} />
+            </Link>
+          </ListItem>
+          <ListItem>
             <Meta>Stack</Meta>
             <span>
               Javascript, React.js, Next.js, Chakra-UI, Framer-Motion, Emotion

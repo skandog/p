@@ -4,7 +4,6 @@ import {
   Link,
   List,
   ListItem,
-  useColorModeValue,
   Divider
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'

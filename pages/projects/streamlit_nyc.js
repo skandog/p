@@ -44,6 +44,12 @@ const Project = () => {
             </Link>
           </ListItem>
           <ListItem>
+            <Meta>Source Code</Meta>
+            <Link href="https://github.com/skandog/columns" target={'_blank'}>
+              Github <ExternalLinkIcon mx={'2px'} />
+            </Link>
+          </ListItem>
+          <ListItem>
             <Meta>Stack</Meta>
             <span>Python, Streamlit, Pandas, PyDeck</span>
           </ListItem>
