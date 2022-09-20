@@ -16,9 +16,12 @@ import botDark from '../../public/images/projects/skandog-dev-twitter-bot-dark.p
 
 const Project = () => {
   return (
-    <Layout>
+    <Layout title={'Twitter Bot'}>
       <Container>
-        <Title>SkandogDev Twitter Bot</Title>
+        <Title>
+          SkandogDev Twitter Bot
+          <Badge ml={'15px'}>2022</Badge>
+        </Title>
         <P>
           This was a project I had wanted to do for a long time. Writing a
           program that is automated to complete tasks is so cool! <br />
