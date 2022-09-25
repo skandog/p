@@ -9,7 +9,7 @@ const Bake = () => {
     <Layout title="Anchovy Pizza">
       <Container>
         <Title>
-          Anchovy, Capers, Chili & Parsley <Badge>July 2022</Badge>
+          Anchovy, Capers, Chili & Parsley <Badge ml={'10px'}>July 2022</Badge>
         </Title>
         <P>
           I love strong flavours and few ingredients can compete with the

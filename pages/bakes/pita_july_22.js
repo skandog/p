@@ -9,7 +9,7 @@ const Bake = () => {
     <Layout title="Pita Bread">
       <Container>
         <Title>
-          Homemade Pita Bread <Badge>July 2022</Badge>
+          Homemade Pita Bread <Badge ml={'10px'}>July 2022</Badge>
         </Title>
         <P>
           I made a load of baba ganoush for some friends coming round for
