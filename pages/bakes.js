@@ -2,7 +2,6 @@ import {
   Box,
   Container,
   Heading,
-  isStyleProp,
   SimpleGrid,
   useColorModeValue
 } from '@chakra-ui/react'
