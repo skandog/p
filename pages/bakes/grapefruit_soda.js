@@ -9,7 +9,7 @@ const Bake = () => {
     <Layout title="Grapefruit Soda">
       <Container>
         <Title>
-          Fermented Grapefruit Soda <Badge>July 2022</Badge>
+          Fermented Grapefruit Soda <Badge ml={'10px'}>July 2022</Badge>
         </Title>
         <P>
           I have been fermenting ginger beer using a natural yeast culture for

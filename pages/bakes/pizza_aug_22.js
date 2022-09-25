@@ -1,4 +1,4 @@
-import { Container, Badge,  List, ListItem } from '@chakra-ui/react'
+import { Container, Badge, List, ListItem } from '@chakra-ui/react'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -9,7 +9,7 @@ const Bake = () => {
     <Layout title="Nduja, Kalmata & Red Onion - August 2022">
       <Container>
         <Title>
-          Nduja, Kalmata & Red Onion <Badge>August 2022</Badge>
+          Nduja, Kalmata & Red Onion <Badge ml={'10px'}>August 2022</Badge>
         </Title>
         <P>
           My signature pizza. Nduja, pork sausage cured with Calabrian chili
