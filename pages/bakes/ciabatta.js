@@ -22,7 +22,8 @@ const Bake = () => {
           water before it goes into the oven for 15-20 minutes!
           <br /> <br />
           First round I made a couple small loafs, which were great for
-          sandwiches. Then tried my hands at smaller rolls. A new rugular I
+          sandwiches. Pictured below is one made of flame roasted peppers,
+          homemade baba ganoush, chilis, olives and arugula. A new rugular I
           think.
         </P>
         <List my={4} ml={4}>
@@ -31,10 +32,17 @@ const Bake = () => {
             <span>Strong White Flour, Yeast, Sugar, Salt, Water</span>
           </ListItem>
         </List>
-        <BakeImage src={Ciabatta1.src} alt="Homemade Pita Bread" />
-        <BakeImage src={Ciabatta2.src} alt="Homemade Pita Bread" />
-        <BakeImage src={Ciabatta3.src} alt="Homemade Pita Bread" />
-        <BakeImage src={Ciabatta4.src} alt="Homemade Pita Bread" />
+        <BakeImage src={Ciabatta1.src} alt="Homemade Ciabatta Sandwich" />
+
+        <BakeImage src={Ciabatta2.src} alt="Homemade Ciabatta Loaf" />
+        <BakeImage
+          src={Ciabatta3.src}
+          alt="Homemade Ciabatta Rolls Before Bake"
+        />
+        <BakeImage
+          src={Ciabatta4.src}
+          alt="Homemade Ciabatta Rolls After Bake"
+        />
       </Container>
     </Layout>
   )

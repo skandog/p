@@ -27,7 +27,10 @@ const Bake = () => {
             </span>
           </ListItem>
         </List>
-        <BakeImage src={Figgy.src} alt="Homemade Pita Bread" />
+        <BakeImage
+          src={Figgy.src}
+          alt="Fig, Goats Cheese, Caramelised Onion Pizza"
+        />
       </Container>
     </Layout>
   )
