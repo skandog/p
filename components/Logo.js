@@ -38,7 +38,7 @@ const Logo = () => {
             ml={3}
             fontFamily='Caveat, "cursive"'
           >
-            Skandy Rattray
+            Skandog
           </Text>
         </LogoBox>
       </a>
