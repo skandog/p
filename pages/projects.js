@@ -64,8 +64,8 @@ const Projects = () => {
               title="Streamlit Analysis of NYC"
               thumbnail={useColorModeValue(stremNYC.src, stremNYCDark.src)}
             >
-              Data science project using Python and Streamlit to analyse data on
-              the NYC Real Estate market in 2022.
+              Data science project using Python and Streamlit to analyse the NYC
+              Real Estate market.
             </WorkGridItem>
           </Section>
           <Section delay={0.2}>
@@ -75,8 +75,8 @@ const Projects = () => {
               title="SkandogDev Twitter Bot"
               thumbnail={useColorModeValue(botDark.src, botLight.src)}
             >
-              Very simple automated twitter bot to explore automated scripts
-              with Python.
+              Automated Twitter bot to explore the API and automation using
+              Python.
             </WorkGridItem>
           </Section>
           <Section delay={0.2}>
@@ -86,8 +86,7 @@ const Projects = () => {
               title="Five Day Weather Forecast"
               thumbnail={weatherApp.src}
             >
-              This project has been completed in around four hours as part of a
-              frontend challenge.
+              Frontend challenge to build weather app in four hours.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
@@ -110,8 +109,8 @@ const Projects = () => {
               title="Foodbank Finder"
               thumbnail={foodbank.src}
             >
-              Four-week team project with open brief. We created an app designed
-              to help all those involved with foodbanks
+              Four-week team project with an open brief. We created an app
+              designed to help foodbanks and their communities.
             </WorkGridItem>
           </Section>
           <Section delay={0.5}>
@@ -120,8 +119,8 @@ const Projects = () => {
               title="Backpack"
               thumbnail={backpack.src}
             >
-              One-week team project to build an app to help students on the
-              Schhol of Code Bootcamp
+              One-week team project to build an app to help other bootcamp
+              students.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
