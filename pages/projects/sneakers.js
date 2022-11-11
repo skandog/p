@@ -4,7 +4,6 @@ import {
   Link,
   List,
   ListItem,
-  useColorModeValue,
   Divider
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
