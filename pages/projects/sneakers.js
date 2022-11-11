@@ -6,6 +6,8 @@ import {
   ListItem,
   Divider
 } from '@chakra-ui/react'
+import NextLink from 'next/link'
+
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, ProjectImage, Meta } from '../../components/project.js'
 import P from '../../components/paragraph.js'
@@ -25,7 +27,11 @@ const Poject = () => {
           I built this single-page e-commerce store as an exercise to practice
           my front-end fundamentals. For this site I used only HTML, SCSS and
           vanilla JavaScript, manipulating the DOM for all animations. This was
-          done with guidance from Lama Dev (@lamaWebDev). <br /> <br />
+          done with guidance from
+          <NextLink href={'https://twitter.com/lamawebdev'} passHref>
+            <Link target={'_blank'}> Lama Dev</Link>
+          </NextLink>
+          . <br /> <br />
           For the past few months I have been exclusively using frameworks like
           React and Django to build, and the time-constrained weather app
           challenge helped me to realise that I could benefit from some practice
