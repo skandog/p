@@ -19,6 +19,9 @@ import foodbank from '../public/images/projects/ff.png'
 import botLight from '../public/images/projects/skandog-dev-twitter-bot-light.png'
 import botDark from '../public/images/projects/skandog-dev-twitter-bot-dark.png'
 import weatherApp from '../public/images/projects/four-hour-weather-app.png'
+import sneakers from '../public/images/projects/sneakers1.JPG'
+import mitroLight from '../public/images/projects/mitro_light1.JPG'
+import mitroDark from '../public/images/projects/mitro_dark1.JPG'
 
 const Projects = () => {
   return (
@@ -57,7 +60,7 @@ const Projects = () => {
               more.
             </WorkGridItem>
           </Section>
-          <Section delay={0.2}>
+          <Section delay={0.1}>
             <WorkGridItem
               id="streamlit_nyc"
               alt="Streamlit Analysis of NYC"
@@ -87,6 +90,27 @@ const Projects = () => {
               thumbnail={weatherApp.src}
             >
               Frontend challenge to build weather app in four hours.
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.3}>
+            <WorkGridItem
+              id="sneakers"
+              alt="Vanilla JS Eccomerce Site"
+              title="Vanilla JavaScript Eccommerce"
+              thumbnail={sneakers.src}
+            >
+              Ecommerce template built to practice fundemental skills in HTML,
+              SCSS and JavaScript.
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.3}>
+            <WorkGridItem
+              id="mitro"
+              alt="PHP Twitter Fan Bot"
+              title="Mitro Fanclub Twitter Bot"
+              thumbnail={useColorModeValue(mitroDark.src, mitroLight.src)}
+            >
+              Project to practice recent learning in PHP.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
