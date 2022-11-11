@@ -7,6 +7,7 @@ import {
   useColorModeValue,
   Divider
 } from '@chakra-ui/react'
+import NextLink from 'next/link'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, ProjectImage, Meta } from '../../components/project.js'
 import P from '../../components/paragraph.js'
@@ -22,15 +23,19 @@ const Project = () => {
           Skanfolio - Portfolio Page <Badge ml={'10px'}>2022</Badge>
         </Title>
         <P>
-          This was a project I undertook in order to practice my ability in
-          building beautiful websites. I also wanted to learn new technologies
-          as part of the process, so decided to use Next.js for the first time.
-          <br /> <br />I chose to follow a tutorial by Takuya Matsuyama, whose
-          eye for design is enviable. The style of his videos is extremely
-          challenging however, as there is no narritive provided to any
-          decision. As a result I was forced to go away an research nearly every
-          keystroke. This process, however, while frustrating at times was
-          immensely valuable as I have come out the end feeling confident in my
+          This was a project I undertook to practice building beautiful
+          websites. I also wanted to learn as part of the process, so decided to
+          use Next.js for the first time.
+          <br /> <br />
+          Referring to a tutorial by
+          <NextLink href="https://twitter.com/craftzdog" passHref>
+            <Link target={'_blank'}> Takuya Matsuyama</Link>
+          </NextLink>
+          , whose eye for design is incredible. The style of his videos is
+          extremely challenging however, as there is no narritive provided to
+          any decision. As a result I was forced to go away an research nearly
+          every keystroke. This process, however, while frustrating at times was
+          immensely valuable as I came out the end feeling confident in my
           ability to use the full tech stack invoved in the project. I spent a
           long time experiementing and further understanding both Framer-Motion
           and Chakra-UI. <br />
