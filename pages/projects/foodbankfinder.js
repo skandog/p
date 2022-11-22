@@ -18,13 +18,13 @@ import ff2 from '../../public/images/projects/ff2.png'
 
 const Project = () => {
   return (
-    <Layout title="Your Local Foodbank">
+    <Layout title="Foodbank Finder">
       <Container>
         <Title>
-          Your Local Foodbank <Badge ml={'10px'}>2022</Badge>
+          Foodbank Finder <Badge ml={'10px'}>2022</Badge>
         </Title>
         <P>
-          For this project I had the pleasure of working with{' '}
+          For this project, I had the pleasure of working with{' '}
           <NextLink href="https://github.com/millagmc" passHref>
             <Link target="_blank">Camilla</Link>
           </NextLink>
@@ -44,23 +44,23 @@ const Project = () => {
           <NextLink href="https://github.com/simran-toor" passHref>
             <Link target="_blank">Sim</Link>
           </NextLink>{' '}
-          to build a full stack application in four weeks. We again had not
+          to build a full-stack application in four weeks. We again had not
           worked together as a team before, although I was lucky to have worked
           previously on an individual basis with most involved. We were given
           the open brief &apos;to solve a problem for someone&apos;.
           <br />
           <br />
-          Bringing the experience of our 1-week project, we again introduced
+          Bringing the experience of our 1-week project, we introduced
           ourselves, and agreed on our team manifesto. It quickly became
           apparent that we had a good blend of specialism, and I was excited to
-          learn some design magic from Sim, Jim and Camilla! For this reason we
+          learn some design magic from Sim, Jim and Camilla! For this reason, we
           opted not to use a component library, so that we could learn how to
           build assets from scratch.
           <br />
           <br />
           We discussed ideas and it became clear that we all wanted to work on
           something to help a wider audience. At the time there was an explosion
-          in foodbank usage and needs as cost of living spiralled. Research
+          in foodbank usage and needs as the cost of living spiralled. Research
           showed that Many smaller community food banks do not have access to
           the same tools and resources that larger ones do, and thus use
           workarounds to communicate with their community.
@@ -72,11 +72,11 @@ const Project = () => {
           services.
           <br />
           <br />
-          The latest verison connects via our hosted backend to a wider API of
+          The latest version connects via our hosted backend to a wider API of
           larger foodbanks around the UK, as well as a database of foodbanks
           registered directly with the app. So smaller foodbanks can sign up
           easily, and use a headless cms to update the details about their
-          foodbank. Supporters looking to help are also able to find infomation
+          foodbank. Supporters looking to help are also able to find information
           about items most needed and ways to donate.
         </P>
         <List ml={4} my={2}>
