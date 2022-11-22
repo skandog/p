@@ -32,12 +32,12 @@ const Project = () => {
             <Link target={'_blank'}> Takuya Matsuyama</Link>
           </NextLink>
           , whose eye for design is incredible. The style of his videos is
-          extremely challenging however, as there is no narritive provided to
-          any decision. As a result I was forced to go away an research nearly
+          extremely challenging, however, as there is no narrative provided for
+          any decision. As a result, I was forced to go away and research nearly
           every keystroke. This process, however, while frustrating at times was
           immensely valuable as I came out the end feeling confident in my
-          ability to use the full tech stack invoved in the project. I spent a
-          long time experiementing and further understanding both Framer-Motion
+          ability to use the full tech stack involved in the project. I spent a
+          long time experimenting and further understanding both Framer-Motion
           and Chakra-UI. <br />
           <br />
         </P>

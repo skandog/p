@@ -110,7 +110,8 @@ const Projects = () => {
               title="Mitro Fanclub Twitter Bot"
               thumbnail={useColorModeValue(mitroDark.src, mitroLight.src)}
             >
-              Automated Twitter bot project to consolidate recent learning in PHP.
+              Automated Twitter bot project to consolidate recent learning in
+              PHP.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
