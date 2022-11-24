@@ -3,7 +3,7 @@
 Portfolio site for Skandy. I built this site intially by following a tutorial by the talented [Takuya Matsuyama](https://github.com/craftzdog) and then 
 going over everything and customising to both better understand everything that was being used and to make it my own.
 
-skandog.com
+[skandog.com](https://skandog.com/)
 
 [![Skanfolio Homepage](public/images/projects/skanfolio_dark.png "Skanfolio Homepage")](http://p-skandog.vercel.app/)
 
