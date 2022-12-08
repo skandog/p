@@ -25,7 +25,7 @@ import mitroDark from '../public/images/projects/mitro_dark1.JPG'
 
 const Projects = () => {
   return (
-    <Layout>
+    <Layout title='Projects'>
       <Container maxW="2xl">
         <Box
           // as={motion.div}
