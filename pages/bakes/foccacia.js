@@ -7,7 +7,7 @@ import Foccacia2 from '../../public/images/bakes/focaccia_baba_ganoush_june_22.j
 
 const Bake = () => {
   return (
-    <Layout title="Pita Bread">
+    <Layout title="Foccacia">
       <Container>
         <Title>
           Italian Foccacia Bread
@@ -17,9 +17,9 @@ const Bake = () => {
           Adventurous as always, I wanted to expand my baking arsenal. Tried
           foccacia for the first time, nervous that it would be difficult.
           Mercifully it appears my years of making pizza have prepared me well!
-          Essentially a dough similar to pizza, but with more olive oil in
-          the mix. Pressed into a cast iron skillet, ingredients forced into the
-          top with a bit more oil and voila!
+          Essentially a dough similar to pizza, but with more olive oil in the
+          mix. Pressed into a cast iron skillet, ingredients forced into the top
+          with a bit more oil and voila!
           <br />
           <br />A really straight forward one and a new favourite gift to bring
           when visiting friends 😋.

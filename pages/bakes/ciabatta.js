@@ -9,7 +9,7 @@ import Ciabatta4 from '../../public/images/bakes/ciabatta_rolls_after.jpg'
 
 const Bake = () => {
   return (
-    <Layout title="Pita Bread">
+    <Layout title="Ciabatta">
       <Container>
         <Title>
           Homemade Ciabatta <Badge ml={'10px'}>Sept 2022</Badge>
