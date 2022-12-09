@@ -11,7 +11,7 @@ import Dongchimi5 from '../../public/images/bakes/dongchimi_5.jpg'
 
 const Bake = () => {
   return (
-    <Layout title="Pita Bread">
+    <Layout title="Dongchimi">
       <Container>
         <Title>
           Korean Dongchimi (Radish Water Kimchi)

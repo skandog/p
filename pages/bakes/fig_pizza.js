@@ -6,7 +6,7 @@ import Figgy from '../../public/images/bakes/fig_goats_onion_sept_22.jpg'
 
 const Bake = () => {
   return (
-    <Layout title="Pita Bread">
+    <Layout title="Fig n Cheese Pizza">
       <Container>
         <Title>
           Fig, Goats Cheese, Caramelised Onion Pizza{' '}
