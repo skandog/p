@@ -22,7 +22,7 @@ import Foccacia from '../public/images/bakes/focaccia_for_max22.jpg'
 
 const Bakes = () => {
   return (
-    <Layout>
+    <Layout title="Bakes">
       <Container maxW="2xl">
         <Box
           // as={motion.div}
