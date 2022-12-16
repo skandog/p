@@ -22,7 +22,7 @@ const Project = () => {
         </Title>
         <P>
           This project was a front-end exercise that a friend set me. The
-          primary challenge was to deliver in a short amount of time, just three
+          primary challenge was to deliver in a short amount of time, just four
           hours. The secondary challenge was to build the application using
           SCSS/SASS while not relying on in-built grid systems such as
           bootstrap.
