@@ -89,8 +89,8 @@ const Page = () => {
             partner, tending to his pizzas and plants 🌱. When not at the
             keyboard he enjoys trying new recipes and sharing the output with
             his friends and family. Whatever he is doing, coding or otherwise,
-            Skandy approaches every challenge with a positive attitude and a
-            relentless drive to succeed.
+            Skandy approaches every challenge with a positive attitude and
+            purposeful drive.
             <br />
           </Paragraph>
           <Box align="left" my={4}>
@@ -161,8 +161,8 @@ const Page = () => {
                 I ♥
               </Heading>
               <Paragraph>
-                Cooking, Baking, Fermenting, Bouldering, Running, Making Music, Skateboarding,
-                Karaoke, History, Photography
+                Cooking, Baking, Fermenting, Bouldering, Running, Making Music,
+                Skateboarding, Karaoke, History, Photography
               </Paragraph>
             </Section>
             <Section delay={0.4}>
