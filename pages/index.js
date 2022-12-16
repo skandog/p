@@ -80,12 +80,18 @@ const Page = () => {
             <NextLink href="https://en.wikipedia.org/wiki/Iskandar" passHref>
               <Link target="_blank">Skandy</Link>
             </NextLink>{' '}
-            is a full-stack developer with a love for growth, making things, and
-            embracing new challenges. Born and raised in South London, he lives
-            there currently with his partner, tending to his pizzas and plants
-            🌱. When not at the keyboard he enjoys trying new recipes and
-            sharing the output with his friends and family. Currently he is
-            sharpening his ability to build beautiful full-stack applications.
+            is a full stack dev with a love for creating delicious baked goods.
+            His strong sense of community and commitment to building meaningful
+            relationships are just two of the many qualities that make him stand
+            out as a developer. <br />
+            <br />
+            Born and raised in South London, he lives there currently with his
+            partner, tending to his pizzas and plants 🌱. When not at the
+            keyboard he enjoys trying new recipes and sharing the output with
+            his friends and family. Whatever he is doing, coding or otherwise,
+            Skandy approaches every challenge with a positive attitude and a
+            relentless drive to succeed.
+            <br />
           </Paragraph>
           <Box align="left" my={4}>
             <NextLink href="/projects">
@@ -100,7 +106,7 @@ const Page = () => {
             </NextLink>
           </Box>
         </Section>
-        <SimpleGrid columns={[1, 1, 2]} spacingX={"10%"}>
+        <SimpleGrid columns={[1, 1, 2]} spacingX={'10%'}>
           <Section delay={0.2}>
             <Heading as="h3" variant={'section-title'}>
               Bio
@@ -155,8 +161,8 @@ const Page = () => {
                 I ♥
               </Heading>
               <Paragraph>
-                Cooking, Karaoke, Running, Making Music, Skateboarding,
-                Fermenting, Travelling, History, Photography
+                Cooking, Baking, Fermenting, Bouldering, Running, Making Music, Skateboarding,
+                Karaoke, History, Photography
               </Paragraph>
             </Section>
             <Section delay={0.4}>
