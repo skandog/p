@@ -34,11 +34,14 @@ const Poject = () => {
           . <br /> <br />
           For the past few months I have been exclusively using frameworks like
           React and Django to build, and the time-constrained weather app
-          challenge helped me to realise that I could benefit from some practice
-          using the basics.
+          challenge helped me to see that I could benefit from some practice
+          using the basics. Not least because these stripped back sites are
+          often far more performant, a huge factor for good UX.
           <br /> <br />I was surprised at how much I enjoyed building in this
-          way, with less of the complexity abstracted away. It has certainly
-          resolidified my underlying web dev understanding.
+          way, with less of the complexity abstracted away. When first learning
+          how to use query selectors to interact with the DOM I remember finding
+          it confusing, but going through this project it now feels more pure 😅
+          It has certainly resolidified my underlying web dev knowledge.
         </P>
         <List ml={4} my={2}>
           <ListItem>

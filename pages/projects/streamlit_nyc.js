@@ -22,16 +22,18 @@ const Project = () => {
           Data analysis of NYC Rental Market<Badge ml={'15px'}>2022</Badge>
         </Title>
         <P>
-          A static analysis of of the NYC rental market in March 2022 using
-          Python and Streamlit. This project was undertaken while working as a
-          data science intern at Crelytica. <br /> <br /> I am so grateful for
-          my time on this project as it was this that confirmed how much I love
-          talking to computers, and wrangling them into doing what I ask! <br />
+          An interactive application which provides the insight from a static
+          analysis of of the NYC rental market in March 2022, primarily using
+          Python and Streamlit. I undertook this project as part of my Data
+          Science internship at Crelytica. <br /> <br /> I loved my time working
+          at Crelytica and working on this project, and I am immensely grateful
+          for the opportunity as it helped to confirm how much I love talking to
+          computers, and wrangling them into doing what I ask! <br />
           <br /> The aim of this project was to help recent graduates identify
           where to focus their search for an apartment shortly after graduating.
           It was interesting learning to use Streamlit&apos;s suite of analysis
           tools, as well as working with geospatial data representation via
-          PyDeck.
+          PyDeck. 
         </P>
         <List ml={4} my={4}>
           <ListItem>

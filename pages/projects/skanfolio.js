@@ -23,22 +23,31 @@ const Project = () => {
           Skanfolio - Portfolio Page <Badge ml={'10px'}>2022</Badge>
         </Title>
         <P>
-          This was a project I undertook to practice building beautiful
-          websites. I also wanted to learn as part of the process, so decided to
-          use Next.js for the first time.
-          <br /> <br />
-          Referring to a tutorial by
+          I started this project to practice building beautiful websites. I also
+          wanted to learn as part of the process, so decided to use Next.js for
+          the first time. With rising popularity, Next.js is a framework for
+          building server-rendered React applications, which means that the
+          initial HTML for the page is generated on the server, rather than in
+          the browser. This can improve the performance and SEO of the website.
+          <br /> <br />I started with a tutorial by
           <NextLink href="https://twitter.com/craftzdog" passHref>
             <Link target={'_blank'}> Takuya Matsuyama</Link>
           </NextLink>
-          , whose eye for design is incredible. The style of his videos is
-          extremely challenging, however, as there is no narrative provided for
-          any decision. As a result, I was forced to go away and research nearly
-          every keystroke. This process, however, while frustrating at times was
-          immensely valuable as I came out the end feeling confident in my
-          ability to use the full tech stack involved in the project. I spent a
-          long time experimenting and further understanding both Framer-Motion
-          and Chakra-UI. <br />
+          , whose eye for design is incredible. I highly recommend his content.
+          The style of his videos is extremely challenging to follow, however,
+          as there is no narrative provided; just a view of his screen as he
+          works in Vim! As a result, I was forced to go away and research nearly
+          every keystroke. While this process was extremely frustrating at
+          times, ultimately it was immensely valuable as I came out of the end
+          properly understanding the tools I was using, and confident in my
+          ability to use the full tech stack involved in the project going
+          forwards.
+          <br />
+          <br />
+          I spent a long time after experimenting to further understand the
+          possibilities presented by these tools, and truly make the site my
+          own. And I continue to update the site regularly with new content and
+          functionality. <br />
           <br />
         </P>
         <List ml={4} my={2}>
