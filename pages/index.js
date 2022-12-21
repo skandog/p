@@ -73,7 +73,7 @@ const Page = () => {
         </Box>
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            Work
+            Profile
           </Heading>
 
           <Paragraph style={{ fontSize: '1.18rem' }}>
