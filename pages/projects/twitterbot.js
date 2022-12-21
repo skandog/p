@@ -24,13 +24,26 @@ const Project = () => {
         </Title>
         <P>
           This was a project I had wanted to do for a long time. Writing a
-          program that is automated to complete tasks is so cool! <br />
+          program that is automated to complete tasks is so cool!
           <br />
-          This was also a great exercise to refresh my familiarity with Python
-          after completing an intensive course focused on JavaScript. It is
-          currently very simplistic and hosted on PythonAnywhere. I plan to keep
-          working on this project in order to add more automation and deliver
-          more value to users.
+          <br />
+          This was a great project to help me refresh my Python skills after
+          completing the intensive bootcamp focused on JavaScript and
+          TypeScript.
+          <br />
+          <br />
+          The design of this bot is rather simple, with the task of cheering on
+          other Twitter users who are learning to code. It does this by
+          accessing the Twitter POST endpoints for liking and retweeting
+          statuses from users tweeting certain keywords. When I first started
+          tweeting the #100DaysOfCode tag, I marvelled at the automated accounts
+          that would interact with my post. It felt like a million miles away
+          for me. So I was excited to possibly provide that inspiration to
+          others, and show it is not so far away.
+          <br />
+          <br />
+          
+
         </P>
         <List ml={4} my={2}>
           <ListItem>
