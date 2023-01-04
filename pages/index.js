@@ -80,10 +80,10 @@ const Page = () => {
             <NextLink href="https://en.wikipedia.org/wiki/Iskandar" passHref>
               <Link target="_blank">Skandy</Link>
             </NextLink>{' '}
-            is a full stack dev with a love for creating delicious baked goods.
-            His strong sense of community and commitment to building meaningful
-            relationships are just two of the many qualities that make him stand
-            out as a developer. <br />
+            is a full stack dev with a love for building beautiful applications
+            and cooking up a storm in the kitchen. His strong sense of community
+            and commitment to building meaningful relationships are just two of
+            the many qualities that make him stand out as a developer. <br />
             <br />
             Born and raised in South London, he lives there currently with his
             partner, tending to his pizzas and plants 🌱. When not at the
