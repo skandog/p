@@ -25,10 +25,9 @@ import mitroDark from '../public/images/projects/mitro_dark1.JPG'
 
 const Projects = () => {
   return (
-    <Layout title='Projects'>
+    <Layout title="Projects">
       <Container maxW="2xl">
         <Box
-          // as={motion.div}
           borderRadius="lg"
           bg={useColorModeValue('purple.500', 'green.400')}
           color="whiteAlpha.800"
@@ -36,12 +35,7 @@ const Projects = () => {
           mt={10}
           mb={6}
           align="center"
-          // whileHover={{ scale: 1.1 }}
-          // whileTap={{ rotate: 45 }}
-          // cursor="pointer"
-        >
-          {/* Here is some of my favourite work */}
-        </Box>
+        ></Box>
         <Heading as="h3" fontSize={20} mb={4}>
           Projects
         </Heading>
