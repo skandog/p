@@ -12,7 +12,6 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, ProjectImage, Meta } from '../../components/project.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
-import pomFocus1 from '../../public/images/projects/pomfocus1.jpg'
 import pomFocus3 from '../../public/images/projects/pomfocus3.jpg'
 import pomFocus4 from '../../public/images/projects/pomfocus4.jpg'
 
@@ -73,10 +72,10 @@ const Project = () => {
         </List>
         <Divider my={8} />
 
-        <ProjectImage src={pomFocus1.src} alt="PomFocus Homepage Screen" />
+        {/* <ProjectImage src={pomFocus1.src} alt="PomFocus Homepage Screen" /> */}
         {/* <ProjectImage src={pomFocus2.src} alt="Portfolio Front Page" /> */}
-        <ProjectImage src={pomFocus3.src} alt="PomFocus Timer Screen" />
         <ProjectImage src={pomFocus4.src} alt="Focus History Screen" />
+        <ProjectImage src={pomFocus3.src} alt="PomFocus Timer Screen" />
       </Container>
     </Layout>
   )
