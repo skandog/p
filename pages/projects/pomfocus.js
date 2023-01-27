@@ -46,30 +46,24 @@ const Project = () => {
           can change the number of items shown in the focus history.
           <br />
           <br />
-          I spent a long time after experimenting to further understand the
-          possibilities presented by these tools, and truly make the site my
-          own. And I continue to update the site regularly with new content and
-          functionality. <br />
-          <br />
         </P>
         <List ml={4} my={2}>
+          {/* // Leaving this here for when its avaialble for d/l
           <ListItem>
             <Meta>Website</Meta>
-            <Link href="https://p-skandog.vercel.app/" target={'_blank'}>
+            <Link href="" target={'_blank'}>
               Homepage <ExternalLinkIcon mx={'2px'} />
             </Link>
-          </ListItem>
+          </ListItem> */}
           <ListItem>
             <Meta>Source Code</Meta>
-            <Link href="https://github.com/skandog/p" target={'_blank'}>
+            <Link href="https://github.com/skandog/pomfocus" target={'_blank'}>
               Github <ExternalLinkIcon mx={'2px'} />
             </Link>
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>
-              Javascript, React.js, Next.js, Chakra-UI, Framer-Motion, Emotion
-            </span>
+            <span>Javascript, React.js, React Native, Expo, Async Storage</span>
           </ListItem>
         </List>
         <Divider my={8} />
