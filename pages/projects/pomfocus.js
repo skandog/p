@@ -12,8 +12,10 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, ProjectImage, Meta } from '../../components/project.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
-import skanfolioLight from '../../public/images/projects/skanfolio_light.png'
-import skanfolioDark from '../../public/images/projects/skanfolio_dark.png'
+import pomFocus1 from '../../public/images/projects/pomfocus1.jpg'
+import pomFocus2 from '../../public/images/projects/pomfocus2.jpg'
+import pomFocus3 from '../../public/images/projects/pomfocus3.jpg'
+import pomFocus4 from '../../public/images/projects/pomfocus4.jpg'
 
 const Project = () => {
   return (
@@ -68,10 +70,10 @@ const Project = () => {
         </List>
         <Divider my={8} />
 
-        <ProjectImage
-          src={useColorModeValue(skanfolioDark.src, skanfolioLight.src)}
-          alt="Portfolio Front Page"
-        />
+        <ProjectImage src={pomFocus1.src} alt="PomFocus Homepage Screen" />
+        {/* <ProjectImage src={pomFocus2.src} alt="Portfolio Front Page" /> */}
+        <ProjectImage src={pomFocus3.src} alt="PomFocus Timer Screen" />
+        <ProjectImage src={pomFocus4.src} alt="Focus History Screen" />
       </Container>
     </Layout>
   )
