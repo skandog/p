@@ -6,9 +6,10 @@ import {
   Divider,
   useColorModeValue
 } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
+
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-import { motion } from 'framer-motion'
 import Layout from '../components/layouts/article'
 import stremNYC from '../public/images/projects/python_streamlit_nyc.JPG.png'
 import stremNYCDark from '../public/images/projects/python_streamlit_nyc_dark.JPG.png'
@@ -22,6 +23,7 @@ import weatherApp from '../public/images/projects/four-hour-weather-app.png'
 import sneakers from '../public/images/projects/sneakers1.JPG'
 import mitroLight from '../public/images/projects/mitro_light1.JPG'
 import mitroDark from '../public/images/projects/mitro_dark1.JPG'
+import pomfocus from '../public/images/projects/pomfocusthumbnail.jpg'
 
 const Projects = () => {
   return (
@@ -67,6 +69,17 @@ const Projects = () => {
           </Section>
           <Section delay={0.2}>
             <WorkGridItem
+              id="pomfocus"
+              alt="PomFocus React Native App"
+              title="React Native App: PomFocus"
+              thumbnail={pomfocus.src}
+            >
+              Native mobile app, which runs on both Android and iOS, designed to
+              help focus by measuring pomodoros
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.2}>
+            <WorkGridItem
               id="twitterbot"
               alt="SkandogDev Automated Twitter Bot"
               title="SkandogDev Twitter Bot"
@@ -76,7 +89,7 @@ const Projects = () => {
               Python.
             </WorkGridItem>
           </Section>
-          <Section delay={0.2}>
+          <Section delay={0.3}>
             <WorkGridItem
               id="four-hour-weather"
               alt="Weather Forecast App Built in Four Hours"
@@ -122,7 +135,7 @@ const Projects = () => {
           Collabs
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section delay={0.4}>
+          <Section delay={0.3}>
             <WorkGridItem
               id="foodbankfinder"
               title="Foodbank Finder"
