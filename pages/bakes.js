@@ -16,8 +16,8 @@ import Ciabatta from '../public/images/bakes/ciabatta_sarnie.jpg'
 import Dongchimi from '../public/images/bakes/dongchimi_4.jpg'
 import Figgy from '../public/images/bakes/fig_goats_onion_sept_22.jpg'
 import Foccacia from '../public/images/bakes/focaccia_for_max22.jpg'
-import Baja from '../public/images/bakes/j'
-
+import Baja from '../public/images/bakes/jan_23/baja_tacos_2.jpg'
+import Falafel from '../public/images/bakes/jan_23/falafel_1.jpg'
 
 // import FocaGanoush from '../public/images/bakes/focaccia_baba_ganoush_june_22'
 // import { motion } from 'framer-motion'
@@ -47,12 +47,23 @@ const Bakes = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.1}>
             <BakeGridItem
+              id="falafel"
+              title="Falafel and Pita"
+              alt="Falafel and Pita"
+              thumbnail={Falafel.src}
+            >
+              Lebanese style falafel and pita.
+            </BakeGridItem>
+          </Section>
+          <Section delay={0.1}>
+            <BakeGridItem
               id="baja_tacos"
               title="Baja Fish Tacos"
               alt="Baja Fish Tacos"
-              thumbnail={Ciabatta.src}
+              thumbnail={Baja.src}
             >
-              First time making big puffy ciabatta!
+              I love Baja style fish tacos so much, but nobody ever does them
+              right in the UK!
             </BakeGridItem>
           </Section>
           <Section delay={0.1}>
