@@ -16,6 +16,8 @@ import Ciabatta from '../public/images/bakes/ciabatta_sarnie.jpg'
 import Dongchimi from '../public/images/bakes/dongchimi_4.jpg'
 import Figgy from '../public/images/bakes/fig_goats_onion_sept_22.jpg'
 import Foccacia from '../public/images/bakes/focaccia_for_max22.jpg'
+import Baja from '../public/images/bakes/j'
+
 
 // import FocaGanoush from '../public/images/bakes/focaccia_baba_ganoush_june_22'
 // import { motion } from 'framer-motion'
@@ -43,7 +45,17 @@ const Bakes = () => {
           Bakes
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section delay={0}>
+          <Section delay={0.1}>
+            <BakeGridItem
+              id="baja_tacos"
+              title="Baja Fish Tacos"
+              alt="Baja Fish Tacos"
+              thumbnail={Ciabatta.src}
+            >
+              First time making big puffy ciabatta!
+            </BakeGridItem>
+          </Section>
+          <Section delay={0.1}>
             <BakeGridItem
               id="ciabatta"
               title="Ciabatta"
