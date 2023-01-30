@@ -51,7 +51,7 @@ const Bakes = () => {
             <BakeGridItem
               id="kombucha"
               title="Kombucha"
-              alt="Kombucha"              
+              alt="Kombucha"
               thumbnail={Kombucha.src}
             >
               Korean style vagtable and spring onion pancake.
@@ -67,7 +67,7 @@ const Bakes = () => {
               Korean style vagtable and spring onion pancake.
             </BakeGridItem>
           </Section>
-          <Section delay={0.1}>
+          <Section delay={0.2}>
             <BakeGridItem
               id="falafel"
               title="Falafel and Pita"
@@ -77,7 +77,7 @@ const Bakes = () => {
               Lebanese style falafel and pita.
             </BakeGridItem>
           </Section>
-          <Section delay={0.1}>
+          <Section delay={0.2}>
             <BakeGridItem
               id="baja_tacos"
               title="Baja Fish Tacos"
@@ -88,7 +88,7 @@ const Bakes = () => {
               right in the UK!
             </BakeGridItem>
           </Section>
-          <Section delay={0.1}>
+          <Section delay={0.3}>
             <BakeGridItem
               id="ciabatta"
               title="Ciabatta"
@@ -98,7 +98,7 @@ const Bakes = () => {
               First time making big puffy ciabatta!
             </BakeGridItem>
           </Section>
-          <Section delay={0.1}>
+          <Section delay={0.3}>
             <BakeGridItem
               id="fig_pizza"
               title="Fig, Goats Cheese, Caramelised Onion"
@@ -108,7 +108,7 @@ const Bakes = () => {
               Balanace of delicate flavours, came together beautifully.
             </BakeGridItem>
           </Section>
-          <Section delay={0.2}>
+          <Section delay={0.4}>
             <BakeGridItem
               id="pizza_aug_22"
               title="Nduja, Red Onion & Olive"
@@ -118,7 +118,7 @@ const Bakes = () => {
               Really enjoying the new found ability to build thickk crusts
             </BakeGridItem>
           </Section>
-          <Section delay={0.3}>
+          <Section delay={0.4}>
             <BakeGridItem
               id="foccacia"
               title="Foccacia"
@@ -138,7 +138,7 @@ const Bakes = () => {
               I love anchovies, and anyone that will enjoy them with me.{' '}
             </BakeGridItem>
           </Section>
-          <Section delay={0.5}>
+          <Section delay={0.4}>
             <BakeGridItem
               id="pita_july_22"
               title="Pita Bread"
@@ -148,7 +148,7 @@ const Bakes = () => {
               First time making pita bread from scratch!
             </BakeGridItem>
           </Section>
-          <Section delay={0.6}>
+          <Section delay={0.4}>
             <BakeGridItem
               id="grapefruit_soda"
               title="Fermented Grapefruit Soda"
@@ -159,7 +159,7 @@ const Bakes = () => {
             </BakeGridItem>
           </Section>
 
-          <Section delay={0.7}>
+          <Section delay={0.4}>
             <BakeGridItem
               id="dongchimi"
               title="Radish Water Kimchi (Dongchimi)"
