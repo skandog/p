@@ -54,7 +54,7 @@ const Bakes = () => {
               alt="Kombucha"
               thumbnail={Kombucha.src}
             >
-              Korean style vagtable and spring onion pancake.
+              Fermented tea; it&apos;s all the rave!
             </BakeGridItem>
           </Section>
           <Section delay={0.1}>
@@ -64,7 +64,7 @@ const Bakes = () => {
               alt="Pa Jeon (Korean Pancake)"
               thumbnail={Pajeon.src}
             >
-              Korean style vagtable and spring onion pancake.
+              Korean style vegtable and spring onion pancake.
             </BakeGridItem>
           </Section>
           <Section delay={0.2}>
