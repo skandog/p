@@ -18,6 +18,7 @@ import Figgy from '../public/images/bakes/fig_goats_onion_sept_22.jpg'
 import Foccacia from '../public/images/bakes/focaccia_for_max22.jpg'
 import Baja from '../public/images/bakes/jan_23/baja_tacos_2.jpg'
 import Falafel from '../public/images/bakes/jan_23/falafel_1.jpg'
+import Pajeon from '../public/images/bakes/jan_23/pa_jeon_1.jpg'
 
 // import FocaGanoush from '../public/images/bakes/focaccia_baba_ganoush_june_22'
 // import { motion } from 'framer-motion'
@@ -45,6 +46,16 @@ const Bakes = () => {
           Bakes
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section delay={0.1}>
+            <BakeGridItem
+              id="pa_jeon"
+              title="Pa Jeon (Korean Pancake)"
+              alt="Pa Jeon (Korean Pancake)"
+              thumbnail={Pajeon.src}
+            >
+              Korean style vagtable and spring onion pancake.
+            </BakeGridItem>
+          </Section>
           <Section delay={0.1}>
             <BakeGridItem
               id="falafel"
