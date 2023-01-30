@@ -19,6 +19,7 @@ import Foccacia from '../public/images/bakes/focaccia_for_max22.jpg'
 import Baja from '../public/images/bakes/jan_23/baja_tacos_2.jpg'
 import Falafel from '../public/images/bakes/jan_23/falafel_1.jpg'
 import Pajeon from '../public/images/bakes/jan_23/pa_jeon_1.jpg'
+import Kombucha from '../public/images/bakes/jan_23/kombucha_4.jpg'
 
 // import FocaGanoush from '../public/images/bakes/focaccia_baba_ganoush_june_22'
 // import { motion } from 'framer-motion'
@@ -46,6 +47,16 @@ const Bakes = () => {
           Bakes
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section delay={0.1}>
+            <BakeGridItem
+              id="kombucha"
+              title="Kombucha"
+              alt="Kombucha"              
+              thumbnail={Kombucha.src}
+            >
+              Korean style vagtable and spring onion pancake.
+            </BakeGridItem>
+          </Section>
           <Section delay={0.1}>
             <BakeGridItem
               id="pa_jeon"
