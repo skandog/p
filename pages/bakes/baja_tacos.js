@@ -1,45 +1,54 @@
-import { Container, Badge, List, ListItem } from '@chakra-ui/react'
+import { Container, Badge, List, ListItem, Link } from '@chakra-ui/react'
+import NextLink from 'next/link'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
-import Ciabatta1 from '../../public/images/bakes/ciabatta_sarnie.jpg'
+import Baja1 from '../../public/images/bakes/jan_23/baja_tacos_1.jpg'
+import Baja2 from '../../public/images/bakes/jan_23/baja_tacos_2.jpg'
 
 const Bake = () => {
   return (
     <Layout title="Ciabatta">
       <Container>
         <Title>
-          Homemade Ciabatta <Badge ml={'10px'}>Sept 2022</Badge>
+          Baja Fish Tacos <Badge ml={'10px'}>Jan 2023</Badge>
         </Title>
         <P>
-          Curious as ever I wanted to try something new. Ciabatta is always such
-          a treat, so I decided to give it a go. I was pleasantly surprised to
-          discover how straight forward it was. Work together a fairly wet dough
-          with and leave to rise for a couple hours. Then a couple spritz with
-          water before it goes into the oven for 15-20 minutes!
+          I love tacos (who doesn&apos;t) but it can be hard to find decent
+          Mexican food in the UK. This is especially true of the delicate Baja
+          Fish Taco, which is often undermined by overly flavourful
+          accompaniment.
+          <br /> <br />I make my own flour tortillas, following a simple and
+          reliable recipe from{' '}
+          <NextLink
+            href="https://www.bbcgoodfood.com/recipes/tortillas"
+            passHref
+          >
+            <Link target="_blank">BBC Good Food</Link>
+          </NextLink>
+          .
           <br /> <br />
-          First round I made a couple small loafs, which were great for
-          sandwiches. Pictured below is one made of flame roasted peppers,
-          homemade baba ganoush, chilis, olives and arugula. A new rugular I
-          think.
+          <NextLink
+            href="https://www.foodrepublic.com/recipes/easy-beer-batter-recipe/"
+            passHref
+          >
+            <Link target="_blank">Beer batter</Link>
+          </NextLink>{' '}
+          the haddock and deep fry in a wok. Then serve with shredded cabbage,
+          avocado, a light chili creme and a little cilantro.
+          <br /> <br />
+          Perfection.
         </P>
         <List my={4} ml={4}>
           <ListItem>
             <Meta>Ingredients</Meta>
-            <span>Strong White Flour, Yeast, Sugar, Salt, Water</span>
+            <span>
+              Haddock, Plain Flour, Beer, Green Cabbage, Avocado, Cilantro{' '}
+            </span>
           </ListItem>
         </List>
-        <BakeImage src={Ciabatta1.src} alt="Homemade Ciabatta Sandwich" />
-        {/* 
-        <BakeImage src={Ciabatta2.src} alt="Homemade Ciabatta Loaf" />
-        <BakeImage
-          src={Ciabatta3.src}
-          alt="Homemade Ciabatta Rolls Before Bake"
-        />
-        <BakeImage
-          src={Ciabatta4.src}
-          alt="Homemade Ciabatta Rolls After Bake"
-        /> */}
+        <BakeImage src={Baja2.src} alt="Baja Fish Tacos" />
+        <BakeImage src={Baja1.src} alt="Homemade Flour Tortillas" />
       </Container>
     </Layout>
   )
