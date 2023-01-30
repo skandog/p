@@ -8,7 +8,7 @@ import Baja2 from '../../public/images/bakes/jan_23/baja_tacos_2.jpg'
 
 const Bake = () => {
   return (
-    <Layout title="Ciabatta">
+    <Layout title="Baja Tacos">
       <Container>
         <Title>
           Baja Fish Tacos <Badge ml={'10px'}>Jan 2023</Badge>
