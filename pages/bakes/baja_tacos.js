@@ -17,7 +17,9 @@ const Bake = () => {
           I love tacos (who doesn&apos;t) but it can be hard to find decent
           Mexican food in the UK. This is especially true of the delicate Baja
           Fish Taco, which is often undermined by overly flavourful
-          accompaniment.
+          accompaniment. The fish is so mild in flavour, it is important not to
+          overshadow this with storng flavours such as smokey chipotle or sweet
+          mango.
           <br /> <br />I make my own flour tortillas, following a simple and
           reliable recipe from{' '}
           <NextLink
