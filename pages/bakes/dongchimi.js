@@ -32,7 +32,7 @@ const Bake = () => {
           <br />
           Recipe taken from one of my favourite recipe books:{' '}
           <NextLink
-            href="https://www.waterstones.com/book/our-korean-kitchen/jordan-bourke/rejina-pyo/9780297609711"
+            href="https://www.weidenfeldandnicolson.co.uk/titles/jordan-bourke/our-korean-kitchen/9780297609711/"
             passHref
           >
             <Link target="_blank">Our Korean Kitchen</Link>

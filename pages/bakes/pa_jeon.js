@@ -18,7 +18,7 @@ const Bake = () => {
           wonderful Korean pancake called Pa Jeon. I first discovered it in one
           of my favourite and most regularly used cookbooks,{' '}
           <NextLink
-            href="https://www.bbcgoodfood.com/recipes/tortillas"
+            href="https://www.weidenfeldandnicolson.co.uk/titles/jordan-bourke/our-korean-kitchen/9780297609711/"
             passHref
           >
             <Link target="_blank">
