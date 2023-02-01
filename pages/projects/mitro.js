@@ -7,7 +7,9 @@ import {
   useColorModeValue,
   Divider
 } from '@chakra-ui/react'
+import NextLink from 'next/link'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
+
 import { Title, ProjectImage, Meta } from '../../components/project.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -71,7 +73,16 @@ const Project = () => {
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>PHP, GitHub Actions</span>
+            <span>
+              PHP,{' '}
+              <NextLink
+                href={'https://github.com/abraham/twitteroauth'}
+                passHref
+              >
+                <Link target={'_blank'}>Abraham/Twitteroauth</Link>
+              </NextLink>
+              , YAML, GitHub Actions
+            </span>
           </ListItem>
         </List>
         <Divider my={8} />

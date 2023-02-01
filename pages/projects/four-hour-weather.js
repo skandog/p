@@ -6,8 +6,9 @@ import {
   ListItem,
   Divider
 } from '@chakra-ui/react'
-import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
+
+import Layout from '../../components/layouts/article'
 import { Title, ProjectImage, Meta } from '../../components/project'
 import P from '../../components/paragraph.js'
 import weather from '../../public/images/projects/four-hour-weather-app.png'
