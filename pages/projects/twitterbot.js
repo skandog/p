@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
+
 import { Title, ProjectImage, Meta } from '../../components/project'
 import P from '../../components/paragraph.js'
 import botLight from '../../public/images/projects/skandog-dev-twitter-bot-light.png'

@@ -8,6 +8,7 @@ import {
   Divider
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
+
 import { Title, ProjectImage, Meta } from '../../components/project.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
