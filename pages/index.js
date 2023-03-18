@@ -78,7 +78,7 @@ const Page = () => {
             <NextLink href="https://en.wikipedia.org/wiki/Iskandar" passHref>
               <Link target="_blank">Skandy</Link>
             </NextLink>{' '}
-            is a full stack dev with a love for building beautiful applications
+            is a full stack dev who loves building beautiful applications
             and cooking up a storm in the kitchen. His strong sense of community
             and commitment to building meaningful relationships are just two of
             the many qualities that make him stand out as a developer. <br />
@@ -87,8 +87,7 @@ const Page = () => {
             partner, tending to his pizzas and plants 🌱. When not at the
             keyboard he enjoys trying new recipes and sharing the output with
             his friends and family. Whatever he is doing, coding or otherwise,
-            Skandy approaches every challenge with a positive attitude and
-            purposeful drive.
+            Skandy approaches every challenge with purpose and a positive attitude.
             <br />
           </Paragraph>
           <Box align="left" my={4}>
