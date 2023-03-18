@@ -40,9 +40,7 @@ const Page = () => {
           // whileHover={{ scale: 1.1 }}
           // whileTap={{ rotate: 45 }}
           // cursor="pointer"
-        >
-          {/* Hello, I&apos;m a full-stack developer based in London! */}
-        </Box>
+        ></Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
@@ -137,8 +135,12 @@ const Page = () => {
               Graduated School of Code Full-Stack Development course.
             </BioSection>
             <BioSection>
-              <BioYear>2022 to present</BioYear>
-              Working freelance and open to full-time roles.
+              <BioYear>2023 to present</BioYear>
+              Working full time in R&D as an Application Developer with{' '}
+              <NextLink passHref href="https://www.aimltd.uk/">
+                <Link target="_blank">Aim Ltd</Link>
+              </NextLink>
+              .
             </BioSection>
             <Box align="left" my={4}>
               <NextLink href="https://www.linkedin.com/in/arattray/" passHref>
