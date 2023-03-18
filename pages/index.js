@@ -29,7 +29,7 @@ const Page = () => {
 
   return (
     <Layout>
-      <Container maxW="2xl">
+      <Container maxW="container.lg">
         <Box
           // as={motion.div}
           borderRadius="lg"

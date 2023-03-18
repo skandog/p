@@ -29,7 +29,9 @@ const Main = ({ children, router }) => {
         }}
       />
       <Navbar path={router.asPath} />
-      <Container maxW="container.md" pt={6}>
+      {/* This is where to adjust the width of the body of the homepage */}
+
+      <Container maxW="3xl" pt={6}>
         {children}
       </Container>
     </Box>

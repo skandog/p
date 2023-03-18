@@ -28,7 +28,7 @@ import pomfocus from '../public/images/projects/pomfocusthumbnail.jpg'
 const Projects = () => {
   return (
     <Layout title="Projects">
-      <Container maxW="2xl">
+      <Container maxW="container.lg">
         <Box
           borderRadius="lg"
           bg={useColorModeValue('purple.500', 'green.400')}
