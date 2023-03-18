@@ -27,7 +27,7 @@ import Kombucha from '../public/images/bakes/jan_23/kombucha_4.jpg'
 const Bakes = () => {
   return (
     <Layout title="Bakes">
-      <Container maxW="2xl">
+      <Container maxW="container.lg">
         <Box
           // as={motion.div}
           borderRadius="lg"

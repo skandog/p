@@ -22,12 +22,14 @@ import { BioSection, BioYear } from '../components/bio'
 import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import { motion } from 'framer-motion'
 
+// This is the homepage of the website, with all of the key info
+
 const Page = () => {
   // const dogImg = `/images/skandy-logo${useColorModeValue('', '-dark')}-v3.png`
 
   return (
     <Layout>
-      <Container maxW="2xl">
+      <Container maxW="container.lg">
         <Box
           // as={motion.div}
           borderRadius="lg"
@@ -40,9 +42,7 @@ const Page = () => {
           // whileHover={{ scale: 1.1 }}
           // whileTap={{ rotate: 45 }}
           // cursor="pointer"
-        >
-          {/* Hello, I&apos;m a full-stack developer based in London! */}
-        </Box>
+        ></Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
@@ -80,17 +80,17 @@ const Page = () => {
             <NextLink href="https://en.wikipedia.org/wiki/Iskandar" passHref>
               <Link target="_blank">Skandy</Link>
             </NextLink>{' '}
-            is a full stack dev with a love for building beautiful applications
-            and cooking up a storm in the kitchen. His strong sense of community
-            and commitment to building meaningful relationships are just two of
-            the many qualities that make him stand out as a developer. <br />
+            is a full stack dev who loves building beautiful applications and
+            cooking up a storm in the kitchen. His strong sense of community and
+            commitment to building meaningful relationships are just two of the
+            many qualities that make him stand out as a developer. <br />
             <br />
             Born and raised in South London, he lives there currently with his
             partner, tending to his pizzas and plants 🌱. When not at the
             keyboard he enjoys trying new recipes and sharing the output with
             his friends and family. Whatever he is doing, coding or otherwise,
-            Skandy approaches every challenge with a positive attitude and
-            purposeful drive.
+            Skandy approaches every challenge with purpose and a positive
+            attitude.
             <br />
           </Paragraph>
           <Box align="left" my={4}>
@@ -113,7 +113,11 @@ const Page = () => {
             </Heading>
             <BioSection>
               <BioYear>1999</BioYear>
-              Won egg and spoon race at school sports day
+              Won egg and spoon race at school sports day.
+            </BioSection>
+            <BioSection>
+              <BioYear>2008</BioYear>
+              Began working as cocktail bartender.
             </BioSection>
             <BioSection>
               <BioYear>2014</BioYear>
@@ -122,23 +126,28 @@ const Page = () => {
             </BioSection>
             <BioSection>
               <BioYear>2015</BioYear>
-              Worked in customer success at fintech startup Dext
+              Worked in customer success at fintech startup Dext.
             </BioSection>
             <BioSection>
               <BioYear>2017</BioYear>
-              Worked in a non-technical project management role at IMechE
+              Worked in project management at the Institution of Mechanical
+              Engineers.
             </BioSection>
             <BioSection>
               <BioYear>2022</BioYear>
-              Undertook Data Science Internship at Crelytica.
+              Undertook Data Science Internship with Crelytica.
             </BioSection>
             <BioSection>
               <BioYear>2022</BioYear>
               Graduated School of Code Full-Stack Development course.
             </BioSection>
             <BioSection>
-              <BioYear>2022 to present</BioYear>
-              Working freelance and open to full-time roles.
+              <BioYear>Currently</BioYear>
+              Working full time as an Application Developer with{' '}
+              <NextLink passHref href="https://www.aimltd.uk/">
+                <Link target="_blank">Aim Ltd</Link>
+              </NextLink>
+              .
             </BioSection>
             <Box align="left" my={4}>
               <NextLink href="https://www.linkedin.com/in/arattray/" passHref>
