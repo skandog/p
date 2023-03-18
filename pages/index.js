@@ -142,8 +142,8 @@ const Page = () => {
               Graduated School of Code Full-Stack Development course.
             </BioSection>
             <BioSection>
-              <BioYear>Currently</BioYear>
-              Working full time as an Application Developer with{' '}
+              <BioYear>2023</BioYear>
+              Currently working full time as an Application Developer with{' '}
               <NextLink passHref href="https://www.aimltd.uk/">
                 <Link target="_blank">Aim Ltd</Link>
               </NextLink>
