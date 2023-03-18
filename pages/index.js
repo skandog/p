@@ -22,6 +22,8 @@ import { BioSection, BioYear } from '../components/bio'
 import { IoLogoTwitter, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import { motion } from 'framer-motion'
 
+// This is the homepage of the website, with all of the key info
+
 const Page = () => {
   // const dogImg = `/images/skandy-logo${useColorModeValue('', '-dark')}-v3.png`
 
