@@ -25,6 +25,9 @@ import mitroLight from '../public/images/projects/mitro_light1.JPG'
 import mitroDark from '../public/images/projects/mitro_dark1.JPG'
 import pomfocus from '../public/images/projects/pomfocusthumbnail.jpg'
 import dataServe_logo from '../public/images/projects/dataServe_logo.png'
+import dataBelt_logo from '../public/images/projects/dataBelt_logo.png'
+import dataBelt_logo_light from '../public/images/projects/dataBelt_logo_light.png'
+
 
 const Projects = () => {
   return (
@@ -56,17 +59,16 @@ const Projects = () => {
               No-code virtual agent, integration engine, and automation builder.
             </WorkGridItem>
           </Section>
-          {/* <Section delay={0.1}>
+          <Section delay={0.1}>
             <WorkGridItem
-              id="streamlit_nyc"
-              alt="Streamlit Analysis of NYC"
-              title="Streamlit Analysis of NYC"
-              thumbnail={useColorModeValue(stremNYC.src, stremNYCDark.src)}
+              id="databelt"
+              alt="dataBelt"
+              title="dataBelt"
+              thumbnail={useColorModeValue(dataBelt_logo_light.src, dataBelt_logo.src)}
             >
-              Data science project using Python and Streamlit to analyse the NYC
-              Real Estate market.
+              A complete data governance plaform.
             </WorkGridItem>
-          </Section> */}
+          </Section>
         </SimpleGrid>
         <Section delay={0.3}>
           <Divider
