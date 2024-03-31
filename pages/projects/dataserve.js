@@ -4,7 +4,8 @@ import {
     Link,
     List,
     ListItem,
-    Divider
+    Divider,
+    useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -13,11 +14,13 @@ import { Title, ProjectImage, Meta } from '../../components/project.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
 import dataServe_logo from '../../public/images/projects/dataServe_logo.png'
+import dataServe_logo_light from '../../public/images/projects/dataServe_logo_light.png'
+
 
 
 const Project = () => {
     return (
-        <Layout title="Backpack">
+        <Layout title="dataServe">
             <Container>
                 <Title>
                     dataServe <Badge ml={'10px'}>2023 - Present</Badge>
@@ -61,7 +64,10 @@ const Project = () => {
                 </List>
                 <Divider my={8} />
 
-                <ProjectImage src={dataServe_logo.src} alt="dataServe" />
+                <ProjectImage src={useColorModeValue(
+                dataServe_logo_light.src,
+                dataServe_logo.src
+              )} alt="dataServe" />
             </Container>
         </Layout>
     )

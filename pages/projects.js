@@ -25,6 +25,7 @@ import mitroLight from '../public/images/projects/mitro_light1.JPG'
 import mitroDark from '../public/images/projects/mitro_dark1.JPG'
 import pomfocus from '../public/images/projects/pomfocusthumbnail.jpg'
 import dataServe_logo from '../public/images/projects/dataServe_logo.png'
+import dataServe_logo_light from '../public/images/projects/dataServe_logo_light.png'
 import dataBelt_logo from '../public/images/projects/dataBelt_logo.png'
 import dataBelt_logo_light from '../public/images/projects/dataBelt_logo_light.png'
 
@@ -52,7 +53,7 @@ const Projects = () => {
               alt="dataServe"
               title="dataServe"
               thumbnail={useColorModeValue(
-                dataServe_logo.src,
+                dataServe_logo_light.src,
                 dataServe_logo.src
               )}
             >
