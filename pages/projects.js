@@ -24,6 +24,7 @@ import sneakers from '../public/images/projects/sneakers1.JPG'
 import mitroLight from '../public/images/projects/mitro_light1.JPG'
 import mitroDark from '../public/images/projects/mitro_dark1.JPG'
 import pomfocus from '../public/images/projects/pomfocusthumbnail.jpg'
+import dataServe_logo from '../public/images/projects/dataServe_logo.png'
 
 const Projects = () => {
   return (
@@ -38,6 +39,45 @@ const Projects = () => {
           mb={6}
           align="center"
         ></Box>
+          <Heading as="h3" fontSize={20} mb={4}>
+          Commercial Work
+        </Heading>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section delay={0.1}>
+            <WorkGridItem
+              id="dataserve"
+              alt="dataServe"
+              title="dataServe"
+              thumbnail={useColorModeValue(
+                dataServe_logo.src,
+                dataServe_logo.src
+              )}
+            >
+              No-code virtual agent, integration engine, and automation builder.
+            </WorkGridItem>
+          </Section>
+          {/* <Section delay={0.1}>
+            <WorkGridItem
+              id="streamlit_nyc"
+              alt="Streamlit Analysis of NYC"
+              title="Streamlit Analysis of NYC"
+              thumbnail={useColorModeValue(stremNYC.src, stremNYCDark.src)}
+            >
+              Data science project using Python and Streamlit to analyse the NYC
+              Real Estate market.
+            </WorkGridItem>
+          </Section> */}
+        </SimpleGrid>
+        <Section delay={0.3}>
+          <Divider
+            as={motion.hr}
+            my={8}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 3 }}
+          />
+        </Section>
+
         <Heading as="h3" fontSize={20} mb={4}>
           Projects
         </Heading>
