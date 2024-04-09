@@ -34,11 +34,11 @@ const Project = () => {
                     <NextLink href="https://www.aimltd.uk/" passHref>
                         <Link target="_blank">Aim Ltd</Link>
                     </NextLink>.{' '}                                      
-                    It is platform designed to provide a suite of tools to solve all of 
+                    It is a platform designed to provide a suite of tools to solve all of 
                     the pesky challenges of data governance in the modern age.
                     <br />
                     <br />
-                    An incredibly complex application, it allows organisations to get a handle
+                    An incredibly complex application, it allows organisations to get an easy handle
                     on all of its data, both structured and un-structured.
                     <br />
                     <br />
