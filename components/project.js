@@ -4,16 +4,19 @@ import { IoChevronForward } from 'react-icons/io5'
 
 export const Title = ({ children }) => {
   return (
-    <Box>
+    <Box display="flex" alignItems="center" flexWrap="wrap" gap={2} mb={4}>
       <Link asChild>
         <NextLink href="/projects">Projects</NextLink>
       </Link>
-      <span>
-        &nbsp;
-        <IoChevronForward aria-hidden="true" />
-        &nbsp;
-      </span>
-      <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
+      <IoChevronForward aria-hidden="true" />
+      <Heading
+        display="flex"
+        alignItems="center"
+        flexWrap="wrap"
+        gap={2}
+        as="h3"
+        fontSize={20}
+      >
         {children}
       </Heading>
     </Box>
