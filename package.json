@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Portfolio page for Skandy",
   "main": "index.js",
+  "engines": {
+    "node": "26.x"
+  },
   "scripts": {
     "test": "node scripts/smoke-test.js",
     "dev": "next dev",
