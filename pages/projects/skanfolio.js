@@ -7,7 +7,6 @@ import {
   useColorModeValue,
   Divider
 } from '@chakra-ui/react'
-import NextLink from 'next/link'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 import { Title, ProjectImage, Meta } from '../../components/project.js'
@@ -31,9 +30,13 @@ const Project = () => {
           initial HTML for the page is generated on the server, rather than in
           the browser. This can improve the performance and SEO of the website.
           <br /> <br />I started with a tutorial by
-          <NextLink href="https://twitter.com/craftzdog" passHref>
-            <Link target={'_blank'}> Takuya Matsuyama</Link>
-          </NextLink>
+          <Link
+            href="https://twitter.com/craftzdog"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Takuya Matsuyama
+          </Link>
           , whose eye for design is incredible. I highly recommend his content.
           The style of his videos is extremely challenging to follow, however,
           as there is no narrative provided; just a view of his screen as he

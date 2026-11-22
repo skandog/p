@@ -6,7 +6,6 @@ import {
   ListItem,
   Divider
 } from '@chakra-ui/react'
-import NextLink from 'next/link'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 import { Title, ProjectImage, Meta } from '../../components/project.js'
@@ -26,12 +25,13 @@ const Project = () => {
           I have been wanting to learn React Native for ages now and have
           previously found that building an app for my own use is the best way
           to embed new knowledge. As a huge proponent of the{' '}
-          <NextLink
+          <Link
             href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
-            passHref
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Link target={'_blank'}>Pomodoro Technique</Link>
-          </NextLink>
+            Pomodoro Technique
+          </Link>
           , using this in my daily flow to optimise my focus, I chose to build a
           Pomodoro timer app. <br /> <br />
           The most challenging aspect of mobile development tends to be managing

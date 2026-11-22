@@ -1,5 +1,4 @@
 import { Container, Badge, List, ListItem, Link } from '@chakra-ui/react'
-import NextLink from 'next/link'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -22,20 +21,22 @@ const Bake = () => {
           mango.
           <br /> <br />I make my own flour tortillas, following a simple and
           reliable recipe from{' '}
-          <NextLink
+          <Link
             href="https://www.bbcgoodfood.com/recipes/tortillas"
-            passHref
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Link target="_blank">BBC Good Food</Link>
-          </NextLink>
+            BBC Good Food
+          </Link>
           .
           <br /> <br />
-          <NextLink
+          <Link
             href="https://www.foodrepublic.com/recipes/easy-beer-batter-recipe/"
-            passHref
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Link target="_blank">Beer batter</Link>
-          </NextLink>{' '}
+            Beer batter
+          </Link>{' '}
           the haddock and deep fry in a wok. Then serve with shredded cabbage,
           avocado, a light chili creme and a little cilantro.
           <br /> <br />

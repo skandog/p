@@ -1,4 +1,3 @@
-import NextLink from 'next/link'
 import { Container, Link } from '@chakra-ui/react'
 import { Title, ThanksImage } from '../../components/thanks.js'
 import P from '../../components/paragraph.js'
@@ -12,9 +11,13 @@ const Thank = () => {
         <Title>Takuya Matsuyama (Craftzdog)</Title>
         <P>
           I came across Mr Matsuyama&apos;s{' '}
-          <NextLink href="https://youtu.be/bSMZgXzC9AA" passHref>
-            <Link target="_blank">tutorial</Link>
-          </NextLink>{' '}
+          <Link
+            href="https://youtu.be/bSMZgXzC9AA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            tutorial
+          </Link>{' '}
           online, while looking for guidance on how to build a portfolio page
           using Next.js and Chakra UI. Looking at his work I was dazzled by his
           approach to design and was excited to learn from him, not to mention
@@ -32,29 +35,45 @@ const Thank = () => {
           process of research and reading docs while seeing what the end goal
           should look like, really helped to embed a huge amount of knowledge.
           <br />I have levelled up in my ability to build using{' '}
-          <NextLink href="https://nextjs.org/" passHref>
-            <Link target="_blank">Next.js</Link>
-          </NextLink>{' '}
-          and{' '}
-          <NextLink href="https://chakra-ui.com/" passHref target="_blank">
-            <Link target="_blank">Chakra</Link>
-          </NextLink>
-          , as well as{' '}
-          <NextLink href="https://emotion.sh/" passHref target="_blank">
-            <Link target="_blank">Emotion styled components</Link>
-          </NextLink>
-          ,{' '}
-          <NextLink
-            href="https://www.framer.com/motion/"
-            passHref
+          <Link
+            href="https://nextjs.org/"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <Link target="_blank">Framer Motion</Link>
-          </NextLink>{' '}
+            Next.js
+          </Link>{' '}
+          and{' '}
+          <Link
+            href="https://chakra-ui.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Chakra
+          </Link>
+          , as well as{' '}
+          <Link
+            href="https://emotion.sh/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Emotion styled components
+          </Link>
+          ,{' '}
+          <Link
+            href="https://www.framer.com/motion/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Framer Motion
+          </Link>{' '}
           and even{' '}
-          <NextLink href="https://eslint.org/" passHref target="_blank">
-            <Link target="_blank">ES Lint</Link>
-          </NextLink>
+          <Link
+            href="https://eslint.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ES Lint
+          </Link>
           .
           <br />
           <br />

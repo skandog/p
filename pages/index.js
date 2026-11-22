@@ -77,9 +77,13 @@ const Page = () => {
           </Heading>
 
           <Paragraph style={{ fontSize: '1.18rem' }}>
-            <NextLink href="https://en.wikipedia.org/wiki/Iskandar" passHref>
-              <Link target="_blank">Skandy</Link>
-            </NextLink>{' '}
+            <Link
+              href="https://en.wikipedia.org/wiki/Iskandar"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Skandy
+            </Link>{' '}
             is a full stack dev who loves building beautiful applications and
             cooking up a storm in the kitchen. His strong sense of community and
             commitment to building meaningful relationships are just two of the
@@ -94,16 +98,15 @@ const Page = () => {
             <br />
           </Paragraph>
           <Box align="left" my={4}>
-            <NextLink href="/projects">
-              <Button
-                as={motion.button}
-                whileHover={{ scale: 1.2 }}
-                rightIcon={<ChevronRightIcon />}
-                colorScheme={useColorModeValue('purple', 'green')}
-              >
-                Projects
-              </Button>
-            </NextLink>
+            <Button
+              as={NextLink}
+              href="/projects"
+              scroll={false}
+              rightIcon={<ChevronRightIcon />}
+              colorScheme={useColorModeValue('purple', 'green')}
+            >
+              Projects
+            </Button>
           </Box>
         </Section>
         <SimpleGrid columns={[1, 1, 2]} spacingX={'10%'}>
@@ -144,24 +147,27 @@ const Page = () => {
             <BioSection>
               <BioYear>2023</BioYear>
               Currently working full time as an Application Developer with{' '}
-              <NextLink passHref href="https://www.aimltd.uk/">
-                <Link target="_blank">Aim Ltd</Link>
-              </NextLink>
+              <Link
+                href="https://www.aimltd.uk/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Aim Ltd
+              </Link>
               .
             </BioSection>
             <Box align="left" my={4}>
-              <NextLink href="https://www.linkedin.com/in/arattray/" passHref>
-                <Link target="_blank" style={{ textDecoration: 'none' }}>
-                  <Button
-                    as={motion.button}
-                    whileHover={{ scale: 1.2 }}
-                    rightIcon={<ChevronRightIcon />}
-                    colorScheme={useColorModeValue('purple', 'green')}
-                  >
-                    Career
-                  </Button>
-                </Link>
-              </NextLink>
+              <Button
+                as="a"
+                href="https://www.linkedin.com/in/arattray/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none' }}
+                rightIcon={<ChevronRightIcon />}
+                colorScheme={useColorModeValue('purple', 'green')}
+              >
+                Career
+              </Button>
             </Box>
           </Section>
           <SimpleGrid columns={1} spacingY="12%">

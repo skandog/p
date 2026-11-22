@@ -6,7 +6,6 @@ import {
   ListItem,
   Divider
 } from '@chakra-ui/react'
-import NextLink from 'next/link'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 import { Title, ProjectImage, Meta } from '../../components/project.js'
@@ -23,17 +22,29 @@ const Project = () => {
         </Title>
         <P>
           This was a project in which I worked with{' '}
-          <NextLink href="https://github.com/AdamPhasey" passHref>
-            <Link target="_blank">Adam</Link>
-          </NextLink>
+          <Link
+            href="https://github.com/AdamPhasey"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Adam
+          </Link>
           ,{' '}
-          <NextLink href="https://github.com/ClaudiaGC1339" passHref>
-            <Link target="_blank">Claudia</Link>
-          </NextLink>{' '}
+          <Link
+            href="https://github.com/ClaudiaGC1339"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Claudia
+          </Link>{' '}
           and{' '}
-          <NextLink href="https://github.com/StevenCK1" passHref>
-            <Link target="_blank">Steven</Link>
-          </NextLink>{' '}
+          <Link
+            href="https://github.com/StevenCK1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Steven
+          </Link>{' '}
           to build a full stack app in just one week. We had not worked together
           before that week, and were given the simple breif to &apos;build an
           app to help fellow students&apos;.

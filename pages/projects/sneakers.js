@@ -6,7 +6,6 @@ import {
   ListItem,
   Divider
 } from '@chakra-ui/react'
-import NextLink from 'next/link'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 import { Title, ProjectImage, Meta } from '../../components/project.js'
@@ -28,9 +27,13 @@ const Poject = () => {
           my front-end fundamentals. For this site I used only HTML, SCSS and
           vanilla JavaScript, manipulating the DOM for all animations. This was
           done with guidance from
-          <NextLink href={'https://twitter.com/lamawebdev'} passHref>
-            <Link target={'_blank'}> Lama Dev</Link>
-          </NextLink>
+          <Link
+            href="https://twitter.com/lamawebdev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lama Dev
+          </Link>
           . <br /> <br />
           For the past few months I have been exclusively using frameworks like
           React and Django to build, and the time-constrained weather app

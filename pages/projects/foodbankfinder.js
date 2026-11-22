@@ -6,7 +6,6 @@ import {
   ListItem,
   Divider
 } from '@chakra-ui/react'
-import NextLink from 'next/link'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 import { Title, ProjectImage, Meta } from '../../components/project.js'
@@ -25,25 +24,45 @@ const Project = () => {
         </Title>
         <P>
           For this project, I had the pleasure of working with{' '}
-          <NextLink href="https://github.com/millagmc" passHref>
-            <Link target="_blank">Camilla</Link>
-          </NextLink>
+          <Link
+            href="https://github.com/millagmc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Camilla
+          </Link>
           ,{' '}
-          <NextLink href="https://github.com/ClaudiaGC1339" passHref>
-            <Link target="_blank">Claudia</Link>
-          </NextLink>
+          <Link
+            href="https://github.com/ClaudiaGC1339"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Claudia
+          </Link>
           ,{' '}
-          <NextLink href="https://github.com/jimlikesjazz" passHref>
-            <Link target="_blank">Jim</Link>
-          </NextLink>
+          <Link
+            href="https://github.com/jimlikesjazz"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Jim
+          </Link>
           ,{' '}
-          <NextLink href="https://github.com/J05hL" passHref>
-            <Link target="_blank">Joshua</Link>
-          </NextLink>{' '}
+          <Link
+            href="https://github.com/J05hL"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Joshua
+          </Link>{' '}
           and{' '}
-          <NextLink href="https://github.com/simran-toor" passHref>
-            <Link target="_blank">Sim</Link>
-          </NextLink>{' '}
+          <Link
+            href="https://github.com/simran-toor"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sim
+          </Link>{' '}
           to build a full-stack application in four weeks. We again had not
           worked together as a team before, although I was lucky to have worked
           previously on an individual basis with most involved. We were given
