@@ -15,7 +15,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => {
           placeholder="blur"
           loading="lazy"
         />
-        <LinkOverlay href={href} target="_blank">
+        <LinkOverlay href={href} target="_blank" rel="noopener noreferrer">
           <Text mt={2}>{title}</Text>
         </LinkOverlay>
         <Text fontSize={14}>{children}</Text>
@@ -32,24 +32,22 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
       w="100%"
       textAlign="left"
     >
-      <NextLink href={`/projects/${id}`} passHref scroll={false}>
-        <LinkBox cursor="pointer">
-          <Image
-            src={thumbnail}
-            alt={title}
-            className="grid-item-thumbnail"
-            placeholder="blur"
-            objectFit={'cover'}
-            minH={'160px'}
-          />
-          <LinkOverlay href={`/projects/${id}`}>
-            <Text mt={2} fontSize={20}>
-              {title}
-            </Text>
-          </LinkOverlay>
-          <Text fontSize={14}>{children}</Text>
-        </LinkBox>
-      </NextLink>
+      <LinkBox cursor="pointer">
+        <Image
+          src={thumbnail}
+          alt={title}
+          className="grid-item-thumbnail"
+          placeholder="blur"
+          objectFit={'cover'}
+          minH={'160px'}
+        />
+        <LinkOverlay as={NextLink} href={`/projects/${id}`} scroll={false}>
+          <Text mt={2} fontSize={20}>
+            {title}
+          </Text>
+        </LinkOverlay>
+        <Text fontSize={14}>{children}</Text>
+      </LinkBox>
     </Box>
   )
 }
@@ -61,46 +59,42 @@ export const BakeGridItem = ({ children, id, title, thumbnail }) => {
       w="100%"
       textAlign="left"
     >
-      <NextLink href={`/bakes/${id}`} passHref scroll={false}>
-        <LinkBox cursor="pointer">
-          <Image
-            src={thumbnail}
-            alt={title}
-            className="grid-item-thumbnail"
-            placeholder="blur"
-            objectFit={'cover'}
-            minH={'160px'}
-          />
-          <LinkOverlay href={`/bakes/${id}`}>
-            <Text mt={2} fontSize={20}>
-              {title}
-            </Text>
-          </LinkOverlay>
-          <Text fontSize={14}>{children}</Text>
-        </LinkBox>
-      </NextLink>
+      <LinkBox cursor="pointer">
+        <Image
+          src={thumbnail}
+          alt={title}
+          className="grid-item-thumbnail"
+          placeholder="blur"
+          objectFit={'cover'}
+          minH={'160px'}
+        />
+        <LinkOverlay as={NextLink} href={`/bakes/${id}`} scroll={false}>
+          <Text mt={2} fontSize={20}>
+            {title}
+          </Text>
+        </LinkOverlay>
+        <Text fontSize={14}>{children}</Text>
+      </LinkBox>
     </Box>
   )
 }
 export const ThanksGridItem = ({ children, id, title, thumbnail }) => {
   return (
     <Box w="100%" textAlign="center">
-      <NextLink href={`/thanks/${id}`} passHref scroll={false}>
-        <LinkBox cursor="pointer">
-          <Image
-            src={thumbnail}
-            alt={title}
-            className="grid-item-thumbnail"
-            placeholder="blur"
-          />
-          <LinkOverlay href={`/thanks/${id}`}>
-            <Text mt={2} fontSize={20}>
-              {title}
-            </Text>
-          </LinkOverlay>
-          <Text fontSize={14}>{children}</Text>
-        </LinkBox>
-      </NextLink>
+      <LinkBox cursor="pointer">
+        <Image
+          src={thumbnail}
+          alt={title}
+          className="grid-item-thumbnail"
+          placeholder="blur"
+        />
+        <LinkOverlay as={NextLink} href={`/thanks/${id}`} scroll={false}>
+          <Text mt={2} fontSize={20}>
+            {title}
+          </Text>
+        </LinkOverlay>
+        <Text fontSize={14}>{children}</Text>
+      </LinkBox>
     </Box>
   )
 }

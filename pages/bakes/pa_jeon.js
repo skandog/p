@@ -17,14 +17,13 @@ const Bake = () => {
           My favourite lunch to make if I have more than 15 mins is this
           wonderful Korean pancake called Pa Jeon. I first discovered it in one
           of my favourite and most regularly used cookbooks,{' '}
-          <NextLink
+          <Link
             href="https://www.weidenfeldandnicolson.co.uk/titles/jordan-bourke/our-korean-kitchen/9780297609711/"
-            passHref
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Link target="_blank">
-              OUR KOREAN KITCHEN by Rejina Pyo &amp; Jordan Bourke
-            </Link>
-          </NextLink>
+            OUR KOREAN KITCHEN by Rejina Pyo &amp; Jordan Bourke
+          </Link>
           , which I highly recommend if you enjoy Korean food.
           <br /> <br />
           My go to is adapted from their recipe for a seafood version, just
@@ -37,9 +36,9 @@ const Bake = () => {
           Delicious served with a dipping sauce made with garlic, soy sauce,
           black vinegar and toasted sesame oil. And if you have any kimchi to
           hand, make sure to serve on the side; pictured below is some of the{' '}
-          <NextLink href="/bakes/dongchimi" passHref>
-            <Link target="_blank">water radish kimchi</Link>
-          </NextLink>{' '}
+          <Link as={NextLink} href="/bakes/dongchimi">
+            water radish kimchi
+          </Link>{' '}
           I make on the regs.
         </P>
         <List my={4} ml={4}>

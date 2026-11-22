@@ -1,5 +1,4 @@
 import { Container, Badge, List, ListItem, Link } from '@chakra-ui/react'
-import NextLink from 'next/link'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -23,12 +22,13 @@ const Bake = () => {
           First step was to improve my pita game; previous attempts have been
           fine for dipping in hummus, but not ideal for a proper sandwich. I
           landed on{' '}
-          <NextLink
+          <Link
             href="https://www.loveandlemons.com/pita-bread-recipe/"
-            passHref
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Link target="_blank">this recipe</Link>
-          </NextLink>{' '}
+            this recipe
+          </Link>{' '}
           and the output was exactly what I was going for, soft and fluffy.
           <br /> <br />
           Then the key to the falafel was using dried chickpeas, rather than

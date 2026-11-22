@@ -1,5 +1,4 @@
 import { Container, Badge, List, ListItem, Link } from '@chakra-ui/react'
-import NextLink from 'next/link'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -29,9 +28,13 @@ const Bake = () => {
           <br />
           <br />
           Big shoutout to{' '}
-          <NextLink href="https://www.reddit.com/r/Kombucha/" passHref>
-            <Link target="_blank">r/Kombucha</Link>
-          </NextLink>{' '}
+          <Link
+            href="https://www.reddit.com/r/Kombucha/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            r/Kombucha
+          </Link>{' '}
           for their detailed guides and supportive community.
         </P>
         <List my={4} ml={4}>

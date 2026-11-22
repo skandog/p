@@ -1,5 +1,4 @@
 import { Container, Badge, List, ListItem, Link } from '@chakra-ui/react'
-import NextLink from 'next/link'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -31,12 +30,13 @@ const Bake = () => {
           <br />
           <br />
           Recipe taken from one of my favourite recipe books:{' '}
-          <NextLink
+          <Link
             href="https://www.weidenfeldandnicolson.co.uk/titles/jordan-bourke/our-korean-kitchen/9780297609711/"
-            passHref
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Link target="_blank">Our Korean Kitchen</Link>
-          </NextLink>
+            Our Korean Kitchen
+          </Link>
           .
         </P>
         <List my={4} ml={4}>

@@ -20,20 +20,22 @@ import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('black.200', "'whiteAlpha.900'")
+  const inactiveColor = useColorModeValue('black.200', 'whiteAlpha.900')
   const activeColor = useColorModeValue('gray.500', 'whiteAlpha.600')
   return (
-    <NextLink href={href} passHref scroll={false}>
-      <Link
-        p={2}
-        bg={active ? 'grassTeal' : undefined}
-        color={active ? activeColor : inactiveColor}
-        target={target}
-        {...props}
-      >
-        {children}
-      </Link>
-    </NextLink>
+    <Link
+      as={NextLink}
+      href={href}
+      scroll={false}
+      p={2}
+      bg={active ? 'grassTeal' : undefined}
+      color={active ? activeColor : inactiveColor}
+      target={target}
+      rel={target === '_blank' ? 'noopener noreferrer' : undefined}
+      {...props}
+    >
+      {children}
+    </Link>
   )
 }
 
@@ -97,7 +99,7 @@ const Navbar = props => {
           </LinkItem>
         </Stack>
 
-        <Box z-index={5} flex={1} align="right">
+        <Box zIndex={5} flex={1} align="right">
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
@@ -106,26 +108,27 @@ const Navbar = props => {
                 as={IconButton}
                 icon={<HamburgerIcon />}
                 variant="outline"
-                aria-label="Options"
+                aria-label="Open navigation menu"
               />
               <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/projects" passHref>
-                  <MenuItem as={Link}>Projects</MenuItem>
-                </NextLink>
-                <NextLink href="/bakes" passHref>
-                  <MenuItem as={Link}>Bakes</MenuItem>
-                </NextLink>
-                {/* <NextLink href="/thanks" passHref>
-                  <MenuItem as={Link}>Thanks</MenuItem>
-                </NextLink> */}
+                <MenuItem as={NextLink} href="/">
+                  About
+                </MenuItem>
+                <MenuItem as={NextLink} href="/projects">
+                  Projects
+                </MenuItem>
+                <MenuItem as={NextLink} href="/bakes">
+                  Bakes
+                </MenuItem>
+                {/* <MenuItem as={NextLink} href="/thanks">
+                  Thanks
+                </MenuItem> */}
 
                 <MenuItem
                   as={Link}
                   href="https://github.com/skandog/p"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   View Source
                 </MenuItem>
