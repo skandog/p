@@ -10,6 +10,8 @@
     "test": "node scripts/smoke-test.js",
     "dev": "next dev --webpack",
     "build": "next build --webpack",
+    "images:check": "node scripts/optimize-images.mjs",
+    "images:optimize": "node scripts/optimize-images.mjs --write",
     "prettier": "prettier -write .",
     "lint": "eslint ."
   },
