@@ -18,7 +18,8 @@ going over everything and customising to both better understand everything that 
 ## Local development
 
 This repository uses Yarn Classic and the dependency versions recorded in `yarn.lock`.
-Node.js 18 or newer is recommended. With Node.js and Yarn Classic installed:
+Node.js 26 (the current deployment runtime) and Yarn Classic are recommended. With
+both installed:
 
 ```bash
 yarn install
