@@ -1,4 +1,4 @@
-import { Container, Badge, List, ListItem } from '@chakra-ui/react'
+import { Container, Badge, List } from '@chakra-ui/react'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -19,12 +19,12 @@ const Bake = () => {
           dry and rough wholemeal dough, rolled out thin and given 10 mins in
           the oven. never buying pita again!
         </P>
-        <List my={4} ml={4}>
-          <ListItem>
+        <List.Root my={4} ml={4}>
+          <List.Item>
             <Meta>Ingredients</Meta>
             <span>Wholemeal Flour, Yeast, Sugar, Salt, Water</span>
-          </ListItem>
-        </List>
+          </List.Item>
+        </List.Root>
         <BakeImage src={Pita.src} alt="Homemade Pita Bread"></BakeImage>
       </Container>
     </Layout>

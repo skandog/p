@@ -3,13 +3,12 @@ import {
   Badge,
   Link,
   List,
-  ListItem,
-  useColorModeValue,
-  Divider,
+  Separator,
   Heading
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { FiExternalLink } from 'react-icons/fi'
+import { useColorModeValue } from '../../components/providers'
 
 import { Title, ProjectImage, Meta } from '../../components/project'
 import P from '../../components/paragraph.js'
@@ -50,7 +49,7 @@ const Project = () => {
           sanitise the posts that were amplified, in response to the high misuse
           of the platform&apos;s most popular tech keywords.
         </P>
-        <Divider my={4} />
+        <Separator my={4} />
         <P>
           <Heading display="inline-block" as="h4" fontSize={20} mb={4} ml={0}>
             Update:
@@ -72,28 +71,33 @@ const Project = () => {
           value front and centre, and respond to changing conditions and
           requirements.
         </P>
-        <List ml={4} my={2}>
-          <ListItem>
+        <List.Root ml={4} my={2}>
+          <List.Item>
             <Meta>Automated Bot</Meta>
-            <Link href="https://twitter.com/sdogdev" target={'_blank'}>
-              Profile Page <ExternalLinkIcon mx={'2px'} />
+            <Link
+              href="https://twitter.com/sdogdev"
+              target={'_blank'}
+              rel="noopener noreferrer"
+            >
+              Profile Page <FiExternalLink aria-hidden="true" />
             </Link>
-          </ListItem>
-          <ListItem>
+          </List.Item>
+          <List.Item>
             <Meta>Source Code</Meta>
             <Link
               href="https://github.com/skandog/soc_cheer_leader"
               target={'_blank'}
+              rel="noopener noreferrer"
             >
-              Github <ExternalLinkIcon mx={'2px'} />
+              Github <FiExternalLink aria-hidden="true" />
             </Link>
-          </ListItem>
-          <ListItem>
+          </List.Item>
+          <List.Item>
             <Meta>Stack</Meta>
             <span>Python, Tweepy, Dotenv, Regex, Twitter API</span>
-          </ListItem>
-        </List>
-        <Divider my={8} />
+          </List.Item>
+        </List.Root>
+        <Separator my={8} />
 
         <ProjectImage
           src={useColorModeValue(botDark.src, botLight.src)}

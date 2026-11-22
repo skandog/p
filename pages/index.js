@@ -5,15 +5,12 @@ import {
   Box,
   Heading,
   Link,
-  useColorModeValue,
   Image,
   Button,
   List,
-  ListItem,
-  Icon,
   SimpleGrid
 } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { FiChevronRight } from 'react-icons/fi'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
@@ -25,15 +22,13 @@ import { motion } from 'framer-motion'
 // This is the homepage of the website, with all of the key info
 
 const Page = () => {
-  // const dogImg = `/images/skandy-logo${useColorModeValue('', '-dark')}-v3.png`
-
   return (
     <Layout>
       <Container maxW="container.lg">
         <Box
           // as={motion.div}
           borderRadius="lg"
-          bg={useColorModeValue('purple.500', 'green.400')}
+          bg={{ base: 'purple.500', _dark: 'green.400' }}
           color="whiteAlpha.800"
           p={3}
           mt={10}
@@ -60,7 +55,7 @@ const Page = () => {
             <Image
               as={motion.img}
               whileHover={{ rotate: 360 }}
-              borderColor={useColorModeValue('purple.500', 'green.400')}
+              borderColor={{ base: 'purple.500', _dark: 'green.400' }}
               borderWidth={3}
               borderStyle="solid"
               maxWidth="150px"
@@ -98,18 +93,14 @@ const Page = () => {
             <br />
           </Paragraph>
           <Box align="left" my={4}>
-            <Button
-              as={NextLink}
-              href="/projects"
-              scroll={false}
-              rightIcon={<ChevronRightIcon />}
-              colorScheme={useColorModeValue('purple', 'green')}
-            >
-              Projects
+            <Button asChild colorPalette={{ base: 'purple', _dark: 'green' }}>
+              <NextLink href="/projects" scroll={false}>
+                Projects <FiChevronRight aria-hidden="true" />
+              </NextLink>
             </Button>
           </Box>
         </Section>
-        <SimpleGrid columns={[1, 1, 2]} spacingX={'10%'}>
+        <SimpleGrid columns={[1, 1, 2]} columnGap="10%">
           <Section delay={0.2}>
             <Heading as="h3" variant={'section-title'}>
               Bio
@@ -157,20 +148,20 @@ const Page = () => {
               .
             </BioSection>
             <Box align="left" my={4}>
-              <Button
-                as="a"
-                href="https://www.linkedin.com/in/arattray/"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: 'none' }}
-                rightIcon={<ChevronRightIcon />}
-                colorScheme={useColorModeValue('purple', 'green')}
-              >
-                Career
+              <Button asChild colorPalette={{ base: 'purple', _dark: 'green' }}>
+                <a
+                  href="https://www.linkedin.com/in/arattray/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <FiChevronRight aria-hidden="true" />
+                  Career
+                </a>
               </Button>
             </Box>
           </Section>
-          <SimpleGrid columns={1} spacingY="12%">
+          <SimpleGrid columns={1} rowGap="12%">
             <Section delay={0.3}>
               <Heading as="h3" variant="section-title">
                 I ♥
@@ -184,46 +175,44 @@ const Page = () => {
               <Heading as="h3" variant="section-title">
                 Also find me here
               </Heading>
-              <List>
-                <ListItem>
-                  <Link href="https://github.com/skandog" target="_blank">
-                    <Button
-                      variant="ghost"
-                      colorScheme={'teal'}
-                      leftIcon={<Icon as={IoLogoGithub} />}
+              <List.Root>
+                <List.Item>
+                  <Button asChild variant="ghost" colorPalette="teal">
+                    <a
+                      href="https://github.com/skandog"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
+                      <IoLogoGithub aria-hidden="true" />
                       @skandog
-                    </Button>
-                  </Link>
-                </ListItem>
-                <ListItem>
-                  <Link href="https://twitter.com/skandog_" target="_blank">
-                    <Button
-                      variant="ghost"
-                      colorScheme={'teal'}
-                      leftIcon={<Icon as={IoLogoTwitter} />}
+                    </a>
+                  </Button>
+                </List.Item>
+                <List.Item>
+                  <Button asChild variant="ghost" colorPalette="teal">
+                    <a
+                      href="https://twitter.com/skandog_"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
+                      <IoLogoTwitter aria-hidden="true" />
                       @skandog_
-                    </Button>
-                  </Link>
-                </ListItem>
-                <ListItem>
-                  <Link
-                    href="https://www.linkedin.com/in/arattray/"
-                    target="_blank"
-                  >
-                    <Button
-                      variant="ghost"
-                      colorScheme={'teal'}
-                      leftIcon={<Icon as={IoLogoLinkedin} />}
+                    </a>
+                  </Button>
+                </List.Item>
+                <List.Item>
+                  <Button asChild variant="ghost" colorPalette="teal">
+                    <a
+                      href="https://www.linkedin.com/in/arattray/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
+                      <IoLogoLinkedin aria-hidden="true" />
                       @arattray
-                    </Button>
-                  </Link>
-                </ListItem>
-                <ListItem></ListItem>
-                <ListItem></ListItem>
-              </List>
+                    </a>
+                  </Button>
+                </List.Item>
+              </List.Root>
             </Section>
           </SimpleGrid>
         </SimpleGrid>

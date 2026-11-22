@@ -1,4 +1,4 @@
-import { Container, Badge, List, ListItem, Link } from '@chakra-ui/react'
+import { Container, Badge, List, Link } from '@chakra-ui/react'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -37,14 +37,14 @@ const Bake = () => {
           fry them. Best falafel I have had in years 😋 served with hummus,
           shreded cabbage and carrot.
         </P>
-        <List my={4} ml={4}>
-          <ListItem>
+        <List.Root my={4} ml={4}>
+          <List.Item>
             <Meta>Ingredients</Meta>
             <span>
               Chickpeas, Parsley, Cilantro, Garlic, Spices, Toasted Sesame Seeds{' '}
             </span>
-          </ListItem>
-        </List>
+          </List.Item>
+        </List.Root>
         <BakeImage src={Falafel1.src} alt="Baja Fish Tacos" />
         <BakeImage src={Falafel2.src} alt="Homemade Flour Tortillas" />
       </Container>

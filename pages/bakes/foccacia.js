@@ -1,4 +1,4 @@
-import { Container, Badge, List, ListItem } from '@chakra-ui/react'
+import { Container, Badge, List } from '@chakra-ui/react'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -24,12 +24,12 @@ const Bake = () => {
           <br />A really straight forward one and a new favourite gift to bring
           when visiting friends 😋.
         </P>
-        <List my={4} ml={4}>
-          <ListItem>
+        <List.Root my={4} ml={4}>
+          <List.Item>
             <Meta>Ingredients</Meta>
             <span>Shallots, Red Onion, Kalmata Olives, Rosemary</span>
-          </ListItem>
-        </List>
+          </List.Item>
+        </List.Root>
         <BakeImage src={Foccacia1.src} alt="Homemade Foccacia Bread" />
         <BakeImage src={Foccacia2.src} alt="Homemade Foccacia Bread" />
       </Container>

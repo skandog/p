@@ -1,12 +1,5 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem,
-  Divider
-} from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Container, Badge, Link, List, Separator } from '@chakra-ui/react'
+import { FiExternalLink } from 'react-icons/fi'
 
 import { Title, ProjectImage, Meta } from '../../components/project.js'
 import P from '../../components/paragraph.js'
@@ -98,34 +91,36 @@ const Project = () => {
           foodbank. Supporters looking to help are also able to find information
           about items most needed and ways to donate.
         </P>
-        <List ml={4} my={2}>
-          <ListItem>
+        <List.Root ml={4} my={2}>
+          <List.Item>
             <Meta>Web App</Meta>
             <Link
               href="https://your-local-foodbank.netlify.app/"
               target={'_blank'}
+              rel="noopener noreferrer"
             >
-              Website <ExternalLinkIcon mx={'2px'} />
+              Website <FiExternalLink aria-hidden="true" />
             </Link>
-          </ListItem>
-          <ListItem>
+          </List.Item>
+          <List.Item>
             <Meta>Source Code</Meta>
             <Link
               href="https://github.com/SchoolOfCode/final-project_front-end-jazzy-code-superheros"
               target={'_blank'}
+              rel="noopener noreferrer"
             >
-              Github <ExternalLinkIcon mx={'2px'} />
+              Github <FiExternalLink aria-hidden="true" />
             </Link>
-          </ListItem>
-          <ListItem>
+          </List.Item>
+          <List.Item>
             <Meta>Stack</Meta>
             <span>
               Javascript, React.js, Node.js, Framer-Motion, Emotion, Jest,
               Supertest, React Testing Library
             </span>
-          </ListItem>
-        </List>
-        <Divider my={8} />
+          </List.Item>
+        </List.Root>
+        <Separator my={8} />
 
         <ProjectImage src={ff.src} alt="Foodbank Finder Landing Page" />
         <ProjectImage src={ff2.src} alt="Foodbank Finder Give Help" />

@@ -1,10 +1,4 @@
-import {
-  Box,
-  Container,
-  Heading,
-  SimpleGrid,
-  useColorModeValue
-} from '@chakra-ui/react'
+import { Box, Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import { BakeGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
@@ -31,7 +25,7 @@ const Bakes = () => {
         <Box
           // as={motion.div}
           borderRadius="lg"
-          bg={useColorModeValue('purple.500', 'green.400')}
+          bg={{ base: 'purple.500', _dark: 'green.400' }}
           color="whiteAlpha.800"
           p={3}
           mt={10}

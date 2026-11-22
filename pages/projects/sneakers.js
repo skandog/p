@@ -1,12 +1,5 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem,
-  Divider
-} from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Container, Badge, Link, List, Separator } from '@chakra-ui/react'
+import { FiExternalLink } from 'react-icons/fi'
 
 import { Title, ProjectImage, Meta } from '../../components/project.js'
 import P from '../../components/paragraph.js'
@@ -46,25 +39,33 @@ const Poject = () => {
           it confusing, but going through this project it now feels more pure 😅
           It has certainly resolidified my underlying web dev knowledge.
         </P>
-        <List ml={4} my={2}>
-          <ListItem>
+        <List.Root ml={4} my={2}>
+          <List.Item>
             <Meta>Website</Meta>
-            <Link href="https://skandog.github.io/lama_comm/" target={'_blank'}>
-              Homepage <ExternalLinkIcon mx={'2px'} />
+            <Link
+              href="https://skandog.github.io/lama_comm/"
+              target={'_blank'}
+              rel="noopener noreferrer"
+            >
+              Homepage <FiExternalLink aria-hidden="true" />
             </Link>
-          </ListItem>
-          <ListItem>
+          </List.Item>
+          <List.Item>
             <Meta>Source Code</Meta>
-            <Link href="https://github.com/skandog/lama_comm" target={'_blank'}>
-              Github <ExternalLinkIcon mx={'2px'} />
+            <Link
+              href="https://github.com/skandog/lama_comm"
+              target={'_blank'}
+              rel="noopener noreferrer"
+            >
+              Github <FiExternalLink aria-hidden="true" />
             </Link>
-          </ListItem>
-          <ListItem>
+          </List.Item>
+          <List.Item>
             <Meta>Stack</Meta>
             <span>HTML, SCSS, Javascript</span>
-          </ListItem>
-        </List>
-        <Divider my={8} />
+          </List.Item>
+        </List.Root>
+        <Separator my={8} />
         <ProjectImage src={sneakers1.src} alt=".Sneakers E-commerce Site" />
         <ProjectImage src={sneakers2.src} alt=".Sneakers E-commerce Site" />
         <ProjectImage src={sneakers3.src} alt=".Sneakers E-commerce Site" />

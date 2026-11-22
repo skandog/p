@@ -1,13 +1,6 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem,
-  Divider,
-  useColorModeValue
-} from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Container, Badge, Link, List, Separator } from '@chakra-ui/react'
+import { FiExternalLink } from 'react-icons/fi'
+import { useColorModeValue } from '../../components/providers'
 
 import { Title, ProjectImage, Meta } from '../../components/project.js'
 import P from '../../components/paragraph.js'
@@ -50,22 +43,26 @@ const Project = () => {
           challenges! I have played a big part in building out the CMDB
           component, as well as enhancing its reporting functionality.
         </P>
-        <List ml={4} my={2}>
-          <ListItem>
+        <List.Root ml={4} my={2}>
+          <List.Item>
             <Meta>Website</Meta>
-            <Link href="https://www.aimdatabelt.uk/" target="_blank">
-              dataBelt <ExternalLinkIcon mx={'2px'} />
+            <Link
+              href="https://www.aimdatabelt.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              dataBelt <FiExternalLink aria-hidden="true" />
             </Link>
-          </ListItem>
-          <ListItem>
+          </List.Item>
+          <List.Item>
             <Meta>Stack</Meta>
             <span>
               Javascript, Python, Angular.js, Node.js, Sails.js, MongoDB, Gulp,
               Chart.js, d3, Elastic, Redis, Docker, WSL
             </span>
-          </ListItem>
-        </List>
-        <Divider my={8} />
+          </List.Item>
+        </List.Root>
+        <Separator my={8} />
 
         <ProjectImage
           src={useColorModeValue(dataBelt_logo_light.src, dataBelt_logo.src)}

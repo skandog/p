@@ -1,4 +1,4 @@
-import { Container, Badge, List, ListItem } from '@chakra-ui/react'
+import { Container, Badge, List } from '@chakra-ui/react'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -19,14 +19,14 @@ const Bake = () => {
           across the pizaa, where often the flavour is limited only to where the
           fish lays.
         </P>
-        <List my={4} ml={4}>
-          <ListItem>
+        <List.Root my={4} ml={4}>
+          <List.Item>
             <Meta>Ingredients</Meta>
             <span>
               Anchovy, Capers, Red Chili, Fresh Parsley, Lemon Juice + Zest
             </span>
-          </ListItem>
-        </List>
+          </List.Item>
+        </List.Root>
         <BakeImage
           src={AnchPizza.src}
           alt="Nduja, onion and olive pizza"

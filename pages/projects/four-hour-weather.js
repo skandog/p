@@ -1,12 +1,5 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem,
-  Divider
-} from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Container, Badge, Link, List, Separator } from '@chakra-ui/react'
+import { FiExternalLink } from 'react-icons/fi'
 
 import Layout from '../../components/layouts/article'
 import { Title, ProjectImage, Meta } from '../../components/project'
@@ -44,31 +37,33 @@ const Project = () => {
           areas that could benefit from more learning and work on those to
           ensure I remain a well rounded full-stack developer.
         </P>
-        <List ml={4} my={2}>
-          <ListItem>
+        <List.Root ml={4} my={2}>
+          <List.Item>
             <Meta>Webpage</Meta>
             <Link
               href="https://weather-app-skandog.vercel.app/"
               target={'_blank'}
+              rel="noopener noreferrer"
             >
-              Webpage <ExternalLinkIcon mx={'2px'} />
+              Webpage <FiExternalLink aria-hidden="true" />
             </Link>
-          </ListItem>
-          <ListItem>
+          </List.Item>
+          <List.Item>
             <Meta>Source Code</Meta>
             <Link
               href="https://github.com/skandog/weather_app"
               target={'_blank'}
+              rel="noopener noreferrer"
             >
-              Github <ExternalLinkIcon mx={'2px'} />
+              Github <FiExternalLink aria-hidden="true" />
             </Link>
-          </ListItem>
-          <ListItem>
+          </List.Item>
+          <List.Item>
             <Meta>Stack</Meta>
             <span>JavaScript, Next.js, React, SCSS, OpenWeatherAPI</span>
-          </ListItem>
-        </List>
-        <Divider my={8} />
+          </List.Item>
+        </List.Root>
+        <Separator my={8} />
 
         <ProjectImage src={weather.src} alt="Five Day Weather Forecast" />
       </Container>

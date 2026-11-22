@@ -1,4 +1,4 @@
-import { Container, Badge, List, ListItem, Link } from '@chakra-ui/react'
+import { Container, Badge, List, Link } from '@chakra-ui/react'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -37,14 +37,14 @@ const Bake = () => {
           </Link>{' '}
           for their detailed guides and supportive community.
         </P>
-        <List my={4} ml={4}>
-          <ListItem>
+        <List.Root my={4} ml={4}>
+          <List.Item>
             <Meta>Ingredients</Meta>
             <span>
               Black Tea, Kombucha SCOBY, Sugar, (Flavours: Pinapple, Raspberry){' '}
             </span>
-          </ListItem>
-        </List>
+          </List.Item>
+        </List.Root>
         <BakeImage src={Kombucha4.src} alt="Bottled Kombucha" />
         <BakeImage src={Kombucha1.src} alt="Kombucha Fermenting" />
       </Container>

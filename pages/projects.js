@@ -3,10 +3,10 @@ import {
   Container,
   SimpleGrid,
   Heading,
-  Divider,
-  useColorModeValue
+  Separator
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
+import { useColorModeValue } from '../components/providers'
 
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
@@ -29,21 +29,20 @@ import dataServe_logo_light from '../public/images/projects/dataServe_logo_light
 import dataBelt_logo from '../public/images/projects/dataBelt_logo.png'
 import dataBelt_logo_light from '../public/images/projects/dataBelt_logo_light.png'
 
-
 const Projects = () => {
   return (
     <Layout title="Projects">
       <Container maxW="container.lg">
         <Box
           borderRadius="lg"
-          bg={useColorModeValue('purple.500', 'green.400')}
+          bg={{ base: 'purple.500', _dark: 'green.400' }}
           color="whiteAlpha.800"
           p={3}
           mt={10}
           mb={6}
           align="center"
         ></Box>
-          <Heading as="h3" fontSize={20} mb={4}>
+        <Heading as="h3" fontSize={20} mb={4}>
           Commercial Work
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -65,20 +64,23 @@ const Projects = () => {
               id="databelt"
               alt="dataBelt"
               title="dataBelt"
-              thumbnail={useColorModeValue(dataBelt_logo_light.src, dataBelt_logo.src)}
+              thumbnail={useColorModeValue(
+                dataBelt_logo_light.src,
+                dataBelt_logo.src
+              )}
             >
               A complete data governance plaform.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
         <Section delay={0.3}>
-          <Divider
-            as={motion.hr}
-            my={8}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 3 }}
-          />
+          <Separator asChild my={8}>
+            <motion.hr
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 3 }}
+            />
+          </Separator>
         </Section>
 
         <Heading as="h3" fontSize={20} mb={4}>
@@ -166,13 +168,13 @@ const Projects = () => {
           </Section>
         </SimpleGrid>
         <Section delay={0.3}>
-          <Divider
-            as={motion.hr}
-            my={8}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 3 }}
-          />
+          <Separator asChild my={8}>
+            <motion.hr
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 3 }}
+            />
+          </Separator>
         </Section>
         <Heading as="h3" fontSize={20} mb={4}>
           Collabs

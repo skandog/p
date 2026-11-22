@@ -8,33 +8,33 @@ import {
   Heading,
   Flex,
   Menu,
-  MenuItem,
-  MenuList,
-  MenuButton,
   IconButton,
-  useColorModeValue
+  Portal
 } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import { IoMenu } from 'react-icons/io5'
 import ThemeToggleButton from './Theme-Toggle-Button'
 import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('black.200', 'whiteAlpha.900')
-  const activeColor = useColorModeValue('gray.500', 'whiteAlpha.600')
+  const inactiveColor = { base: 'black.200', _dark: 'whiteAlpha.900' }
+  const activeColor = { base: 'gray.500', _dark: 'whiteAlpha.600' }
+  const rel = target === '_blank' ? 'noopener noreferrer' : undefined
   return (
     <Link
-      as={NextLink}
+      asChild
       href={href}
       scroll={false}
+      variant="nav"
       p={2}
-      bg={active ? 'grassTeal' : undefined}
       color={active ? activeColor : inactiveColor}
       target={target}
-      rel={target === '_blank' ? 'noopener noreferrer' : undefined}
+      rel={rel}
       {...props}
     >
-      {children}
+      <NextLink href={href} scroll={false} target={target} rel={rel}>
+        {children}
+      </NextLink>
     </Link>
   )
 }
@@ -47,7 +47,7 @@ const Navbar = props => {
       position="static"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#FBF4E2', '#0B0827')}
+      bg={{ base: '#FBF4E2', _dark: '#0B0827' }}
       css={{ backdropFilter: 'blur(100px)' }}
       zIndex={4}
       // borderColor={"green.300"}
@@ -99,41 +99,41 @@ const Navbar = props => {
           </LinkItem>
         </Stack>
 
-        <Box zIndex={5} flex={1} align="right">
+        <Box zIndex={5} flex={1} textAlign="right">
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu isLazy id="navbar-menu">
-              <MenuButton
-                as={IconButton}
-                icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Open navigation menu"
-              />
-              <MenuList>
-                <MenuItem as={NextLink} href="/">
-                  About
-                </MenuItem>
-                <MenuItem as={NextLink} href="/projects">
-                  Projects
-                </MenuItem>
-                <MenuItem as={NextLink} href="/bakes">
-                  Bakes
-                </MenuItem>
-                {/* <MenuItem as={NextLink} href="/thanks">
-                  Thanks
-                </MenuItem> */}
-
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/skandog/p"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Source
-                </MenuItem>
-              </MenuList>
-            </Menu>
+            <Menu.Root lazyMount unmountOnExit id="navbar-menu">
+              <Menu.Trigger asChild>
+                <IconButton variant="outline" aria-label="Open navigation menu">
+                  <IoMenu />
+                </IconButton>
+              </Menu.Trigger>
+              <Portal>
+                <Menu.Positioner>
+                  <Menu.Content>
+                    <Menu.Item value="about" asChild>
+                      <NextLink href="/">About</NextLink>
+                    </Menu.Item>
+                    <Menu.Item value="projects" asChild>
+                      <NextLink href="/projects">Projects</NextLink>
+                    </Menu.Item>
+                    <Menu.Item value="bakes" asChild>
+                      <NextLink href="/bakes">Bakes</NextLink>
+                    </Menu.Item>
+                    <Menu.Item value="source" asChild>
+                      <a
+                        href="https://github.com/skandog/p"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        View Source
+                      </a>
+                    </Menu.Item>
+                  </Menu.Content>
+                </Menu.Positioner>
+              </Portal>
+            </Menu.Root>
           </Box>
         </Box>
       </Container>

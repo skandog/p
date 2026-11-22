@@ -1,4 +1,4 @@
-import { Container, Badge, List, ListItem, Link } from '@chakra-ui/react'
+import { Container, Badge, List, Link } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
@@ -36,21 +36,21 @@ const Bake = () => {
           Delicious served with a dipping sauce made with garlic, soy sauce,
           black vinegar and toasted sesame oil. And if you have any kimchi to
           hand, make sure to serve on the side; pictured below is some of the{' '}
-          <Link as={NextLink} href="/bakes/dongchimi">
-            water radish kimchi
+          <Link asChild>
+            <NextLink href="/bakes/dongchimi">water radish kimchi</NextLink>
           </Link>{' '}
           I make on the regs.
         </P>
-        <List my={4} ml={4}>
-          <ListItem>
+        <List.Root my={4} ml={4}>
+          <List.Item>
             <Meta>Ingredients</Meta>
             <span>
               Eggs, Plain Flour, Rice Flour, Spring Onions, Green Cabbage,
               Carrot, Chili, Garlic, Soy Sauce, Black Vinegar and Toasted Sesame
               Oil
             </span>
-          </ListItem>
-        </List>
+          </List.Item>
+        </List.Root>
         <BakeImage
           src={PaJeon1.src}
           alt="Pa Jeon (Korean Pancake) in the pan"

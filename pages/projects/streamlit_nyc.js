@@ -1,13 +1,6 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem,
-  useColorModeValue,
-  Divider
-} from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Container, Badge, Link, List, Separator } from '@chakra-ui/react'
+import { FiExternalLink } from 'react-icons/fi'
+import { useColorModeValue } from '../../components/providers'
 
 import { Title, ProjectImage, Meta } from '../../components/project.js'
 import P from '../../components/paragraph.js'
@@ -34,30 +27,35 @@ const Project = () => {
           where to focus their search for an apartment shortly after graduating.
           It was interesting learning to use Streamlit&apos;s suite of analysis
           tools, as well as working with geospatial data representation via
-          PyDeck. 
+          PyDeck.
         </P>
-        <List ml={4} my={4}>
-          <ListItem>
+        <List.Root ml={4} my={4}>
+          <List.Item>
             <Meta>Website</Meta>
             <Link
               href="https://skandog-columns-column-tut-clean-91kzmb.streamlitapp.com/"
               target={'_blank'}
+              rel="noopener noreferrer"
             >
-              Streamlit App <ExternalLinkIcon mx={'2px'} />
+              Streamlit App <FiExternalLink aria-hidden="true" />
             </Link>
-          </ListItem>
-          <ListItem>
+          </List.Item>
+          <List.Item>
             <Meta>Source Code</Meta>
-            <Link href="https://github.com/skandog/columns" target={'_blank'}>
-              Github <ExternalLinkIcon mx={'2px'} />
+            <Link
+              href="https://github.com/skandog/columns"
+              target={'_blank'}
+              rel="noopener noreferrer"
+            >
+              Github <FiExternalLink aria-hidden="true" />
             </Link>
-          </ListItem>
-          <ListItem>
+          </List.Item>
+          <List.Item>
             <Meta>Stack</Meta>
             <span>Python, Streamlit, Pandas, PyDeck</span>
-          </ListItem>
-        </List>
-        <Divider my={8} />
+          </List.Item>
+        </List.Root>
+        <Separator my={8} />
 
         <ProjectImage
           src={useColorModeValue(stremNYC.src, stremNYCDark.src)}

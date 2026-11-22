@@ -15,8 +15,10 @@ export const GridItem = ({ children, href, title, thumbnail }) => {
           placeholder="blur"
           loading="lazy"
         />
-        <LinkOverlay href={href} target="_blank" rel="noopener noreferrer">
-          <Text mt={2}>{title}</Text>
+        <LinkOverlay asChild>
+          <a href={href} target="_blank" rel="noopener noreferrer">
+            <Text mt={2}>{title}</Text>
+          </a>
         </LinkOverlay>
         <Text fontSize={14}>{children}</Text>
       </LinkBox>
@@ -41,10 +43,12 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => {
           objectFit={'cover'}
           minH={'160px'}
         />
-        <LinkOverlay as={NextLink} href={`/projects/${id}`} scroll={false}>
-          <Text mt={2} fontSize={20}>
-            {title}
-          </Text>
+        <LinkOverlay asChild>
+          <NextLink href={`/projects/${id}`} scroll={false}>
+            <Text mt={2} fontSize={20}>
+              {title}
+            </Text>
+          </NextLink>
         </LinkOverlay>
         <Text fontSize={14}>{children}</Text>
       </LinkBox>
@@ -68,10 +72,12 @@ export const BakeGridItem = ({ children, id, title, thumbnail }) => {
           objectFit={'cover'}
           minH={'160px'}
         />
-        <LinkOverlay as={NextLink} href={`/bakes/${id}`} scroll={false}>
-          <Text mt={2} fontSize={20}>
-            {title}
-          </Text>
+        <LinkOverlay asChild>
+          <NextLink href={`/bakes/${id}`} scroll={false}>
+            <Text mt={2} fontSize={20}>
+              {title}
+            </Text>
+          </NextLink>
         </LinkOverlay>
         <Text fontSize={14}>{children}</Text>
       </LinkBox>
@@ -88,10 +94,12 @@ export const ThanksGridItem = ({ children, id, title, thumbnail }) => {
           className="grid-item-thumbnail"
           placeholder="blur"
         />
-        <LinkOverlay as={NextLink} href={`/thanks/${id}`} scroll={false}>
-          <Text mt={2} fontSize={20}>
-            {title}
-          </Text>
+        <LinkOverlay asChild>
+          <NextLink href={`/thanks/${id}`} scroll={false}>
+            <Text mt={2} fontSize={20}>
+              {title}
+            </Text>
+          </NextLink>
         </LinkOverlay>
         <Text fontSize={14}>{children}</Text>
       </LinkBox>

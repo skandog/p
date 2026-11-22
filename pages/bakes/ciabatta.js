@@ -1,4 +1,4 @@
-import { Container, Badge, List, ListItem } from '@chakra-ui/react'
+import { Container, Badge, List } from '@chakra-ui/react'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -26,12 +26,12 @@ const Bake = () => {
           homemade baba ganoush, chilis, olives and arugula. A new rugular I
           think.
         </P>
-        <List my={4} ml={4}>
-          <ListItem>
+        <List.Root my={4} ml={4}>
+          <List.Item>
             <Meta>Ingredients</Meta>
             <span>Strong White Flour, Yeast, Sugar, Salt, Water</span>
-          </ListItem>
-        </List>
+          </List.Item>
+        </List.Root>
         <BakeImage src={Ciabatta1.src} alt="Homemade Ciabatta Sandwich" />
 
         <BakeImage src={Ciabatta2.src} alt="Homemade Ciabatta Loaf" />

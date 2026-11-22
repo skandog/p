@@ -1,12 +1,5 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem,
-  Divider
-} from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Container, Badge, Link, List, Separator } from '@chakra-ui/react'
+import { FiExternalLink } from 'react-icons/fi'
 
 import { Title, ProjectImage, Meta } from '../../components/project.js'
 import P from '../../components/paragraph.js'
@@ -51,26 +44,30 @@ const Project = () => {
           <br />
           <br />
         </P>
-        <List ml={4} my={2}>
+        <List.Root ml={4} my={2}>
           {/* // Leaving this here for when its avaialble for d/l
-          <ListItem>
+          <List.Item>
             <Meta>Website</Meta>
             <Link href="" target={'_blank'}>
-              Homepage <ExternalLinkIcon mx={'2px'} />
+              Homepage <FiExternalLink aria-hidden="true" />
             </Link>
-          </ListItem> */}
-          <ListItem>
+          </List.Item> */}
+          <List.Item>
             <Meta>Source Code</Meta>
-            <Link href="https://github.com/skandog/pomfocus" target={'_blank'}>
-              Github <ExternalLinkIcon mx={'2px'} />
+            <Link
+              href="https://github.com/skandog/pomfocus"
+              target={'_blank'}
+              rel="noopener noreferrer"
+            >
+              Github <FiExternalLink aria-hidden="true" />
             </Link>
-          </ListItem>
-          <ListItem>
+          </List.Item>
+          <List.Item>
             <Meta>Stack</Meta>
             <span>Javascript, React.js, React Native, Expo, Async Storage</span>
-          </ListItem>
-        </List>
-        <Divider my={8} />
+          </List.Item>
+        </List.Root>
+        <Separator my={8} />
 
         {/* <ProjectImage src={pomFocus1.src} alt="PomFocus Homepage Screen" /> */}
         {/* <ProjectImage src={pomFocus2.src} alt="Portfolio Front Page" /> */}

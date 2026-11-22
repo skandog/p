@@ -1,8 +1,7 @@
-import styled from '@emotion/styled'
+import { chakra } from '@chakra-ui/react'
 
-const Paragraph = styled.p`
-  text-align: left;
-  text-indent: 1em;
-`
+const Paragraph = chakra('p', {
+  base: { textAlign: 'left', textIndent: '1em' }
+})
 
 export default Paragraph

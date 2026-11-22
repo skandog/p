@@ -1,4 +1,4 @@
-import { Container, List, ListItem, Badge } from '@chakra-ui/react'
+import { Container, List, Badge } from '@chakra-ui/react'
 import { Title, BakeImage, Meta } from '../../components/bakes.js'
 import P from '../../components/paragraph.js'
 import Layout from '../../components/layouts/article.js'
@@ -26,12 +26,12 @@ const Bake = () => {
           The final product was so good, better than any grapefruit soda I have
           managed to source in the UK.
         </P>
-        <List my={4} ml={4}>
-          <ListItem>
+        <List.Root my={4} ml={4}>
+          <List.Item>
             <Meta>Ingredients</Meta>
             <span>Grapefruit, Lemon, Sugar, Ginger Yeast Culture</span>
-          </ListItem>
-        </List>
+          </List.Item>
+        </List.Root>
         <BakeImage src={GrapeSoda.src} alt="Homemade Pita Bread"></BakeImage>
       </Container>
     </Layout>
