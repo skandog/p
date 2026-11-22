@@ -15,6 +15,21 @@ going over everything and customising to both better understand everything that 
 - [Framer Motion](https://www.framer.com/motion/) - Animation library for React
 - [Emotion Styled Components](https://emotion.sh/docs/styled) - Styling library for React
 
+## Local development
+
+This repository uses Yarn Classic and the dependency versions recorded in `yarn.lock`.
+Node.js 18 or newer is recommended. With Node.js and Yarn Classic installed:
+
+```bash
+yarn install
+yarn dev
+```
+
+The site does not require a database or other local service. It uses the existing Google
+Tag Manager container by default. To use a different container locally, set
+`NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID` in `.env.local`, which is ignored by Git. Never commit
+credentials or private configuration.
+
 
 
 ## Structure
